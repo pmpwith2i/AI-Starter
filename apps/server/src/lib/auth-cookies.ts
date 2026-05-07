@@ -2,9 +2,9 @@ import type { FastifyReply } from "fastify";
 import { ENVIRONMENT_VARIABLES } from "#src/constants/env.constants.js";
 
 const COOKIE_NAMES = {
-  ACCESS_TOKEN: "oncologo_access_token",
-  REFRESH_TOKEN: "oncologo_refresh_token",
-  LOGGED_IN: "oncologo_logged_in",
+  ACCESS_TOKEN: "app_access_token",
+  REFRESH_TOKEN: "app_refresh_token",
+  LOGGED_IN: "app_logged_in",
 } as const;
 
 function getCookieOptions(maxAge: number) {

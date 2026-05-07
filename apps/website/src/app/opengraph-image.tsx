@@ -123,7 +123,7 @@ export default function OpenGraphImage() {
             display: "flex",
           }}
         >
-          oncologo.it
+          {`{{PROJECT_NAME}}`}
         </div>
       </div>
     </div>,

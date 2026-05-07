@@ -1,5 +1,5 @@
 /** DELETE /account — requires password confirmation. Hybrid strategy:
- *  - Hard delete: ClinicalProfile, chats, souls, nutrition plans, etc.
+ *  - Hard delete: every domain row that holds the user's personal data
  *  - Anonymize + retain: CreditTransaction, CoursePurchase, EventPurchase, BundlePurchase
  *    (retained for 10 years per Italian tax law).
  *  - Retain as-is: ConsentRecord, AuditLog.

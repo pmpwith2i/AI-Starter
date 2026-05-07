@@ -96,7 +96,11 @@ export default function LoginScreen() {
 
       <KeyboardAwareScrollView
         bottomOffset={88}
-        contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 24, paddingTop: 32 }}
+        contentContainerStyle={{
+          flexGrow: 1,
+          paddingHorizontal: 24,
+          paddingTop: 32,
+        }}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
       >
@@ -112,59 +116,59 @@ export default function LoginScreen() {
           </Text>
 
           <View className="mt-10 gap-4">
-          <TextField
-            label="Email"
-            value={email}
-            onChangeText={setEmail}
-            keyboardType="email-address"
-            autoCapitalize="none"
-            autoCorrect={false}
-            autoComplete="email"
-            textContentType="emailAddress"
-            returnKeyType="next"
-            onSubmitEditing={() => passwordInputRef.current?.focus()}
-            blurOnSubmit={false}
-            placeholder="nome@esempio.it"
-          />
+            <TextField
+              label="Email"
+              value={email}
+              onChangeText={setEmail}
+              keyboardType="email-address"
+              autoCapitalize="none"
+              autoCorrect={false}
+              autoComplete="email"
+              textContentType="emailAddress"
+              returnKeyType="next"
+              onSubmitEditing={() => passwordInputRef.current?.focus()}
+              blurOnSubmit={false}
+              placeholder="nome@esempio.it"
+            />
 
-          <TextField
-            ref={passwordInputRef}
-            label="Password"
-            value={password}
-            onChangeText={setPassword}
-            secureTextEntry={!showPassword}
-            autoCapitalize="none"
-            autoCorrect={false}
-            autoComplete="current-password"
-            textContentType="password"
-            returnKeyType="go"
-            onSubmitEditing={submit}
-            placeholder="••••••••"
-            trailing={
-              <Pressable
-                onPress={() => setShowPassword((v) => !v)}
-                className="px-1 active:opacity-70"
-                accessibilityRole="button"
-                accessibilityLabel={
-                  showPassword ? "Nascondi password" : "Mostra password"
-                }
-                hitSlop={8}
-              >
-                {showPassword ? (
-                  <EyeOff size={20} color="rgba(247,251,255,0.7)" />
-                ) : (
-                  <Eye size={20} color="rgba(247,251,255,0.7)" />
-                )}
-              </Pressable>
-            }
-          />
-        </View>
-
-        {error ? (
-          <View className="mt-5 rounded-xl border border-red-400/30 bg-red-500/15 px-4 py-3">
-            <Text className="text-sm text-red-100">{error}</Text>
+            <TextField
+              ref={passwordInputRef}
+              label="Password"
+              value={password}
+              onChangeText={setPassword}
+              secureTextEntry={!showPassword}
+              autoCapitalize="none"
+              autoCorrect={false}
+              autoComplete="current-password"
+              textContentType="password"
+              returnKeyType="go"
+              onSubmitEditing={submit}
+              placeholder="••••••••"
+              trailing={
+                <Pressable
+                  onPress={() => setShowPassword((v) => !v)}
+                  className="px-1 active:opacity-70"
+                  accessibilityRole="button"
+                  accessibilityLabel={
+                    showPassword ? "Nascondi password" : "Mostra password"
+                  }
+                  hitSlop={8}
+                >
+                  {showPassword ? (
+                    <EyeOff size={20} color="rgba(247,251,255,0.7)" />
+                  ) : (
+                    <Eye size={20} color="rgba(247,251,255,0.7)" />
+                  )}
+                </Pressable>
+              }
+            />
           </View>
-        ) : null}
+
+          {error ? (
+            <View className="mt-5 rounded-xl border border-red-400/30 bg-red-500/15 px-4 py-3">
+              <Text className="text-sm text-red-100">{error}</Text>
+            </View>
+          ) : null}
 
           <Link href="/forgot-password" asChild>
             <Pressable className="mt-5 self-start active:opacity-70">
@@ -177,7 +181,10 @@ export default function LoginScreen() {
       </KeyboardAwareScrollView>
 
       <KeyboardStickyView offset={{ closed: 0, opened: 0 }}>
-        <SafeAreaView edges={["bottom"]} className="bg-[#0d1424] px-6 pb-3 pt-2">
+        <SafeAreaView
+          edges={["bottom"]}
+          className="bg-[#0d1424] px-6 pb-3 pt-2"
+        >
           <Pressable
             disabled={!canSubmit}
             onPress={submit}
@@ -205,7 +212,9 @@ export default function LoginScreen() {
           </Pressable>
 
           <View className="flex-row items-center justify-center gap-1.5">
-            <Text className="text-sm text-[#f7fbff]/60">Non hai un account?</Text>
+            <Text className="text-sm text-[#f7fbff]/60">
+              Non hai un account?
+            </Text>
             <Link href="/signup" asChild>
               <Pressable className="active:opacity-70">
                 <Text className="text-sm font-semibold text-[#f7fbff]">

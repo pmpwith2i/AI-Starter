@@ -1,7 +1,7 @@
 import * as SecureStore from "expo-secure-store";
 
-const ACCESS_TOKEN_KEY = "oncologo_access_token";
-const REFRESH_TOKEN_KEY = "oncologo_refresh_token";
+const ACCESS_TOKEN_KEY = "app_access_token";
+const REFRESH_TOKEN_KEY = "app_refresh_token";
 
 let cachedAccessToken: string | null = null;
 

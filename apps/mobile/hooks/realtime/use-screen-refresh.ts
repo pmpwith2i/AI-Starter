@@ -22,7 +22,7 @@ import { useCallback, useState } from "react";
  * ```tsx
  * const { refreshing, onRefresh } = useScreenRefresh([
  *   notificationsKeys.all,
- *   nutritionKeys.all,
+ *   itemKeys.all,
  *   eventsKeys.all,
  * ]);
  * <ScrollView refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />} />
@@ -38,9 +38,7 @@ export function useScreenRefresh(domainKeys: readonly (readonly unknown[])[]): {
   const onRefresh = useCallback(() => {
     setRefreshing(true);
     void Promise.all(
-      domainKeys.map((key) =>
-        queryClient.invalidateQueries({ queryKey: key }),
-      ),
+      domainKeys.map((key) => queryClient.invalidateQueries({ queryKey: key })),
     ).finally(() => {
       setRefreshing(false);
     });
@@ -48,7 +46,6 @@ export function useScreenRefresh(domainKeys: readonly (readonly unknown[])[]): {
     // scope or wrapped in useMemo by the caller). Invalidate-on-array-rebuild
     // is intentional — if the screen's domains change at runtime, treat that
     // as a new screen mount.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [queryClient, domainKeys]);
 
   return { refreshing, onRefresh };

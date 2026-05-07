@@ -38,8 +38,10 @@ read_answer() {
   fi
 }
 
-PROJECT_NAME=$(read_answer project_name "metaimed-starter")
+PROJECT_NAME=$(read_answer project_name "Starter")
+COMPANY_NAME=$(read_answer company_name "$PROJECT_NAME Inc.")
 ONE_LINER=$(read_answer one_liner "TODO: project pitch")
+TAGLINE=$(read_answer tagline "$ONE_LINER")
 CATEGORY=$(read_answer category "consumer_wellness")
 PRIMARY_DOMAIN=$(read_answer primary_domain "Item")
 PRIMARY_DOMAIN_DESCRIPTION=$(read_answer primary_domain_description "TODO")
@@ -48,6 +50,11 @@ TONE=$(read_answer tone "clinical")
 TONE_KEYWORDS=$(read_answer tone_keywords "calm, precise, restrained")
 PRIMARY_HUE=$(read_answer primary_hue "245")
 SECONDARY_HUE=$(read_answer secondary_hue "")
+CONTACT_EMAIL=$(read_answer contact_email "hello@example.com")
+STREET_ADDRESS=$(read_answer street_address "")
+POSTAL_CODE=$(read_answer postal_code "")
+ADDRESS_CITY=$(read_answer address_city "")
+ADDRESS_REGION=$(read_answer address_region "")
 SURFACES=$(jq -r '.surfaces // [] | join(",")' "$ANSWERS")
 TODAY_ISO=$(date -u +"%Y-%m-%d")
 PROJECT_KEBAB=$(echo "$PROJECT_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//; s/-$//')
@@ -63,9 +70,14 @@ echo ">> Surfaces: $SURFACES"
 substitute() {
   local file="$1"
   if [[ ! -f "$file" ]]; then return; fi
+  # Skip files that don't contain any placeholder (faster + avoids touching
+  # mtimes for nothing).
+  if ! grep -q '{{' "$file" 2>/dev/null; then return; fi
   sed -i.bak \
     -e "s|{{PROJECT_NAME}}|${PROJECT_NAME}|g" \
+    -e "s|{{COMPANY_NAME}}|${COMPANY_NAME}|g" \
     -e "s|{{ONE_LINER}}|${ONE_LINER}|g" \
+    -e "s|{{TAGLINE}}|${TAGLINE}|g" \
     -e "s|{{CATEGORY}}|${CATEGORY}|g" \
     -e "s|{{PRIMARY_DOMAIN}}|${PRIMARY_DOMAIN}|g" \
     -e "s|{{PRIMARY_DOMAIN_DESCRIPTION}}|${PRIMARY_DOMAIN_DESCRIPTION}|g" \
@@ -77,13 +89,39 @@ substitute() {
     -e "s|{{AUDIENCE}}|${CATEGORY}|g" \
     -e "s|{{SURFACES}}|${SURFACES}|g" \
     -e "s|{{TODAY_ISO}}|${TODAY_ISO}|g" \
+    -e "s|{{CONTACT_EMAIL}}|${CONTACT_EMAIL}|g" \
+    -e "s|{{STREET_ADDRESS}}|${STREET_ADDRESS}|g" \
+    -e "s|{{POSTAL_CODE}}|${POSTAL_CODE}|g" \
+    -e "s|{{ADDRESS_CITY}}|${ADDRESS_CITY}|g" \
+    -e "s|{{ADDRESS_REGION}}|${ADDRESS_REGION}|g" \
     "$file"
   rm -f "${file}.bak"
 }
 
-echo ">> Substituting placeholders"
+echo ">> Substituting placeholders in docs + design"
 for f in AGENT.md CLAUDE.md README.md design/tone.md design/brand.md design/tokens.md design/components.md; do
   substitute "$f"
+done
+
+echo ">> Substituting placeholders across the source tree"
+# In-source placeholders (auth-layout, consent-form, email templates, legal,
+# website pages, marketing content, mobile screens). Limited to the file
+# extensions where we placed `{{...}}` tokens, never matches node_modules.
+SOURCE_GLOBS=(
+  'apps/server/src'
+  'apps/dashboard/src'
+  'apps/website/src'
+  'apps/mobile/app'
+  'apps/mobile/components'
+  'apps/mobile/lib'
+  'packages/email/src'
+  'packages/server-sdk/src'
+)
+for root in "${SOURCE_GLOBS[@]}"; do
+  if [[ ! -d "$root" ]]; then continue; fi
+  while IFS= read -r f; do
+    substitute "$f"
+  done < <(find "$root" -type f \( -name '*.ts' -o -name '*.tsx' \))
 done
 
 # Update root package.json name field

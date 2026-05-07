@@ -61,8 +61,8 @@ export function Header() {
             className="text-primary transition-transform duration-500 group-hover:rotate-45"
           />
           <span className="text-[1.15rem] font-extrabold tracking-normal">
-            oncologo
-            <span className="text-primary">.</span>it
+            {`{{PROJECT_NAME}}`}
+            <span className="text-primary">.</span>
           </span>
         </Link>
 

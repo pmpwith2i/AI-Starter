@@ -8,7 +8,7 @@ import { HttpErrorResponse } from "./error-handler.plugin.js";
  * authenticated request from a user whose email has not been verified.
  *
  * Apply this hook AFTER `fastify.authenticate` in any module that should be
- * locked behind email verification (clinical-profile, chat, nutrition, meal
+ * locked behind email verification (protected resources
  * generation, appointments, background tasks, credit operations, etc.).
  *
  * Routes that MUST stay reachable for unverified users:

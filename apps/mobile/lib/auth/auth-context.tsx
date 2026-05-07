@@ -24,10 +24,7 @@ import {
   loadStoredTokens,
   storeTokens,
 } from "./secure-store";
-import {
-  setRefreshHandler,
-  setSessionExpiredHandler,
-} from "./session-events";
+import { setRefreshHandler, setSessionExpiredHandler } from "./session-events";
 
 export type AuthUser = {
   userId: string;

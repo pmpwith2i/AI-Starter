@@ -28,7 +28,7 @@ export const Route = createRootRouteWithContext<RouterContext>()({
 
 function RootComponent() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="oncologo-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="app-ui-theme">
       <TooltipProvider>
         <I18nProvider i18n={i18n}>
           <QueryClientProvider client={queryClient}>

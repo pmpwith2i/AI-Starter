@@ -1,21 +1,24 @@
-const DEFAULT_SITE_URL = "https://oncologo.it";
+// Brand-level constants. `personalize.sh` replaces every `{{...}}` placeholder
+// from the interview answers. Override values via NEXT_PUBLIC_* env vars at
+// runtime if you don't want to bake them at build time.
+
+const DEFAULT_SITE_URL = "https://example.com";
 
 const rawUrl = process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL;
 
 export const SITE_URL = rawUrl.endsWith("/") ? rawUrl.slice(0, -1) : rawUrl;
 
-export const SITE_NAME = "oncologo.it";
+export const SITE_NAME = "{{PROJECT_NAME}}";
 
-export const SITE_LEGAL_NAME = "Oncologo.it S.r.l.";
+export const SITE_LEGAL_NAME = "{{COMPANY_NAME}}";
 
-export const SITE_TAGLINE = "La piattaforma dedicata ai pazienti oncologici";
+export const SITE_TAGLINE = "{{TAGLINE}}";
 
-export const SITE_DESCRIPTION =
-  "Specialisti certificati ARTOI, piani nutrizionali generati dall'intelligenza artificiale, corsi ed eventi dedicati al percorso di cura oncologica.";
+export const SITE_DESCRIPTION = "{{ONE_LINER}}";
 
-export const SITE_LOCALE = "it_IT";
+export const SITE_LOCALE = "en_US";
 
-export const SITE_COUNTRY = "IT";
+export const SITE_COUNTRY = "US";
 
 export const DEFAULT_OG_PATH = "/opengraph-image";
 
@@ -25,17 +28,14 @@ export const BRAND_BACKGROUND_HEX = "#f8f9fb";
 
 export const BRAND_FOREGROUND_HEX = "#1b1d21";
 
-export const SOCIAL_PROFILES: readonly string[] = [
-  "https://www.linkedin.com/company/oncologo-it",
-  "https://www.instagram.com/oncologo.it",
-];
+export const SOCIAL_PROFILES: readonly string[] = [];
 
 export const ORGANIZATION_CONTACT = {
-  email: "ciao@oncologo.it",
-  streetAddress: "Via Placeholder 1",
-  postalCode: "00100",
-  addressLocality: "Roma",
-  addressRegion: "RM",
+  email: "{{CONTACT_EMAIL}}",
+  streetAddress: "{{STREET_ADDRESS}}",
+  postalCode: "{{POSTAL_CODE}}",
+  addressLocality: "{{ADDRESS_CITY}}",
+  addressRegion: "{{ADDRESS_REGION}}",
   addressCountry: SITE_COUNTRY,
 } as const;
 

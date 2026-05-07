@@ -93,18 +93,12 @@ export const markAllAsRead = async (userId: string): Promise<number> => {
 };
 
 /**
- * Lifecycle notification types used by background-task executors. Mobile +
- * dashboard switch on these strings to render appropriate icons / route on
- * tap; consumers that don't recognise the type fall back to the default
- * `Bell` icon and no navigation.
+ * Lifecycle notification types. Add a literal here for every notification kind
+ * your domain emits — mobile + dashboard switch on these strings to render
+ * icons / route on tap. Consumers that don't recognise the type fall back to
+ * the default `Bell` icon and no navigation.
  */
-export type NotificationType =
-  | "nutrition_plan_ready"
-  | "nutrition_plan_failed"
-  | "meal_regenerated"
-  | "meal_regeneration_failed"
-  | "event_updated"
-  | (string & {});
+export type NotificationType = "welcome" | (string & {});
 
 export interface CreateNotificationInput {
   userId: string;

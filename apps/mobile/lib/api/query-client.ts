@@ -1,14 +1,7 @@
 import { ApiError } from "@repo/server-sdk";
-import {
-  MutationCache,
-  QueryCache,
-  QueryClient,
-} from "@tanstack/react-query";
+import { MutationCache, QueryCache, QueryClient } from "@tanstack/react-query";
 
-import {
-  notifySessionExpired,
-  tryRefresh,
-} from "../auth/session-events";
+import { notifySessionExpired, tryRefresh } from "../auth/session-events";
 
 /**
  * On 401: try the refresh-token flow once. If it succeeds we invalidate the

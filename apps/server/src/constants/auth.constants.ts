@@ -1,2 +1,2 @@
-export const JWT_ISSUER = "oncologo-patient";
-export const JWT_AUDIENCE = "oncologo-patient";
+export const JWT_ISSUER = "app-patient";
+export const JWT_AUDIENCE = "app-patient";

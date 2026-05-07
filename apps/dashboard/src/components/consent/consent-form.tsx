@@ -91,8 +91,8 @@ export function ConsentForm({
           title={<Trans>Termini di servizio</Trans>}
           description={
             <Trans>
-              Accetto i termini di servizio di oncologo.it che regolano
-              l&apos;utilizzo della piattaforma e dei suoi servizi.
+              I accept {`{{PROJECT_NAME}}`}&apos;s terms of service governing
+              use of the platform and its services.
             </Trans>
           }
           docLink={{
@@ -125,10 +125,9 @@ export function ConsentForm({
           title={<Trans>Trattamento dei dati sanitari</Trans>}
           description={
             <Trans>
-              Acconsento esplicitamente al trattamento dei miei dati sanitari
-              (categorie particolari ex art. 9 GDPR) per l&apos;erogazione dei
-              servizi di oncologo.it, inclusi piani nutrizionali, cartelle
-              cliniche e chat assistita.
+              I explicitly consent to the processing of my health data (special
+              categories under GDPR Art. 9) for the provision of
+              {` {{PROJECT_NAME}} `} services.
             </Trans>
           }
         />

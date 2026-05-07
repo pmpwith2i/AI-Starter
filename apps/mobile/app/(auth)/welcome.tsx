@@ -116,21 +116,15 @@ export default function WelcomeScreen() {
           ))}
         </AnimatedScrollView>
 
-        <View
-          pointerEvents="box-none"
-          className="absolute inset-x-0 top-0"
-        >
+        <View pointerEvents="box-none" className="absolute inset-x-0 top-0">
           <SafeAreaView edges={["top"]} className="px-6 pt-2">
             <Text className="text-base font-semibold tracking-wide text-[#f7fbff]">
-              Oncologo
+              {`{{PROJECT_NAME}}`}
             </Text>
           </SafeAreaView>
         </View>
 
-        <View
-          pointerEvents="box-none"
-          className="absolute inset-x-0 bottom-0"
-        >
+        <View pointerEvents="box-none" className="absolute inset-x-0 bottom-0">
           <SafeAreaView edges={["bottom"]} className="px-6 pb-3">
             <View className="mb-7 flex-row items-center justify-center gap-2">
               {SLIDES.map((_, index) => (
@@ -267,5 +261,7 @@ function Dot({ index, scrollX }: DotProps) {
     );
     return { width: w, opacity };
   });
-  return <Animated.View style={style} className="h-2 rounded-full bg-[#f7fbff]" />;
+  return (
+    <Animated.View style={style} className="h-2 rounded-full bg-[#f7fbff]" />
+  );
 }

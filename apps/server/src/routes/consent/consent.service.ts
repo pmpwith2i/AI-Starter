@@ -10,7 +10,7 @@ import { cache, invalidateUserCache, userTag } from "#src/lib/cache.js";
 
 /** TTL ms for the cached consent status. Short enough that a missed
  * invalidation is not catastrophic; long enough to shed significant DB load
- * on hot endpoints (chat stream, nutrition generation) that run the guard
+ * on hot endpoints (hot endpoints) that run the guard
  * on every request. */
 const CONSENT_CACHE_TTL_MS = 30_000;
 

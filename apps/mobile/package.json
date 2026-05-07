@@ -5,9 +5,12 @@
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
-    "ios": "expo start --ios",
-    "android": "expo start --android",
-    "prebuild": "expo prebuild"
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "prebuild": "expo prebuild",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "build": "tsc --noEmit"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
@@ -54,6 +57,9 @@
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@types/react": "~19.1.0",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "@repo/eslint-config": "workspace:*",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0"
   }
 }

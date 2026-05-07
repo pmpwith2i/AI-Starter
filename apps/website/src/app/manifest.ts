@@ -9,7 +9,7 @@ import {
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: SITE_NAME,
-    short_name: "oncologo",
+    short_name: "{{PROJECT_NAME}}",
     description: SITE_DESCRIPTION,
     start_url: "/",
     display: "standalone",

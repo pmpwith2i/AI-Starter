@@ -24,18 +24,13 @@ export const isValidName = (value: string): boolean => {
   return trimmed.length >= 1 && trimmed.length <= 50;
 };
 
-export const isValidCode6 = (value: string): boolean =>
-  /^\d{6}$/.test(value);
+export const isValidCode6 = (value: string): boolean => /^\d{6}$/.test(value);
 
 /**
  * Returns the list of password requirements not yet met (for inline UI hints).
  * Empty array = valid.
  */
-export type PasswordRule =
-  | "minLength"
-  | "uppercase"
-  | "lowercase"
-  | "digit";
+export type PasswordRule = "minLength" | "uppercase" | "lowercase" | "digit";
 
 export const failingPasswordRules = (value: string): PasswordRule[] => {
   const failing: PasswordRule[] = [];

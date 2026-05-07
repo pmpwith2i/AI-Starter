@@ -1,5 +1,5 @@
 /**
- * Retention windows for the patient platform.
+ * Retention windows.
  *
  * GDPR Art. 5(1)(e) — storage limitation. Every row of personal data that
  * falls under this service is created with `retentionExpiresAt = createdAt
@@ -8,31 +8,16 @@
  * Windows are set in months rather than days so leap years / DST don't skew
  * boundaries. Values are ops-tunable — tweak here, reseed, and the next
  * cleanup pass picks them up.
+ *
+ * Add a literal here for every new domain model that carries
+ * `retentionExpiresAt`, then add the matching `deleteMany` call in
+ * `runRetentionCleanup`.
  */
 
-export type PatientRetentionModel =
-  | "chat_message"
-  | "compacted_segment"
-  | "user_soul"
-  | "background_task"
-  | "notification"
-  | "suggestion"
-  | "prevy_user_analysis";
+export type RetentionModel = "notification";
 
-export const RETENTION_WINDOW_MONTHS: Record<PatientRetentionModel, number> = {
-  // Chat + LLM byproducts: keep long enough for a user to review recent history,
-  // not so long that it accumulates indefinitely.
-  chat_message: 24,
-  compacted_segment: 36,
-  user_soul: 36,
-  // Background tasks are operational artefacts; short window.
-  background_task: 6,
-  // Notifications + suggestions are ephemeral UI surfaces.
+export const RETENTION_WINDOW_MONTHS: Record<RetentionModel, number> = {
   notification: 24,
-  suggestion: 24,
-  // Prevy history: the product-level analysis is platform-wide cache and not
-  // scoped here — only the per-user join is retention-bounded. 24 months.
-  prevy_user_analysis: 24,
 };
 
 const MS_PER_MONTH = (365.25 / 12) * 24 * 60 * 60 * 1000;
@@ -42,7 +27,7 @@ const MS_PER_MONTH = (365.25 / 12) * 24 * 60 * 60 * 1000;
  * `createdAt` (defaults to now).
  */
 export const resolveRetentionExpiry = (
-  model: PatientRetentionModel,
+  model: RetentionModel,
   createdAt: Date = new Date(),
 ): Date => {
   const months = RETENTION_WINDOW_MONTHS[model];

@@ -1,17 +1,7 @@
-import {
-  GlassView,
-  isLiquidGlassAvailable,
-} from "expo-glass-effect";
+import { GlassView, isLiquidGlassAvailable } from "expo-glass-effect";
 import { LinearGradient } from "expo-linear-gradient";
 import { usePathname, useRouter } from "expo-router";
-import {
-  Apple,
-  BookOpen,
-  CalendarDays,
-  Home,
-  type LucideIcon,
-  UserRound,
-} from "lucide-react-native";
+import { Home, type LucideIcon, UserRound } from "lucide-react-native";
 import { cssInterop } from "nativewind";
 import type { ReactNode } from "react";
 import { useEffect, useMemo } from "react";
@@ -71,12 +61,8 @@ export const MOBILE_COLORS = {
   cream: "#f0d8b9",
   warm: "#f1d9b1",
   clay: "#ec8f64",
-  // Domain whispers
-  care: "#7c95ff",
-  nutrition: "#7ddac2",
-  events: "#8fc7e8",
-  courses: "#f0d8b9",
-  support: "#aabaff",
+  // Domain whispers — add per-domain accent colors as you scaffold tabs.
+  accent: "#7ddac2",
 } as const;
 
 // Display font — iOS New York (transitional serif), Charter / serif fallback.
@@ -86,7 +72,7 @@ export const DISPLAY_FONT: TextStyle = Platform.select({
   default: { fontFamily: "Georgia" },
 }) as TextStyle;
 
-type SurfaceTone = "default" | "strong" | "nutrition" | "events" | "courses" | "warm";
+type SurfaceTone = "default" | "strong" | "warm" | "accent";
 
 // Surface palette — layered LinearGradient stile onboarding.
 // Ogni tone ha base scura + accent di hue + gradient flow.
@@ -118,7 +104,7 @@ const TONE_SPEC: Record<SurfaceTone, ToneSpec> = {
     ] as const,
     border: "rgba(244,247,251,0.085)",
   },
-  nutrition: {
+  accent: {
     base: "#0f2030",
     gradient: [
       "rgba(125,218,194,0.14)",
@@ -126,24 +112,6 @@ const TONE_SPEC: Record<SurfaceTone, ToneSpec> = {
       "rgba(11,19,34,0)",
     ] as const,
     border: "rgba(125,218,194,0.18)",
-  },
-  events: {
-    base: "#11202f",
-    gradient: [
-      "rgba(143,199,232,0.13)",
-      "rgba(143,199,232,0.02)",
-      "rgba(11,19,34,0)",
-    ] as const,
-    border: "rgba(143,199,232,0.18)",
-  },
-  courses: {
-    base: "#1a2030",
-    gradient: [
-      "rgba(240,216,185,0.13)",
-      "rgba(240,216,185,0.02)",
-      "rgba(11,19,34,0)",
-    ] as const,
-    border: "rgba(240,216,185,0.18)",
   },
   warm: {
     base: "#1c2235",
@@ -167,7 +135,7 @@ const TONE_SPEC: Record<SurfaceTone, ToneSpec> = {
  * translateY animations on top of the base gradient. That forced the GPU to
  * recomposite the entire screen on every frame, which compounded with any
  * `FlatList` / `ScrollView` underneath and produced visible scroll jank on
- * every "main" page (events, courses, nutrition, profile, home).
+ * every authenticated screen.
  *
  * The detail screens (`[eventId]`, `[courseId]`, `[planId]`, `[bundleId]`) do
  * not use AppBackdrop at all and were always smooth — that contrast was the
@@ -570,7 +538,8 @@ export function MealStrip({
       <View
         className="flex-row items-center"
         style={{
-          justifyContent: align === "space-between" ? "space-between" : "flex-start",
+          justifyContent:
+            align === "space-between" ? "space-between" : "flex-start",
           gap: align === "space-between" ? 0 : 18,
         }}
       >
@@ -657,33 +626,16 @@ type NavItem = {
   match: (pathname: string) => boolean;
 };
 
+// Replace these tab destinations with your domain screens.
 const NAV_ITEMS: NavItem[] = [
   {
-    label: "Oggi",
+    label: "Home",
     href: "/",
     icon: Home,
     match: (pathname) => pathname === "/" || pathname === "/index",
   },
   {
-    label: "Nutrizione",
-    href: "/nutrition",
-    icon: Apple,
-    match: (pathname) => pathname.startsWith("/nutrition"),
-  },
-  {
-    label: "Eventi",
-    href: "/events",
-    icon: CalendarDays,
-    match: (pathname) => pathname.startsWith("/events"),
-  },
-  {
-    label: "Corsi",
-    href: "/courses",
-    icon: BookOpen,
-    match: (pathname) => pathname.startsWith("/courses"),
-  },
-  {
-    label: "Profilo",
+    label: "Profile",
     href: "/profile",
     icon: UserRound,
     match: (pathname) => pathname.startsWith("/profile"),

@@ -87,9 +87,7 @@ export default function VerifyEmailScreen() {
       } catch (err) {
         setError(mapAuthError(err));
         setCode("");
-        void Haptics.notificationAsync(
-          Haptics.NotificationFeedbackType.Error,
-        );
+        void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
       } finally {
         setSubmitting(false);
       }
@@ -210,12 +208,16 @@ export default function VerifyEmailScreen() {
         {submitting ? (
           <View className="mt-6 flex-row items-center justify-center gap-2">
             <ActivityIndicator color="#f7fbff" />
-            <Text className="text-sm text-[#f7fbff]/70">Verifica in corso…</Text>
+            <Text className="text-sm text-[#f7fbff]/70">
+              Verifica in corso…
+            </Text>
           </View>
         ) : null}
 
         <View className="mt-10 items-center">
-          <Text className="text-sm text-[#f7fbff]/60">Non hai ricevuto il codice?</Text>
+          <Text className="text-sm text-[#f7fbff]/60">
+            Non hai ricevuto il codice?
+          </Text>
           <Pressable
             onPress={() => void onResend()}
             disabled={cooldown > 0 || resending}
@@ -248,7 +250,13 @@ export default function VerifyEmailScreen() {
   );
 }
 
-function CodeCell({ char, active }: { char: string | undefined; active: boolean }) {
+function CodeCell({
+  char,
+  active,
+}: {
+  char: string | undefined;
+  active: boolean;
+}) {
   const filled = !!char;
   let style: string;
   if (filled) {

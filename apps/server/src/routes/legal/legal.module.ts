@@ -6,57 +6,60 @@ import {
 } from "@repo/server-sdk/schemas";
 import { ENVIRONMENT_VARIABLES } from "#src/constants/env.constants.js";
 
-const PRIVACY_POLICY_PLACEHOLDER = `# Informativa sulla Privacy
+// Placeholder policy text. Replace with your real legal copy (or invoke
+// the `gdpr-compliance:gdpr-compliance` skill to draft a tailored Privacy
+// Policy + Terms). Bump PRIVACY_POLICY_VERSION / TERMS_VERSION env vars to
+// force every user to re-accept the new version on next login.
+const PRIVACY_POLICY_PLACEHOLDER = `# Privacy Policy
 
-_Versione: ${"${version}"}_
+_Version: ${"${version}"}_
 
-Questa è una versione placeholder dell'informativa sulla privacy di oncologo.it.
+This is a placeholder privacy policy for {{PROJECT_NAME}}.
 
-## Dati raccolti
-- Dati anagrafici (nome, cognome, email, telefono)
-- Dati sanitari (allergie, condizioni mediche, piani nutrizionali) — Art. 9 GDPR
-- Dati di utilizzo della piattaforma
+## Data we collect
+- Account data (email, name)
+- Usage data
+- (Add health-data and other special-category items as your domain dictates.)
 
-## Finalità del trattamento
-- Gestione dell'account utente
-- Erogazione dei servizi sanitari e di wellness
-- Elaborazione AI per suggerimenti nutrizionali e clinici
+## Purposes
+- Account management
+- Service delivery
 
-## Base giuridica
-- Esecuzione di un contratto (Art. 6(1)(b))
-- Consenso esplicito per il trattamento di dati sanitari (Art. 9(2)(a))
+## Lawful bases (GDPR Art. 6 / Art. 9)
+- Contract performance (Art. 6(1)(b))
+- Explicit consent for any health data processing (Art. 9(2)(a))
 
-## Diritti dell'interessato
-Puoi esercitare i tuoi diritti (accesso, rettifica, cancellazione, portabilità) dalle impostazioni del tuo account o contattando il DPO.
-
-## Trasferimenti extra-UE
-Alcuni fornitori (OpenRouter, Resend) hanno sede negli Stati Uniti. Applichiamo Standard Contractual Clauses e pseudonimizzazione dei dati sanitari prima della trasmissione.
-
----
-
-_Per la versione completa, contattare il DPO._`;
-
-const TERMS_PLACEHOLDER = `# Termini di Servizio
-
-_Versione: ${"${version}"}_
-
-Questa è una versione placeholder dei termini di servizio di oncologo.it.
-
-## Oggetto
-oncologo.it è una piattaforma di supporto al wellness per pazienti oncologici.
-
-## Registrazione
-L'accesso richiede la creazione di un account e la verifica dell'email.
-
-## Uso della piattaforma
-L'utente si impegna a fornire informazioni accurate e ad utilizzare la piattaforma in modo conforme alle leggi.
-
-## Limitazioni
-La piattaforma non sostituisce il parere medico professionale.
+## Your rights
+You can exercise access / rectification / erasure / portability rights from
+your account settings or by contacting our DPO.
 
 ---
 
-_Per la versione completa, contattare il servizio clienti._`;
+_Replace this placeholder before going to production._`;
+
+const TERMS_PLACEHOLDER = `# Terms of Service
+
+_Version: ${"${version}"}_
+
+This is a placeholder terms-of-service document for {{PROJECT_NAME}}.
+
+## Subject
+{{PROJECT_NAME}} is a software platform offered by {{COMPANY_NAME}}.
+
+## Registration
+Access requires creating an account and verifying your email address.
+
+## Use of the platform
+The user agrees to provide accurate information and to use the platform in
+compliance with applicable law.
+
+## Disclaimers
+Add domain-specific disclaimers here (medical, financial, etc.) before
+exposing the service publicly.
+
+---
+
+_Replace this placeholder before going to production._`;
 
 export default async (fastify: FastifyInstance) => {
   fastify.get<{

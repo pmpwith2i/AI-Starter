@@ -5,35 +5,33 @@ import { buildMetadata } from "@/lib/seo/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Cookie Policy",
   description:
-    "Informativa sui cookie utilizzati dalla piattaforma oncologo.it. Usiamo solo cookie strettamente necessari al funzionamento del sito.",
+    "Cookie policy for {{PROJECT_NAME}}. We only use cookies strictly necessary for the site to function.",
   path: "/cookie-policy",
 });
 
 const COOKIE_POLICY_PLACEHOLDER = `# Cookie Policy
 
-_Versione placeholder — sostituire con copia legale._
+_Placeholder version — replace with your legal copy._
 
-## Cookie utilizzati
+## Cookies we use
 
-oncologo.it utilizza esclusivamente **cookie strettamente necessari** per il funzionamento della piattaforma:
-- Cookie di sessione per mantenere l'utente autenticato
-- Cookie tecnici per ricordare le preferenze (tema, lingua)
+{{PROJECT_NAME}} uses only **strictly necessary cookies** to operate the
+platform:
+- Session cookies to keep authenticated users signed in
+- Technical cookies for preferences (theme, language)
 
-## Cookie NON utilizzati
+## What we don't use
 
-Non utilizziamo cookie di profilazione, marketing o di terze parti su questo sito.
+We do not set tracking, profiling, or third-party marketing cookies on this
+site.
 
-## Font
+## Changes
 
-Il sito utilizza Google Fonts auto-ospitati tramite Next.js: i file dei font sono scaricati al momento del build e serviti dal nostro server. Nessuna richiesta runtime viene effettuata verso server di Google.
-
-## Modifiche
-
-Aggiorneremo questa pagina ogni volta che cambieranno le tipologie di cookie utilizzate.
+We update this page whenever the cookie usage changes.
 
 ---
 
-_Per domande sulla nostra cookie policy, contatta privacy@oncologo.it._`;
+_For questions about our cookie policy, contact {{CONTACT_EMAIL}}._`;
 
 export default function CookiePolicyPage() {
   return (

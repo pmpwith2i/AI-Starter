@@ -1,10 +1,5 @@
 import { useState } from "react";
-import {
-  Text,
-  TextInput,
-  View,
-  type ViewStyle,
-} from "react-native";
+import { Text, TextInput, View, type ViewStyle } from "react-native";
 
 /**
  * Shared labelled text field used by every auth form. Owns its own focus

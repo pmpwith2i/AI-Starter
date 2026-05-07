@@ -1,4 +1,4 @@
-const INDICATOR_COOKIE = "oncologo_logged_in";
+const INDICATOR_COOKIE = "app_logged_in";
 
 /**
  * Check if the user has an active login session by reading the indicator cookie.

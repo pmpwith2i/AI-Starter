@@ -1,21 +1,18 @@
-import { useClinicalProfile } from "../../hooks/clinical-profile/use-clinical-profile";
-
 /**
- * Gender helper.
+ * Gender helper — starter stub.
  *
- * Italian agrees adjectives/past-participles with grammatical gender
- * ("iscritta" / "iscritto", "benvenuta" / "benvenuto"). The biological-sex
- * value chosen in onboarding (`f` / `m` / `other` / null) drives the form.
+ * The original version derived `Sex` from the user's clinical
+ * profile to pick the right Italian past-participle / adjective form. The
+ * starter doesn't ship a clinical profile, so the hooks below default to
+ * masculine/neutral.
  *
- * For "other" / unknown we default to the neutral / masculine form, matching
- * the standard Italian editorial fallback ("Benvenuto" being the catch-all).
+ * Wire it back to your real source (form input, account preference, etc.)
+ * when you scaffold a richer profile model.
  */
+
 export type Sex = "f" | "m" | "other" | null;
 
 export function useSex(): Sex {
-  const { data } = useClinicalProfile();
-  const sex = data?.sex;
-  if (sex === "f" || sex === "m") return sex;
   return null;
 }
 
@@ -31,7 +28,7 @@ export function gendered(
   return neutral ?? male;
 }
 
-/** Hook: return the gendered string based on the user's onboarding sex. */
+/** Hook: return the gendered string based on the user's profile sex. */
 export function useGenderedText(
   female: string,
   male: string,

@@ -6,9 +6,8 @@ import { buildMetadata } from "@/lib/seo/metadata";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Termini di servizio",
-  description:
-    "Termini e condizioni d'uso della piattaforma oncologo.it. Consulta i nostri termini di servizio aggiornati.",
+  title: "Terms of Service",
+  description: "Terms of service for {{PROJECT_NAME}}.",
   path: "/termini",
 });
 

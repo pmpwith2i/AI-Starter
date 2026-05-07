@@ -191,9 +191,7 @@ export default function ResetPasswordScreen() {
             ref={codeInputRef}
             label="Codice"
             value={code}
-            onChangeText={(t) =>
-              setCode(t.replace(/\D/g, "").slice(0, 6))
-            }
+            onChangeText={(t) => setCode(t.replace(/\D/g, "").slice(0, 6))}
             keyboardType="number-pad"
             maxLength={6}
             textContentType="oneTimeCode"

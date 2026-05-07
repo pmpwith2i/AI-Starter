@@ -61,12 +61,7 @@ export const ERROR_MESSAGES: Record<ErrorCode, string> = {
   TASK_NOT_FOUND: "Operazione non trovata.",
   TASK_ALREADY_RUNNING: "Operazione già in corso.",
 
-  // Nutrition
-  NUTRITION_PLAN_NOT_FOUND: "Piano nutrizionale non trovato.",
   NO_ACTIVE_PLAN: "Nessun piano nutrizionale attivo.",
-  NUTRITION_PLAN_CREATING:
-    "Il piano nutrizionale è ancora in fase di generazione.",
-  NUTRITION_INVALID_STATUS_TRANSITION: "Transizione di stato non consentita.",
   MEAL_REGENERATION_FAILED: "Errore nella rigenerazione del pasto. Riprova.",
   // PR 5 — fallback messages for the notes preprocessor. The dashboard
   // mutation error handler PREFERs the server-provided message (which
@@ -82,8 +77,6 @@ export const ERROR_MESSAGES: Record<ErrorCode, string> = {
   PLAN_NOT_FOUND: "Piano non trovato.",
   DEFAULT_PLAN_MISSING:
     "Configurazione errata: nessun piano predefinito disponibile.",
-  NUTRITION_PLAN_NOT_READY:
-    "Il piano non è ancora pronto. Riprova quando la generazione sarà completata.",
   INVALID_DATE_RANGE:
     "Le date scelte non sono valide. Il piano deve iniziare oggi o in futuro e durare al massimo un mese.",
 
@@ -185,14 +178,4 @@ export const ERROR_MESSAGES: Record<ErrorCode, string> = {
 
   // Blog
   BLOG_POST_NOT_FOUND: "Articolo non trovato.",
-
-  // Prevy
-  PREVY_PRODUCT_NOT_FOUND:
-    "Prodotto non trovato. Prova con un altro termine o carica una foto dell'etichetta.",
-  PREVY_INSUFFICIENT_DATA:
-    "Dati insufficienti per l'analisi — manca la lista ingredienti.",
-  PREVY_OFF_UNAVAILABLE:
-    "Il servizio di ricerca prodotti non è al momento disponibile. Riprova tra qualche minuto.",
-  PREVY_ANALYSIS_FAILED:
-    "Analisi fallita. I crediti sono stati rimborsati automaticamente. Riprova più tardi.",
 };

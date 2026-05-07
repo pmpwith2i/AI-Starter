@@ -2,9 +2,9 @@ import { createApiSDK, setAccessTokenProvider } from "@repo/server-sdk";
 import { ApiError } from "@repo/server-sdk";
 import type { ApiSDK } from "@repo/server-sdk";
 
-const INDICATOR_COOKIE = "oncologo_logged_in";
-const LS_ACCESS_TOKEN = "oncologo_access_token";
-const LS_REFRESH_TOKEN = "oncologo_refresh_token";
+const INDICATOR_COOKIE = "app_logged_in";
+const LS_ACCESS_TOKEN = "app_access_token";
+const LS_REFRESH_TOKEN = "app_refresh_token";
 
 /**
  * Auth strategy: "cookie" (default, production) or "bearer" (Vercel preview deployments).

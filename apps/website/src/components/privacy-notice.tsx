@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 
-const STORAGE_KEY = "oncologo_privacy_notice_seen";
+const STORAGE_KEY = "app_privacy_notice_seen";
 
 /**
  * Minimal first-visit privacy notice. We currently load no third-party

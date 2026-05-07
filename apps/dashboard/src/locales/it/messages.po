@@ -17,13 +17,21 @@ msgstr ""
 #~ msgid "Centro assistenza"
 #~ msgstr "Centro assistenza"
 
-#: src/components/consent/consent-form.tsx:259
+#: src/components/consent/consent-form.tsx:258
 msgid "(facoltativo)"
 msgstr "(facoltativo)"
 
 #: src/components/nutrition/daily-stats.tsx:302
 #~ msgid "(totale settimanale)"
 #~ msgstr "(totale settimanale)"
+
+#: src/components/auth/auth-layout.tsx:27
+msgid "{{ONE_LINER}}"
+msgstr "{{ONE_LINER}}"
+
+#: src/components/auth/auth-layout.tsx:24
+msgid "{{TAGLINE}}"
+msgstr "{{TAGLINE}}"
 
 #: src/components/profile/clinical-profile-section.tsx:200
 #~ msgid "{0}"
@@ -151,9 +159,13 @@ msgstr "{resourceLabel} non trovato"
 #~ msgid "{totalItems} alimenti per {coveredCount} giorni coperti"
 #~ msgstr "{totalItems} alimenti per {coveredCount} giorni coperti"
 
+#: src/components/auth/auth-layout.tsx:32
+msgid "© {{COMPANY_NAME}} — All rights reserved"
+msgstr "© {{COMPANY_NAME}} — All rights reserved"
+
 #: src/components/auth/auth-layout.tsx:62
-msgid "© oncologo.it — Tutti i diritti riservati"
-msgstr "© oncologo.it — Tutti i diritti riservati"
+#~ msgid "© oncologo.it — Tutti i diritti riservati"
+#~ msgstr "© oncologo.it — Tutti i diritti riservati"
 
 #: src/components/nutrition/plan-generation-wizard.tsx:1858
 #~ msgid "+{remaining}"
@@ -226,8 +238,8 @@ msgid "Accedi al tuo account per continuare"
 msgstr "Accedi al tuo account per continuare"
 
 #: src/components/auth/auth-layout.tsx:27
-msgid "Accedi per gestire appuntamenti, piani nutrizionali, corsi ed eventi del tuo percorso di benessere."
-msgstr "Accedi per gestire appuntamenti, piani nutrizionali, corsi ed eventi del tuo percorso di benessere."
+#~ msgid "Accedi per gestire appuntamenti, piani nutrizionali, corsi ed eventi del tuo percorso di benessere."
+#~ msgstr "Accedi per gestire appuntamenti, piani nutrizionali, corsi ed eventi del tuo percorso di benessere."
 
 #: src/components/auth/login-form.tsx:138
 msgid "Accesso in corso..."
@@ -238,24 +250,24 @@ msgid "Accetto i <0>Termini di Servizio</0> e l'<1>Informativa sulla Privacy</1>
 msgstr "Accetto i <0>Termini di Servizio</0> e l'<1>Informativa sulla Privacy</1>."
 
 #: src/components/consent/consent-form.tsx:93
-msgid "Accetto i termini di servizio di oncologo.it che regolano l'utilizzo della piattaforma e dei suoi servizi."
-msgstr "Accetto i termini di servizio di oncologo.it che regolano l'utilizzo della piattaforma e dei suoi servizi."
+#~ msgid "Accetto i termini di servizio di oncologo.it che regolano l'utilizzo della piattaforma e dei suoi servizi."
+#~ msgstr "Accetto i termini di servizio di oncologo.it che regolano l'utilizzo della piattaforma e dei suoi servizi."
 
-#: src/components/consent/consent-form.tsx:169
+#: src/components/consent/consent-form.tsx:168
 msgid "Acconsento a ricevere newsletter, aggiornamenti su eventi e contenuti promozionali via email."
 msgstr "Acconsento a ricevere newsletter, aggiornamenti su eventi e contenuti promozionali via email."
 
-#: src/components/consent/consent-form.tsx:154
+#: src/components/consent/consent-form.tsx:153
 msgid "Acconsento all'invio dei miei dati sanitari pseudonimizzati a fornitori di intelligenza artificiale (OpenRouter) per le funzionalità di chat e generazione di piani nutrizionali."
 msgstr "Acconsento all'invio dei miei dati sanitari pseudonimizzati a fornitori di intelligenza artificiale (OpenRouter) per le funzionalità di chat e generazione di piani nutrizionali."
 
-#: src/components/consent/consent-form.tsx:183
+#: src/components/consent/consent-form.tsx:182
 msgid "Acconsento alla condivisione dei dati di pagamento necessari con Stripe (processore di pagamento) per l'acquisto di corsi ed eventi a pagamento."
 msgstr "Acconsento alla condivisione dei dati di pagamento necessari con Stripe (processore di pagamento) per l'acquisto di corsi ed eventi a pagamento."
 
 #: src/components/consent/consent-form.tsx:127
-msgid "Acconsento esplicitamente al trattamento dei miei dati sanitari (categorie particolari ex art. 9 GDPR) per l'erogazione dei servizi di oncologo.it, inclusi piani nutrizionali, cartelle cliniche e chat assistita."
-msgstr "Acconsento esplicitamente al trattamento dei miei dati sanitari (categorie particolari ex art. 9 GDPR) per l'erogazione dei servizi di oncologo.it, inclusi piani nutrizionali, cartelle cliniche e chat assistita."
+#~ msgid "Acconsento esplicitamente al trattamento dei miei dati sanitari (categorie particolari ex art. 9 GDPR) per l'erogazione dei servizi di oncologo.it, inclusi piani nutrizionali, cartelle cliniche e chat assistita."
+#~ msgstr "Acconsento esplicitamente al trattamento dei miei dati sanitari (categorie particolari ex art. 9 GDPR) per l'erogazione dei servizi di oncologo.it, inclusi piani nutrizionali, cartelle cliniche e chat assistita."
 
 #: src/components/dashboard/app-sidebar.tsx:78
 msgid "Account"
@@ -824,7 +836,7 @@ msgstr "Cognome"
 #~ msgid "Comunicazioni"
 #~ msgstr "Comunicazioni"
 
-#: src/components/consent/consent-form.tsx:167
+#: src/components/consent/consent-form.tsx:166
 #: src/components/profile/consent-management-section.tsx:111
 msgid "Comunicazioni marketing"
 msgstr "Comunicazioni marketing"
@@ -854,7 +866,7 @@ msgstr "Conferma password"
 #~ msgid "Configurazione guidata"
 #~ msgstr "Configurazione guidata"
 
-#: src/components/consent/consent-form.tsx:139
+#: src/components/consent/consent-form.tsx:138
 msgid "Consensi facoltativi"
 msgstr "Consensi facoltativi"
 
@@ -882,7 +894,7 @@ msgstr "Consenso revocato."
 #~ msgid "Consumi"
 #~ msgstr "Consumi"
 
-#: src/components/consent/consent-form.tsx:218
+#: src/components/consent/consent-form.tsx:217
 msgid "Continua"
 msgstr "Continua"
 
@@ -938,8 +950,8 @@ msgstr "Continua"
 #~ msgstr "Corsi completati"
 
 #: src/components/auth/auth-layout.tsx:54
-msgid "Corsi, eventi e contenuti curati per il tuo benessere"
-msgstr "Corsi, eventi e contenuti curati per il tuo benessere"
+#~ msgid "Corsi, eventi e contenuti curati per il tuo benessere"
+#~ msgstr "Corsi, eventi e contenuti curati per il tuo benessere"
 
 #: src/components/courses/courses-dashboard.tsx:185
 #~ msgid "Corso completato"
@@ -1234,7 +1246,7 @@ msgstr "Data di nascita"
 msgid "Each new domain gets a route, a hook, and a section here"
 msgstr "Each new domain gets a route, a hook, and a section here"
 
-#: src/components/consent/consent-form.tsx:152
+#: src/components/consent/consent-form.tsx:151
 #: src/components/profile/consent-management-section.tsx:107
 msgid "Elaborazione AI"
 msgstr "Elaborazione AI"
@@ -1278,7 +1290,7 @@ msgstr "Email"
 #~ msgid "es. glutine, lattosio"
 #~ msgstr "es. glutine, lattosio"
 
-#: src/components/consent/consent-form.tsx:202
+#: src/components/consent/consent-form.tsx:201
 #: src/routes/verify-email.tsx:82
 msgid "Esci"
 msgstr "Esci"
@@ -1626,6 +1638,14 @@ msgstr "Ho letto l'informativa sulla privacy e acconsento al trattamento dei mie
 msgid "Home"
 msgstr "Home"
 
+#: src/components/consent/consent-form.tsx:93
+msgid "I accept {{PROJECT_NAME}}'s terms of service governing use of the platform and its services."
+msgstr "I accept {{PROJECT_NAME}}'s terms of service governing use of the platform and its services."
+
+#: src/components/consent/consent-form.tsx:127
+msgid "I explicitly consent to the processing of my health data (special categories under GDPR Art. 9) for the provision of {{PROJECT_NAME}}  services."
+msgstr "I explicitly consent to the processing of my health data (special categories under GDPR Art. 9) for the provision of {{PROJECT_NAME}}  services."
+
 #: src/components/dashboard/healthcare-section.tsx:270
 #~ msgid "I follow-up regolari per i pazienti oncologici riducono il rischio di complicazioni fino al 30%. Stai facendo un ottimo lavoro."
 #~ msgstr "I follow-up regolari per i pazienti oncologici riducono il rischio di complicazioni fino al 30%. Stai facendo un ottimo lavoro."
@@ -1719,8 +1739,8 @@ msgid "Il tuo nome"
 msgstr "Il tuo nome"
 
 #: src/components/auth/auth-layout.tsx:24
-msgid "Il tuo percorso di cura, sempre a portata di mano."
-msgstr "Il tuo percorso di cura, sempre a portata di mano."
+#~ msgid "Il tuo percorso di cura, sempre a portata di mano."
+#~ msgstr "Il tuo percorso di cura, sempre a portata di mano."
 
 #: src/components/events/events-page-content.tsx:70
 #~ msgid "Il tuo percorso di salute, <0>insieme.</0>"
@@ -2612,7 +2632,7 @@ msgstr "Overview"
 #~ msgid "Pacchetto non trovato."
 #~ msgstr "Pacchetto non trovato."
 
-#: src/components/consent/consent-form.tsx:181
+#: src/components/consent/consent-form.tsx:180
 #: src/components/profile/consent-management-section.tsx:115
 msgid "Pagamenti tramite Stripe"
 msgstr "Pagamenti tramite Stripe"
@@ -2776,8 +2796,8 @@ msgstr "Per utilizzare la piattaforma è necessario accettare i documenti qui so
 #~ msgstr "Piani mostrati"
 
 #: src/components/auth/auth-layout.tsx:38
-msgid "Piani nutrizionali personalizzati e aggiornati in tempo reale"
-msgstr "Piani nutrizionali personalizzati e aggiornati in tempo reale"
+#~ msgid "Piani nutrizionali personalizzati e aggiornati in tempo reale"
+#~ msgstr "Piani nutrizionali personalizzati e aggiornati in tempo reale"
 
 #: src/components/nutrition/nutrition-dashboard.tsx:395
 #~ msgid "Piano"
@@ -3061,7 +3081,7 @@ msgstr "Profile"
 #~ msgid "Punti di forza"
 #~ msgstr "Punti di forza"
 
-#: src/components/consent/consent-form.tsx:142
+#: src/components/consent/consent-form.tsx:141
 msgid "Puoi attivarli o disattivarli ora e in qualsiasi momento dalle impostazioni dell'account."
 msgstr "Puoi attivarli o disattivarli ora e in qualsiasi momento dalle impostazioni dell'account."
 
@@ -3345,7 +3365,7 @@ msgstr "Salva"
 #~ msgid "Salvataggio"
 #~ msgstr "Salvataggio"
 
-#: src/components/consent/consent-form.tsx:215
+#: src/components/consent/consent-form.tsx:214
 msgid "Salvataggio…"
 msgstr "Salvataggio…"
 
@@ -3627,8 +3647,8 @@ msgstr "Sistema"
 #~ msgstr "Specialisti selezionati per il tuo percorso di cura"
 
 #: src/components/auth/auth-layout.tsx:46
-msgid "Specialisti verificati e prenotazione visite in pochi click"
-msgstr "Specialisti verificati e prenotazione visite in pochi click"
+#~ msgid "Specialisti verificati e prenotazione visite in pochi click"
+#~ msgstr "Specialisti verificati e prenotazione visite in pochi click"
 
 #: src/components/professionals/professional-detail.tsx:194
 #~ msgid "Specializzazioni"

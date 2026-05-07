@@ -7,8 +7,8 @@ import { errorHandlerPlugin } from "./error-handler.plugin.js";
 // ─── Module mocks ──────────────────────────────────────────────────────────────
 
 const TEST_SECRET = "test-jwt-secret";
-const TEST_ISSUER = "oncologo-patient";
-const TEST_AUDIENCE = "oncologo-patient";
+const TEST_ISSUER = "app-patient";
+const TEST_AUDIENCE = "app-patient";
 
 mock.module("../constants/env.constants.js", {
   namedExports: {
@@ -153,7 +153,7 @@ describe("authGuardPlugin", () => {
   it("returns 401 with token signed with mismatched issuer", async () => {
     const token = jwt.sign({ sub: "user-1", tokenVersion: 0 }, TEST_SECRET, {
       expiresIn: "1h",
-      issuer: "oncologo-pro",
+      issuer: "other-app",
       audience: TEST_AUDIENCE,
     });
 
