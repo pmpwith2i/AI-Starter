@@ -7,7 +7,6 @@ import {
   Navigate,
   Outlet,
   useNavigate,
-  useMatchRoute,
 } from "@tanstack/react-router";
 import { useEffect, useMemo } from "react";
 
@@ -16,16 +15,8 @@ export const Route = createFileRoute("/app")({
 });
 
 function AuthenticatedLayout() {
-  const {
-    isAuthenticated,
-    isLoading,
-    userId,
-    onboardingCompleted,
-    emailVerified,
-  } = useAuth();
-  const matchRoute = useMatchRoute();
+  const { isAuthenticated, isLoading, userId, emailVerified } = useAuth();
   const navigate = useNavigate();
-  const isOnboardingRoute = matchRoute({ to: "/app/onboarding", fuzzy: true });
 
   const consentStatus = useConsentStatus({
     enabled: isAuthenticated && !isLoading,
@@ -35,10 +26,7 @@ function AuthenticatedLayout() {
   // as you scaffold features (the corresponding entity must be in
   // `invalidationMap.ENTITY_KEY_MAP`).
   const globalTopics = useMemo(
-    () =>
-      userId
-        ? [`notifications:user:${userId}`]
-        : [],
+    () => (userId ? [`notifications:user:${userId}`] : []),
     [userId],
   );
   useRealtime(globalTopics);
@@ -67,14 +55,6 @@ function AuthenticatedLayout() {
   if (consentStatus.isLoading) return null;
   if (consentStatus.data && consentStatus.data.mandatoryMissing.length > 0) {
     return <Navigate to="/consent" replace />;
-  }
-
-  if (!onboardingCompleted && !isOnboardingRoute) {
-    return <Navigate to="/app/onboarding" />;
-  }
-
-  if (isOnboardingRoute) {
-    return <Outlet />;
   }
 
   return (

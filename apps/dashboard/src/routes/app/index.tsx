@@ -29,13 +29,17 @@ function OverviewPage() {
         </h2>
         <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
           <li>
-            <Trans>Run the design-system checkpoint agent (see AGENTS.md)</Trans>
+            <Trans>
+              Run the design-system checkpoint agent (see AGENTS.md)
+            </Trans>
           </li>
           <li>
             <Trans>Pick your first domain and run the use-sdk skill</Trans>
           </li>
           <li>
-            <Trans>Each new domain gets a route, a hook, and a section here</Trans>
+            <Trans>
+              Each new domain gets a route, a hook, and a section here
+            </Trans>
           </li>
         </ul>
       </section>

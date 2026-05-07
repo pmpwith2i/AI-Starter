@@ -1,6 +1,5 @@
 import { createHash } from "node:crypto";
 import { comparePassword, getPrismaClient } from "@repo/db";
-import { decrypt, decryptJson, getEncryptionKey } from "@repo/crypto";
 import { HttpErrorResponse } from "#src/plugins/error-handler.plugin.js";
 import { ERROR_CODES } from "@repo/server-sdk/schemas";
 import { logger } from "#src/logger.js";
@@ -16,13 +15,15 @@ const anonymizedEmail = (userId: string): string => {
 };
 
 /**
- * Delete a user's account using the hybrid strategy:
- *  - Hard delete: ClinicalProfile, chats, souls, nutrition plans, background tasks,
- *                  notifications, suggestions, event registrations (free), refresh tokens, accounts.
- *  - Anonymize + retain: CreditTransaction, CoursePurchase, EventPurchase,
- *                        BundlePurchase (10-year Italian tax law).
+ * Delete a user's account using the hybrid GDPR strategy:
+ *  - Hard delete: refresh tokens, notifications.
  *  - Retain as-is: ConsentRecord (10-year accountability), AuditLog.
- *  - Anonymize the User row itself (keep it as a financial anchor).
+ *  - Anonymize the User row itself (kept as anchor for the audit trail).
+ *
+ * As you scaffold domains, extend the transaction below to hard-delete the
+ * user's domain rows (chats, plans, registrations, etc.) and to retain
+ * financial records (purchases, ledger entries) per local tax law (typically
+ * 10 years in the EU).
  */
 export const deleteAccount = async (
   userId: string,
@@ -32,7 +33,7 @@ export const deleteAccount = async (
 
   const user = await prisma.user.findUnique({
     where: { id: userId },
-    select: { id: true, password: true, clinicalProfileId: true },
+    select: { id: true, password: true },
   });
 
   if (!user) {
@@ -60,47 +61,17 @@ export const deleteAccount = async (
   tenYearsFromNow.setFullYear(tenYearsFromNow.getFullYear() + 10);
 
   await prisma.$transaction(async (tx) => {
-    // Hard delete health/personal data (cascade handles related rows)
-    await tx.chatConversation.deleteMany({ where: { userId } });
-    await tx.userSoul.deleteMany({ where: { userId } });
-    await tx.nutritionPlan.deleteMany({ where: { userId } });
-    await tx.backgroundTask.deleteMany({ where: { userId } });
-    await tx.notification.deleteMany({ where: { userId } });
-    await tx.suggestion.deleteMany({ where: { userId } });
     await tx.refreshToken.deleteMany({ where: { userId } });
-    await tx.account.deleteMany({ where: { userId } });
+    await tx.notification.deleteMany({ where: { userId } });
 
-    // Free event registrations with no purchase FK → hard delete
-    await tx.eventRegistration.deleteMany({
-      where: {
-        userId,
-        bundlePurchaseId: null,
-        eventPurchaseId: null,
-      },
-    });
-
-    // Delete ClinicalProfile (via user → set null, then delete)
-    if (user.clinicalProfileId) {
-      await tx.user.update({
-        where: { id: userId },
-        data: { clinicalProfileId: null },
-      });
-      await tx.clinicalProfile.delete({
-        where: { id: user.clinicalProfileId },
-      });
-    }
-
-    // Anonymize the User row itself — keep as a financial anchor.
-    // Related financial rows (credit txns, purchases) have FK cascade,
-    // so we cannot delete the User; instead we null PII fields.
+    // Anonymize the User row itself — keep as an audit anchor.
     await tx.user.update({
       where: { id: userId },
       data: {
         email: anonymizedEmail(userId),
-        name: null,
         firstName: null,
         lastName: null,
-        password: null,
+        password: "",
         phone: null,
         dateOfBirth: null,
         avatar: null,
@@ -113,45 +84,25 @@ export const deleteAccount = async (
     });
   });
 
-  // Drop every cache entry tagged to this user (consent + auth guard +
-  // any future per-user namespace) in one shot — so the soft-deleted user's
-  // cached snapshots can't serve another authenticated request within TTL.
   await invalidateUserCache(userId);
-
-  logger.info({ userId }, "Account deleted (hybrid strategy)");
+  logger.info({ userId }, "Account deleted (anonymized)");
 };
 
 /**
  * Export all user data as a JSON bundle.
- * Encrypted fields are decrypted before export.
+ * Extend `include` as you scaffold domains so users can exercise their
+ * Art. 20 (data portability) right.
  */
 export const exportAccount = async (
   userId: string,
 ): Promise<{ exportedAt: string; data: Record<string, unknown> }> => {
   const prisma = getPrismaClient();
-  const key = getEncryptionKey();
 
   const user = await prisma.user.findUnique({
     where: { id: userId },
     include: {
-      clinicalProfile: true,
-      accounts: true,
       consentRecords: true,
-      chatConversations: {
-        include: {
-          messages: true,
-          compactedSegments: true,
-        },
-      },
-      userSouls: { orderBy: { version: "desc" }, take: 5 },
-      nutritionPlans: true,
       notifications: true,
-      creditTransactions: true,
-      coursePurchases: true,
-      eventPurchases: true,
-      bundlePurchases: true,
-      eventRegistrations: true,
-      courseEnrollments: true,
     },
   });
 
@@ -159,98 +110,20 @@ export const exportAccount = async (
     throw new HttpErrorResponse("User not found", 404, ERROR_CODES.NOT_FOUND);
   }
 
-  // Decrypt helpers
-  const decryptSafe = <T>(ciphertext: string | null): T | null => {
-    if (!ciphertext) return null;
-    try {
-      return decrypt(ciphertext, key) as unknown as T;
-    } catch {
-      return null;
-    }
-  };
-
-  const decryptJsonSafe = <T>(ciphertext: string | null): T | null => {
-    if (!ciphertext) return null;
-    try {
-      return decryptJson<T>(ciphertext, key);
-    } catch {
-      return null;
-    }
-  };
-
-  const clinicalProfile = user.clinicalProfile
-    ? {
-        ...user.clinicalProfile,
-        // Decrypt health data into flat fields, remove the blob
-        healthData: decryptJsonSafe(user.clinicalProfile.encryptedHealthData),
-        encryptedHealthData: undefined,
-      }
-    : null;
-
-  const chatConversations = user.chatConversations.map((c) => ({
-    id: c.id,
-    title: c.title,
-    createdAt: c.createdAt,
-    updatedAt: c.updatedAt,
-    messages: c.messages.map((m) => ({
-      id: m.id,
-      role: m.role,
-      content: decryptSafe<string>(m.content),
-      createdAt: m.createdAt,
-    })),
-    compactedSegments: c.compactedSegments.map((s) => ({
-      id: s.id,
-      topic: s.topic,
-      payload: decryptJsonSafe(s.encryptedPayload),
-      messageCount: s.messageCount,
-      tokenCount: s.tokenCount,
-      compactedBy: s.compactedBy,
-      createdAt: s.createdAt,
-    })),
-  }));
-
-  const userSouls = user.userSouls.map((s) => ({
-    id: s.id,
-    version: s.version,
-    content: decryptSafe<string>(s.content),
-    updatedBy: s.updatedBy,
-    createdAt: s.createdAt,
-  }));
-
-  const nutritionPlans = user.nutritionPlans.map((p) => ({
-    ...p,
-    content: decryptJsonSafe(p.encryptedContent),
-    encryptedContent: undefined,
-  }));
-
   return {
     exportedAt: new Date().toISOString(),
     data: {
       profile: {
         id: user.id,
         email: user.email,
-        name: user.name,
         firstName: user.firstName,
         lastName: user.lastName,
         phone: user.phone,
         dateOfBirth: user.dateOfBirth,
         createdAt: user.createdAt,
       },
-      clinicalProfile,
       consentRecords: user.consentRecords,
-      chatConversations,
-      userSouls,
-      nutritionPlans,
-      accounts: user.accounts,
       notifications: user.notifications,
-      creditTransactions: user.creditTransactions,
-      purchases: {
-        courses: user.coursePurchases,
-        events: user.eventPurchases,
-        bundles: user.bundlePurchases,
-      },
-      eventRegistrations: user.eventRegistrations,
-      courseEnrollments: user.courseEnrollments,
     },
   };
 };

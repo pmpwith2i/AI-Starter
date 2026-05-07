@@ -35,7 +35,6 @@ export function AnimateIn({
     // Already in/above viewport on mount — reveal immediately.
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight * 0.85) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional: check viewport position on mount
       setVisible(true);
       return;
     }

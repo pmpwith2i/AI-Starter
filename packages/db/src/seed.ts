@@ -28,7 +28,7 @@ const main = async () => {
     update: {},
     create: {
       email: "admin@example.com",
-      passwordHash,
+      password: passwordHash,
       firstName: "Admin",
       lastName: "User",
       emailVerified: true,
@@ -42,8 +42,10 @@ const main = async () => {
       id: `seed-tos-${admin.id}`,
       userId: admin.id,
       purpose: "terms_of_service",
-      policyVersion: POLICY_VERSION,
+      granted: true,
       grantedAt: new Date(),
+      policyVersion: POLICY_VERSION,
+      collectedVia: "seed",
     },
   });
 
@@ -54,8 +56,10 @@ const main = async () => {
       id: `seed-priv-${admin.id}`,
       userId: admin.id,
       purpose: "privacy_policy",
-      policyVersion: POLICY_VERSION,
+      granted: true,
       grantedAt: new Date(),
+      policyVersion: POLICY_VERSION,
+      collectedVia: "seed",
     },
   });
 
@@ -71,12 +75,12 @@ const main = async () => {
     },
   });
 
-  console.log("Seeded admin@example.com / Admin123!");
+  process.stdout.write("Seeded admin@example.com / Admin123!\n");
 };
 
 main()
   .catch((e) => {
-    console.error(e);
+    process.stderr.write(`${String(e)}\n`);
     process.exit(1);
   })
   .finally(async () => {

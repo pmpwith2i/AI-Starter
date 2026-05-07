@@ -6,15 +6,12 @@
 // as `String` ciphertext encrypted via @repo/crypto in the service layer.
 
 generator client {
-  provider        = "prisma-client"
-  output          = "../src/generated/prisma"
-  previewFeatures = ["queryCompiler", "driverAdapters"]
-  runtime         = "nodejs"
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 // =====================================================
@@ -23,9 +20,14 @@ datasource db {
 model User {
   id                            String    @id @default(cuid())
   email                         String    @unique
-  passwordHash                  String    @map("password_hash")
+  password                      String?
   firstName                     String?   @map("first_name")
   lastName                      String?   @map("last_name")
+  phone                         String?
+  dateOfBirth                   DateTime? @map("date_of_birth")
+  avatar                        String?
+  preferences                   Json?
+  onboardingCompleted           Boolean   @default(false) @map("onboarding_completed")
   emailVerified                 Boolean   @default(false) @map("email_verified")
   emailVerificationCode         String?   @map("email_verification_code")
   emailVerificationExpires      DateTime? @map("email_verification_expires")
@@ -42,7 +44,7 @@ model User {
   createdAt                     DateTime  @default(now()) @map("created_at")
   updatedAt                     DateTime  @updatedAt @map("updated_at")
 
-  consents       ConsentRecord[]
+  consentRecords ConsentRecord[]
   refreshTokens  RefreshToken[]
   notifications  Notification[]
 
@@ -82,23 +84,26 @@ model ConsentRecord {
   id            String         @id @default(cuid())
   userId        String         @map("user_id")
   purpose       ConsentPurpose
-  policyVersion String         @map("policy_version")
+  granted       Boolean
   grantedAt     DateTime?      @map("granted_at")
-  withdrawnAt   DateTime?      @map("withdrawn_at")
-  ipAddressHash String?        @map("ip_address_hash")
+  revokedAt     DateTime?      @map("revoked_at")
+  policyVersion String         @map("policy_version")
+  collectedVia  String         @map("collected_via")
+  ipAddress     String?        @map("ip_address")
   userAgent     String?        @map("user_agent")
   createdAt     DateTime       @default(now()) @map("created_at")
 
   user User @relation(fields: [userId], references: [id])
 
-  @@index([userId, purpose])
+  @@unique([userId, purpose])
+  @@index([userId])
   @@map("consent_records")
 }
 
 // =====================================================
 // GDPR — Audit Log (append-only, REVOKE UPDATE/DELETE)
 // =====================================================
-enum ActorType {
+enum AuditActorType {
   user
   admin
   system
@@ -113,17 +118,17 @@ enum AuditAction {
 }
 
 model AuditLog {
-  id            String      @id @default(cuid())
-  actorId       String?     @map("actor_id")
-  actorType     ActorType   @map("actor_type")
-  targetId      String?     @map("target_id")
-  targetModel   String?     @map("target_model")
+  id            String         @id @default(cuid())
+  actorId       String?        @map("actor_id")
+  actorType     AuditActorType @map("actor_type")
+  targetId      String?        @map("target_id")
+  targetModel   String?        @map("target_model")
   action        AuditAction
   fields        String[]
   reason        String?
-  ipAddressHash String?     @map("ip_address_hash")
-  userAgent     String?     @map("user_agent")
-  createdAt     DateTime    @default(now()) @map("created_at")
+  ipAddressHash String?        @map("ip_address_hash")
+  userAgent     String?        @map("user_agent")
+  createdAt     DateTime       @default(now()) @map("created_at")
 
   @@index([actorId])
   @@index([targetId, targetModel])
@@ -134,20 +139,22 @@ model AuditLog {
 // =====================================================
 // Realtime — example surface (Notification)
 // Drives the dashboard's realtime invalidation pattern.
-// Drop this if you don't want a starter notification surface.
 // =====================================================
 model Notification {
   id                 String    @id @default(cuid())
   userId             String    @map("user_id")
   type               String
   title              String
-  body               String?
-  readAt             DateTime? @map("read_at")
+  body               String
+  read               Boolean   @default(false)
+  metadata           Json?
   retentionExpiresAt DateTime? @map("retention_expires_at")
   createdAt          DateTime  @default(now()) @map("created_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  @@index([userId, readAt])
+  @@index([userId, read])
+  @@index([userId, createdAt])
+  @@index([retentionExpiresAt])
   @@map("notifications")
 }

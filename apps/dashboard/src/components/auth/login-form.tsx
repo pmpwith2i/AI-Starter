@@ -57,7 +57,7 @@ export function LoginForm({ redirectTo }: LoginFormProps) {
 
     setIsSubmitting(true);
     try {
-      const { onboardingCompleted, emailVerified } = await login({
+      const { emailVerified } = await login({
         email,
         password,
       });
@@ -74,11 +74,7 @@ export function LoginForm({ redirectTo }: LoginFormProps) {
         return;
       }
 
-      if (!onboardingCompleted) {
-        await navigate({ to: "/app/onboarding" });
-      } else {
-        await navigate({ to: "/app" });
-      }
+      await navigate({ to: "/app" });
     } catch (err) {
       const message = buildLoginErrorMessage(err);
       toast.error(t`${message}`);

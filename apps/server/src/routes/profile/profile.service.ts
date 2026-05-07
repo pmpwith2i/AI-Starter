@@ -2,8 +2,6 @@ import { getPrismaClient } from "@repo/db";
 import { HttpErrorResponse } from "#src/plugins/error-handler.plugin.js";
 import { ERROR_CODES } from "@repo/server-sdk/schemas";
 import type { User } from "@repo/db";
-import { ENVIRONMENT_VARIABLES } from "#src/constants/env.constants.js";
-import { uploadToS3 } from "#src/lib/s3.js";
 
 const mapUserToProfile = (user: User) => ({
   id: user.id,
@@ -39,7 +37,6 @@ export const updateProfile = async (
   data: {
     firstName?: string;
     lastName?: string;
-    name?: string;
     phone?: string;
     dateOfBirth?: string;
     avatar?: string;
@@ -49,26 +46,8 @@ export const updateProfile = async (
   const prisma = getPrismaClient();
 
   const updateData: Record<string, unknown> = {};
-  if (data.firstName !== undefined) {
-    updateData.firstName = data.firstName;
-  }
-  if (data.lastName !== undefined) {
-    updateData.lastName = data.lastName;
-  }
-  // Compute name from firstName + lastName when either is provided
-  if (data.firstName !== undefined || data.lastName !== undefined) {
-    const current = await prisma.user.findUnique({ where: { id: userId } });
-    const first = data.firstName ?? current?.firstName ?? "";
-    const last = data.lastName ?? current?.lastName ?? "";
-    updateData.name = [first, last].filter(Boolean).join(" ") || null;
-  }
-  if (
-    data.name !== undefined &&
-    data.firstName === undefined &&
-    data.lastName === undefined
-  ) {
-    updateData.name = data.name;
-  }
+  if (data.firstName !== undefined) updateData.firstName = data.firstName;
+  if (data.lastName !== undefined) updateData.lastName = data.lastName;
   if (data.phone !== undefined) updateData.phone = data.phone;
   if (data.dateOfBirth !== undefined)
     updateData.dateOfBirth = new Date(data.dateOfBirth);
@@ -92,41 +71,22 @@ export const completeOnboarding = async (userId: string) => {
   return { success: true };
 };
 
-const ALLOWED_MIME_TYPES = [
-  "image/jpeg",
-  "image/png",
-  "image/webp",
-  "image/gif",
-];
-
-export const uploadAvatar = async (
+// Avatar upload is intentionally not implemented in the starter — wire your
+// own object storage (S3, R2, GCS) before exposing the route. Args are typed
+// to match the route handler signature so the surrounding wiring compiles.
+export type UploadAvatarArgs = [
   userId: string,
   fileBuffer: Buffer,
   mimeType: string,
+];
+
+export const uploadAvatar = async (
+  ...args: UploadAvatarArgs
 ): Promise<{ avatarUrl: string }> => {
-  if (!ALLOWED_MIME_TYPES.includes(mimeType)) {
-    throw new HttpErrorResponse(
-      "Invalid file type. Allowed: JPEG, PNG, WebP, GIF",
-      400,
-      ERROR_CODES.INVALID_FILE_TYPE,
-    );
-  }
-
-  if (!ENVIRONMENT_VARIABLES.AWS_S3_BUCKET) {
-    throw new HttpErrorResponse(
-      "Avatar upload is not configured",
-      503,
-      ERROR_CODES.UPLOAD_NOT_CONFIGURED,
-    );
-  }
-
-  const avatarUrl = await uploadToS3(fileBuffer, mimeType, `avatars/${userId}`);
-
-  const prisma = getPrismaClient();
-  await prisma.user.update({
-    where: { id: userId },
-    data: { avatar: avatarUrl },
-  });
-
-  return { avatarUrl };
+  void args;
+  throw new HttpErrorResponse(
+    "Avatar upload is not configured in the starter — implement your storage backend in profile.service.ts",
+    503,
+    ERROR_CODES.UPLOAD_NOT_CONFIGURED,
+  );
 };

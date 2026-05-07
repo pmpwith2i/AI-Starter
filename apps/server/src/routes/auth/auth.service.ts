@@ -226,20 +226,6 @@ export const registerUser = async (
     Date.now() + VERIFICATION_CODE_EXPIRY_MS,
   );
 
-  // Look up the default plan once outside the transaction (read-only).
-  // The boot-time validation guarantees this is always present in production.
-  const defaultPlan = await prisma.plan.findFirst({
-    where: { isDefault: true },
-  });
-
-  if (!defaultPlan) {
-    throw new HttpErrorResponse(
-      "Server misconfiguration: no default plan available for new signups",
-      500,
-      ERROR_CODES.DEFAULT_PLAN_MISSING,
-    );
-  }
-
   let user;
   try {
     user = await prisma.$transaction(async (tx) => {
@@ -253,16 +239,6 @@ export const registerUser = async (
           emailVerificationCode: verificationCode,
           emailVerificationExpires: verificationExpires,
           emailVerificationAttempts: 0,
-          registrationPlatform: "web",
-          planId: defaultPlan.id,
-          planActivatedAt: new Date(),
-        },
-      });
-
-      await tx.account.create({
-        data: {
-          userId: created.id,
-          provider: "credentials",
         },
       });
 

@@ -8,23 +8,15 @@ import { logger } from "#src/logger.js";
  * deleted rows are simply not selected. Runs at boot and on an hourly
  * interval.
  *
- * Scope: User (post-anonymisation hard delete), ClinicalProfile, plus six
- * child models with their own per-model retention windows (chat, compacted
- * segments, souls, background tasks, notifications, suggestions). Cascades
- * are preserved — the `deleteMany` calls only hit rows past their window.
+ * Starter scope: Notification (per-user) + User (post-anonymisation hard
+ * delete). Add a `prisma.<model>.deleteMany({ where })` call below for every
+ * new domain model that carries `retentionExpiresAt`.
  *
- * Not included: append-only ledgers (AuditLog, ConsentRecord, CreditTransaction,
- * CoursePurchase, EventPurchase, BundlePurchase) — they need long-term
- * retention for accountability / tax law.
+ * Not included: append-only ledgers (AuditLog, ConsentRecord) — they need
+ * long-term retention for accountability.
  */
 export interface RetentionCleanupReport {
-  chatMessage: number;
-  compactedSegment: number;
-  userSoul: number;
-  backgroundTask: number;
   notification: number;
-  suggestion: number;
-  clinicalProfile: number;
   user: number;
 }
 
@@ -34,36 +26,11 @@ export const runRetentionCleanup =
     const now = new Date();
     const where = { retentionExpiresAt: { lt: now } };
 
-    // Delete child-model rows first so their cascade-targets aren't sniped
-    // out from under them by the User delete below.
-    const chatMessage = await prisma.chatMessage.deleteMany({ where });
-    const compactedSegment = await prisma.compactedSegment.deleteMany({
-      where,
-    });
-    const userSoul = await prisma.userSoul.deleteMany({ where });
-    // Background tasks: only delete terminal-state rows. A task stuck in
-    // `running` (executor hang, OOM kill) past its retention window is
-    // operationally interesting — leave it for the heartbeat scanner /
-    // orphan-recovery hooks to surface, not silently delete.
-    const backgroundTask = await prisma.backgroundTask.deleteMany({
-      where: {
-        retentionExpiresAt: { lt: now },
-        status: { in: ["completed", "failed"] },
-      },
-    });
     const notification = await prisma.notification.deleteMany({ where });
-    const suggestion = await prisma.suggestion.deleteMany({ where });
-    const clinicalProfile = await prisma.clinicalProfile.deleteMany({ where });
     const user = await prisma.user.deleteMany({ where });
 
     const report: RetentionCleanupReport = {
-      chatMessage: chatMessage.count,
-      compactedSegment: compactedSegment.count,
-      userSoul: userSoul.count,
-      backgroundTask: backgroundTask.count,
       notification: notification.count,
-      suggestion: suggestion.count,
-      clinicalProfile: clinicalProfile.count,
       user: user.count,
     };
 

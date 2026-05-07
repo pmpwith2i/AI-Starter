@@ -1,37 +1,33 @@
-import { createCache } from "@repo/cache";
-import { logger } from "#src/logger.js";
+// Starter cache facade — pass-through no-op.
+//
+// Replace with @repo/cache + Redis backend (or any cache library) when you
+// need real caching. The interface below mirrors the @repo/cache shape so
+// callers compile both with this stub and a real backend.
 
-/**
- * Process-wide cache singleton for the patient server.
- *
- * Wires the shared `@repo/cache` facade into the Pino logger so backend
- * failures (currently only the MemoryBackend — a no-op failure-wise — but
- * future Redis may throw) surface as structured `warn` log entries.
- *
- * Consumers should prefer `cache.wrap(...)` over instantiating `cacheFn`
- * directly so that every wrapped function shares the same backend, making
- * `cache.invalidateTags([...])` effective across all namespaces at once.
- *
- * When `REDIS_URL` becomes a real env var, construct the `RedisBackend`
- * here and swap `backend`. No call-site change required.
- */
-export const cache = createCache({
-  logger: {
-    warn: (obj, msg) => logger.warn(obj, msg),
-    debug: (obj, msg) => logger.debug(obj, msg),
-  },
-});
+type CacheWrapOptions<TArgs extends readonly unknown[]> = {
+  namespace?: string;
+  ttlMs?: number;
+  keyFn?: (...args: TArgs) => string;
+  tags?: readonly string[] | ((...args: TArgs) => readonly string[]);
+  singleFlight?: boolean;
+  cacheErrors?: boolean;
+};
 
-/** Stable tag for every user-scoped cache entry. Any namespace that caches
- * per-user data MUST declare `tags: (userId) => [userTag(userId)]` so a single
- * `invalidateUserCache(userId)` call wipes every trace of that user across
- * every namespace (consent, auth lookup, ...). */
+interface Cache {
+  wrap<TArgs extends readonly unknown[], TResult>(
+    fn: (...args: TArgs) => Promise<TResult>,
+    options?: CacheWrapOptions<TArgs>,
+  ): (...args: TArgs) => Promise<TResult>;
+  invalidateTags(tags: readonly string[]): Promise<void>;
+}
+
+export const cache: Cache = {
+  wrap: (fn) => fn,
+  invalidateTags: async () => {},
+};
+
 export const userTag = (userId: string): string => `user:${userId}`;
 
-/**
- * Drops every cached entry tagged with `user:${userId}` across every namespace
- * sharing the singleton `cache`. Callers: account deletion, consent mutations,
- * any flow that changes a user's identity/authorization state.
- */
-export const invalidateUserCache = async (userId: string): Promise<number> =>
-  cache.invalidateTags([userTag(userId)]);
+export const invalidateUserCache = async (userId: string): Promise<void> => {
+  await cache.invalidateTags([userTag(userId)]);
+};

@@ -5,13 +5,7 @@
  */
 
 import type { ComponentType } from "react";
-import {
-  BadgeCheck,
-  CalendarClock,
-  HeartPulse,
-  Stethoscope,
-} from "lucide-react";
-import type { Specialty } from "@repo/server-sdk/schemas";
+import { BadgeCheck, CalendarClock, HeartPulse } from "lucide-react";
 
 export interface ValuePillar {
   title: string;
@@ -65,34 +59,6 @@ export const HOW_IT_WORKS_STEPS: readonly HowItWorksStep[] = [
     n: "03",
     title: "Segui il percorso",
     text: "Tra una visita e l'altra hai accesso a piani nutrizionali personalizzati, corsi formativi e l'assistente AI Onciro.",
-  },
-];
-
-export interface SpecialtyTile {
-  value: Specialty;
-  label: string;
-  count: string;
-  copy: string;
-  examples: string;
-  icon: ComponentType<{ className?: string }>;
-}
-
-export const SPECIALTY_TILES: readonly SpecialtyTile[] = [
-  {
-    value: "oncologo",
-    label: "Oncologi",
-    count: "12 specialisti",
-    copy: "Specialisti in oncologia integrativa per ogni fase del percorso di cura.",
-    examples: "Senologia · Ematologia · Pediatrica · Tumori rari",
-    icon: Stethoscope,
-  },
-  {
-    value: "cardiologo",
-    label: "Cardiologi",
-    count: "5 specialisti",
-    copy: "La salute del cuore durante e dopo le terapie oncologiche.",
-    examples: "Cardio-oncologia · Aritmie · Prevenzione",
-    icon: HeartPulse,
   },
 ];
 
