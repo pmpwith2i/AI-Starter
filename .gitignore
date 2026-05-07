@@ -18,3 +18,8 @@ coverage
 # Prisma
 packages/db/src/generated/
 packages/db/prisma/migrations/.lock
+
+# Audit artifacts (regenerated on demand)
+**/artifacts/
+**/storybook-static/
+**/.tanstack/
