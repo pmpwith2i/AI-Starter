@@ -1,0 +1,17 @@
+export const LOG_REDACT_PATHS = [
+  "req.headers.authorization",
+  "req.headers.cookie",
+  "*.password",
+  "*.token",
+  "*.refreshToken",
+  "*.email",
+  "*.firstName",
+  "*.lastName",
+  "*.phone",
+  "*.codiceFiscale",
+  "*.dateOfBirth",
+  "*.to",
+  "req.body.email",
+  "req.body.password",
+  "res.headers['set-cookie']",
+];

@@ -1,0 +1,40 @@
+{
+  "name": "@repo/ai",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "development": "./src/index.ts",
+      "default": "./dist/index.js",
+      "types": "./src/index.ts"
+    },
+    "./schemas": {
+      "development": "./src/index.ts",
+      "default": "./dist/index.js",
+      "types": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -b",
+    "lint": "eslint --max-warnings 0",
+    "test": "node --import=tsx/esm --test $(find src -type f -name '*.test.ts')"
+  },
+  "dependencies": {
+    "@langfuse/otel": "^5.2.0",
+    "@langfuse/tracing": "^5.2.0",
+    "@openrouter/sdk": "^0.9.11",
+    "@opentelemetry/sdk-node": "^0.215.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.15.3",
+    "tsx": "^4.21.0",
+    "typescript": "5.9.2"
+  }
+}

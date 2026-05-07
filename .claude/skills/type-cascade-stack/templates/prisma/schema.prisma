@@ -1,0 +1,110 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// =====================================================
+// Identity
+// =====================================================
+model User {
+  id                  String   @id @default(cuid())
+  email               String   @unique
+  passwordHash        String   @map("password_hash")
+  emailVerified       Boolean  @default(false) @map("email_verified")
+  tokenVersion        Int      @default(0) @map("token_version")
+  deletedAt           DateTime? @map("deleted_at")
+  retentionExpiresAt  DateTime? @map("retention_expires_at")
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  consents      ConsentRecord[]
+  refreshTokens RefreshToken[]
+
+  @@index([deletedAt])
+  @@map("users")
+}
+
+model RefreshToken {
+  id         String   @id @default(cuid())
+  userId     String   @map("user_id")
+  familyId   String   @map("family_id")
+  token      String   @unique
+  expiresAt  DateTime @map("expires_at")
+  revokedAt  DateTime? @map("revoked_at")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([familyId])
+  @@map("refresh_tokens")
+}
+
+// =====================================================
+// GDPR — Consent (append-only on revoke; never deleted)
+// =====================================================
+enum ConsentPurpose {
+  terms_of_service
+  privacy_policy
+  health_data_processing
+  ai_data_processing
+  marketing_communications
+  third_party_payments
+}
+
+model ConsentRecord {
+  id            String         @id @default(cuid())
+  userId        String         @map("user_id")
+  purpose       ConsentPurpose
+  policyVersion String         @map("policy_version")
+  grantedAt     DateTime?      @map("granted_at")
+  withdrawnAt   DateTime?      @map("withdrawn_at")
+  ipAddressHash String?        @map("ip_address_hash")
+  userAgent     String?        @map("user_agent")
+  createdAt     DateTime       @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId, purpose])
+  @@map("consent_records")
+}
+
+// =====================================================
+// GDPR — Audit Log (append-only, REVOKE UPDATE/DELETE)
+// =====================================================
+enum ActorType {
+  user
+  admin
+  system
+}
+
+enum AuditAction {
+  read
+  create
+  update
+  delete
+  export
+}
+
+model AuditLog {
+  id            String      @id @default(cuid())
+  actorId       String?     @map("actor_id")
+  actorType     ActorType   @map("actor_type")
+  targetId      String?     @map("target_id")
+  targetModel   String?     @map("target_model")
+  action        AuditAction
+  fields        String[]
+  reason        String?
+  ipAddressHash String?     @map("ip_address_hash")
+  userAgent     String?     @map("user_agent")
+  createdAt     DateTime    @default(now()) @map("created_at")
+
+  @@index([actorId])
+  @@index([targetId, targetModel])
+  @@index([createdAt])
+  @@map("audit_logs")
+}

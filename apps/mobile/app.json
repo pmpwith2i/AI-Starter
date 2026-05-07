@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Oncologo",
+    "slug": "oncologo-mobile",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "scheme": "oncologo",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "it.oncologo.app"
+    },
+    "android": {
+      "package": "it.oncologo.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

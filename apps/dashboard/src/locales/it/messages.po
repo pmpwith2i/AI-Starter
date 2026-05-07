@@ -1,0 +1,4088 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-03-05 23:29+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: it\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/dashboard/app-sidebar.tsx:347
+msgid "Centro assistenza"
+msgstr "Centro assistenza"
+
+#: src/components/consent/consent-form.tsx:259
+msgid "(facoltativo)"
+msgstr "(facoltativo)"
+
+#: src/components/nutrition/daily-stats.tsx:302
+msgid "(totale settimanale)"
+msgstr "(totale settimanale)"
+
+#. placeholder {0}: clinicalProfile ? "Modifica dati sanitari" : "Aggiungi dati sanitari"
+#. placeholder {0}: countdown.days === 1 ? "Giorno" : "Giorni"
+#. placeholder {0}: countdown.hours === 1 ? "Ora" : "Ore"
+#: src/components/dashboard/task-rows/task-row.tsx:15
+#: src/components/events/event-detail.tsx:562
+#: src/components/events/event-detail.tsx:567
+#: src/components/events/event-detail.tsx:618
+#: src/components/events/event-detail.tsx:623
+#: src/components/nutrition/nutrition-dashboard.tsx:355
+#: src/components/nutrition/nutrition-dashboard.tsx:358
+#: src/components/nutrition/nutrition-onboarding.tsx:137
+#: src/components/nutrition/nutrition-onboarding.tsx:140
+#: src/components/profile/clinical-profile-section.tsx:200
+msgid "{0}"
+msgstr "{0}"
+
+#. placeholder {0}: pagination.total
+#. placeholder {1}: pagination.total === 1 ? "visita" : "visite"
+#: src/components/visits/my-visits-list.tsx:213
+msgid "{0} {1} totali"
+msgstr "{0} {1} totali"
+
+#: src/components/nutrition/plan-control-panel.tsx:316
+#~ msgid "{0} crediti totali · costo piano: {planCost}"
+#~ msgstr "{0} crediti totali · costo piano: {planCost}"
+
+#. placeholder {0}: section.items.length
+#: src/components/nutrition/shopping-list-section.tsx:402
+msgid "{0} elementi"
+msgstr "{0} elementi"
+
+#. placeholder {0}: group.dates.length
+#: src/components/nutrition/plan-generation-wizard.tsx:1844
+msgid "{0} giorni"
+msgstr "{0} giorni"
+
+#. placeholder {0}: bundle.totalSessions
+#: src/components/bundles/bundle-card.tsx:80
+msgid "{0} incontri"
+msgstr "{0} incontri"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:381
+#~ msgid "{0} momenti"
+#~ msgstr "{0} momenti"
+
+#. placeholder {0}: bundle.totalSessions
+#: src/components/bundles/bundle-card.tsx:124
+#: src/components/bundles/bundle-detail.tsx:111
+msgid "{0} sessioni"
+msgstr "{0} sessioni"
+
+#: src/components/dashboard/background-tasks-popover.tsx:72
+#~ msgid "{0}/{1} giorni"
+#~ msgstr "{0}/{1} giorni"
+
+#. placeholder {0}: selectedAllergens.length
+#: src/components/nutrition/plan-generation-wizard.tsx:853
+msgid "{0}/{MAX_ALLERGENS} selezionati"
+msgstr "{0}/{MAX_ALLERGENS} selezionati"
+
+#. placeholder {0}: Math.floor(diffH / 24)
+#: src/components/dashboard/task-rows/task-row-frame.tsx:63
+msgid "{0}g fa"
+msgstr "{0}g fa"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1940
+msgid "{allergensCount} indicati"
+msgstr "{allergensCount} indicati"
+
+#: src/components/nutrition/shopping-list-section.tsx:1054
+msgid "{checkedCount} elementi selezionati nella lista della spesa"
+msgstr "{checkedCount} elementi selezionati nella lista della spesa"
+
+#: src/components/dashboard/task-rows/nutrition-plan-generation-row.tsx:98
+#: src/components/nutrition/generation-details-card.tsx:210
+msgid "{completed} / {total} giorni"
+msgstr "{completed} / {total} giorni"
+
+#: src/components/nutrition/generation-details-card.tsx:244
+msgid "{completed}/{total} giorni"
+msgstr "{completed}/{total} giorni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1923
+msgid "{daysCount} giorni × {slotsCount} pasti"
+msgstr "{daysCount} giorni × {slotsCount} pasti"
+
+#: src/components/dashboard/task-rows/task-row-frame.tsx:62
+msgid "{diffH}h fa"
+msgstr "{diffH}h fa"
+
+#: src/components/dashboard/task-rows/task-row-frame.tsx:60
+msgid "{diffMin} min fa"
+msgstr "{diffMin} min fa"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1442
+msgid "{generatedDayCount} giorni di pasti generati."
+msgstr "{generatedDayCount} giorni di pasti generati."
+
+#: src/components/dashboard/task-rows/nutrition-plan-generation-row.tsx:74
+msgid "{mealSlotCount} pasti/giorno"
+msgstr "{mealSlotCount} pasti/giorno"
+
+#: src/components/auth/login-form.tsx:84
+msgid "{message}"
+msgstr "{message}"
+
+#: src/components/nutrition/shopping-list-section.tsx:292
+msgid "{missingCount} giorni scoperti"
+msgstr "{missingCount} giorni scoperti"
+
+#: src/components/nutrition/shopping-list-summary.tsx:144
+msgid "{missingCount} giorni scoperti nel carrello"
+msgstr "{missingCount} giorni scoperti nel carrello"
+
+#: src/components/nutrition/shopping-list-section.tsx:131
+#~ msgid "{missingCount} giorni senza piano in questo intervallo"
+#~ msgstr "{missingCount} giorni senza piano in questo intervallo"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1793
+msgid "{overwrittenCount} giorni già coperti verranno sostituiti."
+msgstr "{overwrittenCount} giorni già coperti verranno sostituiti."
+
+#: src/components/nutrition/shopping-list-section.tsx:580
+msgid "{pantryCount} controlli"
+msgstr "{pantryCount} controlli"
+
+#: src/components/nutrition/shopping-list-section.tsx:322
+msgid "{pendingCount} giorni in generazione"
+msgstr "{pendingCount} giorni in generazione"
+
+#: src/components/nutrition/plan-control-panel.tsx:305
+#~ msgid "{planCreditsRemaining} piani disponibili"
+#~ msgstr "{planCreditsRemaining} piani disponibili"
+
+#: src/components/dashboard/task-rows/nutrition-plan-generation-row.tsx:71
+msgid "{plannedDaysCount} giorni/sett."
+msgstr "{plannedDaysCount} giorni/sett."
+
+#: src/components/not-found-page.tsx:60
+msgid "{resourceLabel} non trovato"
+msgstr "{resourceLabel} non trovato"
+
+#: src/components/nutrition/shopping-list-section.tsx:276
+#~ msgid "{totalItems} alimenti per {coveredCount} giorni coperti"
+#~ msgstr "{totalItems} alimenti per {coveredCount} giorni coperti"
+
+#: src/components/auth/auth-layout.tsx:62
+msgid "© oncologo.it — Tutti i diritti riservati"
+msgstr "© oncologo.it — Tutti i diritti riservati"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1858
+msgid "+{remaining}"
+msgstr "+{remaining}"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1403
+msgid "1 mese"
+msgstr "1 mese"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:83
+msgid "1 mese consigliato"
+msgstr "1 mese consigliato"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1393
+msgid "1 settimana"
+msgstr "1 settimana"
+
+#: src/components/nutrition/shopping-list-section.tsx:777
+msgid "1-14 giorni"
+msgstr "1-14 giorni"
+
+#: src/components/nutrition/shopping-list-section.tsx:102
+msgid "14 giorni"
+msgstr "14 giorni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1398
+msgid "2 settimane"
+msgstr "2 settimane"
+
+#: src/components/nutrition/shopping-list-section.tsx:100
+msgid "3 giorni"
+msgstr "3 giorni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:377
+msgid "5 passaggi"
+msgstr "5 passaggi"
+
+#: src/components/nutrition/shopping-list-section.tsx:101
+#: src/components/nutrition/shopping-list-summary.tsx:78
+msgid "7 giorni"
+msgstr "7 giorni"
+
+#: src/components/nutrition/shopping-list-section.tsx:171
+msgid "A"
+msgstr "A"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1115
+#~ msgid "A oltranza"
+#~ msgstr "A oltranza"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:112
+msgid "Abbiamo già recuperato ciò che può rendere il piano più preciso."
+msgstr "Abbiamo già recuperato ciò che può rendere il piano più preciso."
+
+#: src/components/auth/verification-code-form.tsx:71
+msgid "Abbiamo inviato un codice di verifica a"
+msgstr "Abbiamo inviato un codice di verifica a"
+
+#: src/components/nutrition/generation-details-card.tsx:143
+msgid "Abbiamo ricevuto la richiesta. La generazione partirà tra poco."
+msgstr "Abbiamo ricevuto la richiesta. La generazione partirà tra poco."
+
+#: src/components/auth/login-form.tsx:145
+#: src/routes/signup.tsx:57
+msgid "Accedi"
+msgstr "Accedi"
+
+#: src/routes/login.tsx:46
+msgid "Accedi al tuo account per continuare"
+msgstr "Accedi al tuo account per continuare"
+
+#: src/components/auth/auth-layout.tsx:27
+msgid "Accedi per gestire appuntamenti, piani nutrizionali, corsi ed eventi del tuo percorso di benessere."
+msgstr "Accedi per gestire appuntamenti, piani nutrizionali, corsi ed eventi del tuo percorso di benessere."
+
+#: src/components/auth/login-form.tsx:142
+msgid "Accesso in corso..."
+msgstr "Accesso in corso..."
+
+#: src/components/auth/signup-form.tsx:160
+msgid "Accetto i <0>Termini di Servizio</0> e l'<1>Informativa sulla Privacy</1>."
+msgstr "Accetto i <0>Termini di Servizio</0> e l'<1>Informativa sulla Privacy</1>."
+
+#: src/components/consent/consent-form.tsx:93
+msgid "Accetto i termini di servizio di oncologo.it che regolano l'utilizzo della piattaforma e dei suoi servizi."
+msgstr "Accetto i termini di servizio di oncologo.it che regolano l'utilizzo della piattaforma e dei suoi servizi."
+
+#: src/components/consent/consent-form.tsx:169
+msgid "Acconsento a ricevere newsletter, aggiornamenti su eventi e contenuti promozionali via email."
+msgstr "Acconsento a ricevere newsletter, aggiornamenti su eventi e contenuti promozionali via email."
+
+#: src/components/consent/consent-form.tsx:154
+msgid "Acconsento all'invio dei miei dati sanitari pseudonimizzati a fornitori di intelligenza artificiale (OpenRouter) per le funzionalità di chat e generazione di piani nutrizionali."
+msgstr "Acconsento all'invio dei miei dati sanitari pseudonimizzati a fornitori di intelligenza artificiale (OpenRouter) per le funzionalità di chat e generazione di piani nutrizionali."
+
+#: src/components/consent/consent-form.tsx:183
+msgid "Acconsento alla condivisione dei dati di pagamento necessari con Stripe (processore di pagamento) per l'acquisto di corsi ed eventi a pagamento."
+msgstr "Acconsento alla condivisione dei dati di pagamento necessari con Stripe (processore di pagamento) per l'acquisto di corsi ed eventi a pagamento."
+
+#: src/components/consent/consent-form.tsx:127
+msgid "Acconsento esplicitamente al trattamento dei miei dati sanitari (categorie particolari ex art. 9 GDPR) per l'erogazione dei servizi di oncologo.it, inclusi piani nutrizionali, cartelle cliniche e chat assistita."
+msgstr "Acconsento esplicitamente al trattamento dei miei dati sanitari (categorie particolari ex art. 9 GDPR) per l'erogazione dei servizi di oncologo.it, inclusi piani nutrizionali, cartelle cliniche e chat assistita."
+
+#: src/components/dashboard/app-sidebar.tsx:331
+msgid "Account"
+msgstr "Account"
+
+#: src/components/bundles/bundle-card.tsx:92
+msgid "Acquistato"
+msgstr "Acquistato"
+
+#: src/components/dashboard/next-appointment-card.tsx:141
+msgid "Agenda e promemoria"
+msgstr "Agenda e promemoria"
+
+#: src/routes/reset-password.tsx:221
+msgid "Aggiorna password"
+msgstr "Aggiorna password"
+
+#: src/routes/reset-password.tsx:218
+msgid "Aggiornamento in corso..."
+msgstr "Aggiornamento in corso..."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1202
+msgid "Aggiungi pasto"
+msgstr "Aggiungi pasto"
+
+#: src/components/onboarding/steps/avatar-step.tsx:54
+msgid "Aggiungi una foto per rendere il tuo profilo più personale"
+msgstr "Aggiungi una foto per rendere il tuo profilo più personale"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1532
+#~ msgid "Aggiunte"
+#~ msgstr "Aggiunte"
+
+#: src/components/appointments/book-appointment-dialog.tsx:283
+#: src/components/professionals/book-professional-modal.tsx:628
+msgid "alle"
+msgstr "alle"
+
+#. placeholder {0}: dateInfo.time
+#: src/components/dashboard/next-appointment-card.tsx:95
+msgid "alle {0}"
+msgstr "alle {0}"
+
+#: src/components/nutrition/diet-detail-rows.tsx:239
+#: src/components/nutrition/plan-generation-wizard.tsx:1937
+msgid "Allergeni"
+msgstr "Allergeni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:850
+msgid "Allergeni / intolleranze"
+msgstr "Allergeni / intolleranze"
+
+#: src/components/onboarding/steps/health-data-step.tsx:108
+#: src/components/profile/clinical-profile-section.tsx:118
+#: src/components/profile/clinical-profile-section.tsx:183
+msgid "Allergie"
+msgstr "Allergie"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1175
+msgid "Almeno 1 ora di distanza dal pasto precedente."
+msgstr "Almeno 1 ora di distanza dal pasto precedente."
+
+#: src/components/dashboard/profile-summary.tsx:101
+#: src/components/nutrition/plan-generation-wizard.tsx:704
+#: src/components/profile/clinical-profile-section.tsx:163
+msgid "Altezza"
+msgstr "Altezza"
+
+#: src/components/onboarding/steps/health-data-step.tsx:86
+#: src/components/profile/clinical-profile-section.tsx:92
+msgid "Altezza (cm)"
+msgstr "Altezza (cm)"
+
+#: src/components/nutrition/plan-control-panel.tsx:99
+#~ msgid "Altri tuoi piani"
+#~ msgstr "Altri tuoi piani"
+
+#: src/components/prevy/search-results.tsx:91
+msgid "Analizza · {cost} crediti"
+msgstr "Analizza · {cost} crediti"
+
+#. placeholder {0}: r.name
+#: src/components/prevy/search-results.tsx:86
+msgid "Analizza {0}"
+msgstr "Analizza {0}"
+
+#: src/components/prevy/photo-upload.tsx:189
+msgid "Analizza foto · {cost} crediti"
+msgstr "Analizza foto · {cost} crediti"
+
+#: src/routes/app/prevy/index.tsx:35
+msgid "Analizza la qualità nutrizionale dei prodotti confezionati in base ai criteri ARTOI. Cerca per nome o codice a barre, ricevi un punteggio e una valutazione adatta al tuo percorso di cura."
+msgstr "Analizza la qualità nutrizionale dei prodotti confezionati in base ai criteri ARTOI. Cerca per nome o codice a barre, ricevi un punteggio e una valutazione adatta al tuo percorso di cura."
+
+#: src/components/credits/credits-service-tariff.tsx:41
+msgid "Analizza un prodotto alimentare confezionato (Prevy)"
+msgstr "Analizza un prodotto alimentare confezionato (Prevy)"
+
+#: src/components/credits/credits-service-tariff.tsx:44
+msgid "Analizza un prodotto da foto dell'etichetta (Prevy)"
+msgstr "Analizza un prodotto da foto dell'etichetta (Prevy)"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:484
+#~ msgid "Andamento e giorni coperti"
+#~ msgstr "Andamento e giorni coperti"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:684
+msgid "anni"
+msgstr "anni"
+
+#: src/components/appointments/appointment-card.tsx:141
+#: src/components/nutrition/regeneration-dialog.tsx:181
+#: src/components/profile/clinical-profile-section.tsx:154
+#: src/components/profile/profile-form.tsx:195
+msgid "Annulla"
+msgstr "Annulla"
+
+#: src/components/appointments/appointment-card.tsx:138
+#: src/components/appointments/appointment-detail.tsx:463
+#: src/components/appointments/appointment-detail.tsx:466
+msgid "Annulla appuntamento"
+msgstr "Annulla appuntamento"
+
+#: src/components/events/event-detail.tsx:496
+#: src/components/events/event-detail.tsx:591
+#: src/components/events/my-registrations-sidebar.tsx:138
+#: src/components/events/my-registrations-sidebar.tsx:271
+msgid "Annulla iscrizione"
+msgstr "Annulla iscrizione"
+
+#: src/components/appointments/appointment-detail.tsx:556
+msgid "Annullamento..."
+msgstr "Annullamento..."
+
+#: src/components/appointments/appointment-detail.tsx:532
+msgid "Annullare l'appuntamento?"
+msgstr "Annullare l'appuntamento?"
+
+#: src/components/events/event-detail.tsx:473
+#: src/components/events/my-registrations-sidebar.tsx:110
+msgid "Annullare l'iscrizione?"
+msgstr "Annullare l'iscrizione?"
+
+#: src/components/appointments/appointment-card.tsx:33
+#: src/components/appointments/appointment-detail.tsx:100
+msgid "Annullato"
+msgstr "Annullato"
+
+#: src/components/nutrition/shopping-list-section.tsx:741
+msgid "Anteprima dopo il piano"
+msgstr "Anteprima dopo il piano"
+
+#: src/components/prevy/photo-upload.tsx:161
+msgid "Anteprima etichetta"
+msgstr "Anteprima etichetta"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1789
+msgid "Anteprima impatto"
+msgstr "Anteprima impatto"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:373
+msgid "Appena la generazione termina, questa schermata diventa la tua timeline pasti con la lista della spesa collegata."
+msgstr "Appena la generazione termina, questa schermata diventa la tua timeline pasti con la lista della spesa collegata."
+
+#: src/components/nutrition/regeneration-dialog.tsx:128
+msgid "Applica la modifica a"
+msgstr "Applica la modifica a"
+
+#: src/components/appointments/appointments-widget.tsx:43
+msgid "Appuntamenti"
+msgstr "Appuntamenti"
+
+#: src/components/appointments/appointments-list.tsx:87
+msgid "Appuntamenti passati"
+msgstr "Appuntamenti passati"
+
+#: src/components/appointments/appointment-detail.tsx:268
+msgid "Appuntamento annullato"
+msgstr "Appuntamento annullato"
+
+#: src/components/appointments/appointment-detail.tsx:149
+msgid "Appuntamento non trovato"
+msgstr "Appuntamento non trovato"
+
+#: src/components/dashboard/ai-chat-panel.tsx:337
+#: src/components/dashboard/ai-chat-panel.tsx:404
+msgid "Apri chat Onciro"
+msgstr "Apri chat Onciro"
+
+#: src/components/dashboard/app-sidebar.tsx:271
+msgid "Apri eventi e webinar"
+msgstr "Apri eventi e webinar"
+
+#: src/components/dashboard/app-sidebar.tsx:273
+#~ msgid "Apri gli eventi"
+#~ msgstr "Apri gli eventi"
+
+#: src/components/dashboard/app-sidebar.tsx:265
+msgid "Apri i corsi"
+msgstr "Apri i corsi"
+
+#: src/components/dashboard/app-sidebar.tsx:279
+#~ msgid "Apri i webinar"
+#~ msgstr "Apri i webinar"
+
+#: src/components/dashboard/app-sidebar.tsx:348
+msgid "Apri il centro assistenza"
+msgstr "Apri il centro assistenza"
+
+#: src/components/dashboard/dashboard-layout.tsx:37
+msgid "Apri il menu di navigazione"
+msgstr "Apri il menu di navigazione"
+
+#: src/components/dashboard/app-sidebar.tsx:244
+msgid "Apri il piano alimentare"
+msgstr "Apri il piano alimentare"
+
+#: src/components/dashboard/app-sidebar.tsx:287
+msgid "Apri il profilo"
+msgstr "Apri il profilo"
+
+#: src/components/dashboard/app-sidebar.tsx:280
+msgid "Apri il saldo dei crediti AI"
+msgstr "Apri il saldo dei crediti AI"
+
+#: src/components/dashboard/app-sidebar.tsx:250
+msgid "Apri la lista della spesa"
+msgstr "Apri la lista della spesa"
+
+#: src/components/dashboard/app-sidebar.tsx:366
+msgid "Apri le domande frequenti"
+msgstr "Apri le domande frequenti"
+
+#: src/components/dashboard/app-sidebar.tsx:256
+msgid "Apri lo scanner Prevy"
+msgstr "Apri lo scanner Prevy"
+
+#: src/components/dashboard/app-sidebar.tsx:140
+msgid "Apri menu account"
+msgstr "Apri menu account"
+
+#: src/components/dashboard/dashboard-layout.tsx:37
+#~ msgid "Apri o chiudi il menu di navigazione"
+#~ msgstr "Apri o chiudi il menu di navigazione"
+
+#: src/components/prevy/photo-upload.tsx:137
+msgid "Apri selettore file o fotocamera"
+msgstr "Apri selettore file o fotocamera"
+
+#: src/components/dashboard/app-sidebar.tsx:319
+#~ msgid "Apri sezione Nutrizione"
+#~ msgstr "Apri sezione Nutrizione"
+
+#: src/components/dashboard/app-sidebar.tsx:237
+msgid "Apri sezione Salute"
+msgstr "Apri sezione Salute"
+
+#: src/components/nutrition/shopping-list-summary.tsx:177
+msgid "Apri spesa guidata"
+msgstr "Apri spesa guidata"
+
+#: src/components/dashboard/ai-chat-panel.tsx:89
+msgid "Argomenti:"
+msgstr "Argomenti:"
+
+#: src/components/dashboard/ai-chat-panel.tsx:276
+msgid "Assistente AI"
+msgstr "Assistente AI"
+
+#: src/components/dashboard/app-sidebar.tsx:358
+msgid "Assistenza"
+msgstr "Assistenza"
+
+#: src/components/nutrition/plan-control-panel.tsx:355
+#~ msgid "Attiva"
+#~ msgstr "Attiva"
+
+#: src/components/profile/consent-management-section.tsx:165
+msgid "Attiva o disattiva questo consenso"
+msgstr "Attiva o disattiva questo consenso"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1156
+#~ msgid "Attiva subito"
+#~ msgstr "Attiva subito"
+
+#: src/components/dashboard/background-tasks-popover.tsx:46
+msgid "Attività"
+msgstr "Attività"
+
+#: src/components/nutrition/suggestion-cards.tsx:67
+msgid "Attività e benessere"
+msgstr "Attività e benessere"
+
+#: src/components/nutrition/suggestion-cards.tsx:63
+msgid "Attività fisica e benessere"
+msgstr "Attività fisica e benessere"
+
+#: src/components/dashboard/background-tasks-popover.tsx:32
+msgid "Attività in background"
+msgstr "Attività in background"
+
+#: src/components/nutrition/plan-control-panel.tsx:179
+#: src/components/nutrition/plan-control-panel.tsx:199
+#~ msgid "Attivo"
+#~ msgstr "Attivo"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:453
+msgid "Avanti"
+msgstr "Avanti"
+
+#: src/components/onboarding/steps/avatar-step.tsx:63
+#: src/components/profile/profile-form.tsx:107
+msgid "Avatar"
+msgstr "Avatar"
+
+#: src/components/prevy/analysis-detail.tsx:108
+#: src/components/prevy/analysis-detail.tsx:113
+msgid "Avvia analisi"
+msgstr "Avvia analisi"
+
+#: src/components/prevy/photo-upload.tsx:184
+msgid "Avvia analisi foto"
+msgstr "Avvia analisi foto"
+
+#: src/components/appointments/appointment-detail.tsx:443
+msgid "Avvia videochiamata"
+msgstr "Avvia videochiamata"
+
+#: src/components/nutrition/shopping-list-section.tsx:126
+#~ msgid "Avviso"
+#~ msgstr "Avviso"
+
+#: src/components/appointments/appointment-detail.tsx:434
+msgid "Azioni"
+msgstr "Azioni"
+
+#: src/routes/login.tsx:43
+msgid "Bentornato"
+msgstr "Bentornato"
+
+#: src/components/onboarding/onboarding-flow.tsx:52
+msgid "Benvenuto su Oncologo.it"
+msgstr "Benvenuto su Oncologo.it"
+
+#: src/components/credits/credits-history-list.tsx:150
+msgid "bonus"
+msgstr "bonus"
+
+#: src/components/credits/credits-history-list.tsx:94
+msgid "Bonus"
+msgstr "Bonus"
+
+#. placeholder {0}: balance.bonus.available
+#: src/components/credits/credits-balance-widget.tsx:124
+msgid "Bonus: {0} crediti"
+msgstr "Bonus: {0} crediti"
+
+#: src/components/nutrition/shopping-list-section.tsx:659
+#: src/components/nutrition/shopping-list-summary.tsx:121
+msgid "Budget"
+msgstr "Budget"
+
+#: src/components/nutrition/shopping-list-section.tsx:511
+msgid "Budget e preparazione"
+msgstr "Budget e preparazione"
+
+#: src/components/nutrition/shopping-list-section.tsx:633
+#~ msgid "Budget leggibile"
+#~ msgstr "Budget leggibile"
+
+#: src/components/nutrition/shopping-list-section.tsx:443
+msgid "Calcolato dal piano alimentare corrente."
+msgstr "Calcolato dal piano alimentare corrente."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:313
+#~ msgid "Calendario"
+#~ msgstr "Calendario"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:195
+#~ msgid "Calendario diete"
+#~ msgstr "Calendario diete"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:200
+msgid "Calendario pasti"
+msgstr "Calendario pasti"
+
+#: src/components/professionals/book-professional-modal.tsx:436
+msgid "Cambia"
+msgstr "Cambia"
+
+#: src/components/mode-toggle.tsx:22
+msgid "Cambia tema"
+msgstr "Cambia tema"
+
+#: src/components/events/events-page-content.tsx:183
+msgid "Cancella filtri"
+msgstr "Cancella filtri"
+
+#: src/components/events/events-filter-bar.tsx:53
+msgid "Cancella ricerca"
+msgstr "Cancella ricerca"
+
+#: src/components/events/events-page-content.tsx:251
+msgid "Carica altri"
+msgstr "Carica altri"
+
+#: src/components/prevy/photo-upload.tsx:117
+msgid "Carica una foto dell'etichetta"
+msgstr "Carica una foto dell'etichetta"
+
+#: src/routes/app/prevy/scan.tsx:27
+msgid "Carica una foto dell'etichetta del prodotto. Estraiamo ingredienti e valori nutrizionali con l'AI e lanciamo l'analisi ARTOI. Le foto vengono conservate per 90 giorni e poi eliminate automaticamente."
+msgstr "Carica una foto dell'etichetta del prodotto. Estraiamo ingredienti e valori nutrizionali con l'AI e lanciamo l'analisi ARTOI. Le foto vengono conservate per 90 giorni e poi eliminate automaticamente."
+
+#: src/components/legal/legal-document.tsx:58
+msgid "Caricamento documento…"
+msgstr "Caricamento documento…"
+
+#: src/components/events/events-page-content.tsx:248
+#: src/components/profile/clinical-profile-section.tsx:70
+#: src/components/profile/profile-form.tsx:82
+msgid "Caricamento..."
+msgstr "Caricamento..."
+
+#: src/components/profile/consent-management-section.tsx:83
+#: src/routes/consent.tsx:72
+msgid "Caricamento…"
+msgstr "Caricamento…"
+
+#: src/components/nutrition/shopping-list-section.tsx:623
+msgid "Carrello automatico"
+msgstr "Carrello automatico"
+
+#: src/components/nutrition/shopping-list-summary.tsx:73
+msgid "Carrello dai pasti del piano corrente."
+msgstr "Carrello dai pasti del piano corrente."
+
+#: src/components/nutrition/shopping-list-section.tsx:788
+msgid "Casa"
+msgstr "Casa"
+
+#: src/components/dashboard/doctor-search-cta.tsx:56
+#: src/components/prevy/search-bar.tsx:45
+#: src/components/professionals/professionals-listing.tsx:114
+msgid "Cerca"
+msgstr "Cerca"
+
+#: src/components/events/events-filter-bar.tsx:43
+msgid "Cerca eventi"
+msgstr "Cerca eventi"
+
+#: src/components/dashboard/healthcare-section.tsx:101
+msgid "Cerca medico"
+msgstr "Cerca medico"
+
+#: src/components/dashboard/healthcare-section.tsx:76
+msgid "Cerca per nome o patologia..."
+msgstr "Cerca per nome o patologia..."
+
+#: src/components/professionals/professionals-listing.tsx:109
+msgid "Cerca per nome o specialità..."
+msgstr "Cerca per nome o specialità..."
+
+#: src/components/prevy/search-bar.tsx:38
+msgid "Cerca prodotto"
+msgstr "Cerca prodotto"
+
+#: src/components/prevy/search-bar.tsx:34
+msgid "Cerca prodotto per nome o EAN..."
+msgstr "Cerca prodotto per nome o EAN..."
+
+#: src/components/dashboard/next-appointment-card.tsx:151
+msgid "Cerca professionista"
+msgstr "Cerca professionista"
+
+#: src/components/dashboard/doctor-search-cta.tsx:53
+msgid "Cerca professionisti"
+msgstr "Cerca professionisti"
+
+#: src/components/professionals/professionals-listing.tsx:102
+msgid "Cerca specialista"
+msgstr "Cerca specialista"
+
+#: src/components/dashboard/doctor-search-cta.tsx:33
+msgid "Cerca tra i professionisti specializzati e prenota una consulenza personalizzata per il tuo percorso di cura."
+msgstr "Cerca tra i professionisti specializzati e prenota una consulenza personalizzata per il tuo percorso di cura."
+
+#: src/components/events/events-filter-bar.tsx:42
+msgid "Cerca un evento..."
+msgstr "Cerca un evento..."
+
+#: src/routes/app/prevy/index.tsx:47
+msgid "Cerca un prodotto"
+msgstr "Cerca un prodotto"
+
+#: src/components/dashboard/healthcare-section.tsx:257
+msgid "Chatta con un consulente"
+msgstr "Chatta con un consulente"
+
+#: src/components/nutrition/shopping-list-section.tsx:791
+msgid "check"
+msgstr "check"
+
+#: src/components/mode-toggle.tsx:28
+msgid "Chiaro"
+msgstr "Chiaro"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:159
+msgid "Chiedi a Onciro"
+msgstr "Chiedi a Onciro"
+
+#: src/components/dashboard/ai-chat-panel.tsx:296
+msgid "Chiudi chat"
+msgstr "Chiudi chat"
+
+#: src/routes/app/index.tsx:25
+#~ msgid "Ciao, {firstName}"
+#~ msgstr "Ciao, {firstName}"
+
+#: src/routes/app/index.tsx:104
+msgid "Ciao, {firstName}. La prossima azione conta."
+msgstr "Ciao, {firstName}. La prossima azione conta."
+
+#: src/components/dashboard/ai-chat-panel.tsx:155
+msgid "Ciao! Sono Onciro, il tuo assistente per la salute. Ecco cosa posso fare per te:"
+msgstr "Ciao! Sono Onciro, il tuo assistente per la salute. Ecco cosa posso fare per te:"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:394
+msgid "Cinque rapidi passaggi e Onciro genererà un piano alimentare su misura per te."
+msgstr "Cinque rapidi passaggi e Onciro genererà un piano alimentare su misura per te."
+
+#: src/components/auth/verification-code-form.tsx:77
+#: src/routes/reset-password.tsx:113
+msgid "Codice di verifica"
+msgstr "Codice di verifica"
+
+#: src/components/auth/signup-form.tsx:81
+#: src/components/onboarding/steps/personal-info-step.tsx:75
+#: src/components/profile/profile-form.tsx:154
+msgid "Cognome"
+msgstr "Cognome"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:522
+msgid "Collegata ai giorni coperti"
+msgstr "Collegata ai giorni coperti"
+
+#: src/components/dashboard/ai-chat-panel.tsx:164
+msgid "Come gestire gli effetti collaterali"
+msgstr "Come gestire gli effetti collaterali"
+
+#: src/components/nutrition/shopping-list-section.tsx:806
+msgid "Come nasce la lista"
+msgstr "Come nasce la lista"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:117
+msgid "Compila i campi essenziali qui a destra per generare un piano più affidabile."
+msgstr "Compila i campi essenziali qui a destra per generare un piano più affidabile."
+
+#: src/components/dashboard/profile-summary.tsx:419
+msgid "Completa il profilo clinico"
+msgstr "Completa il profilo clinico"
+
+#: src/components/courses/lesson-sidebar.tsx:65
+msgid "completate"
+msgstr "completate"
+
+#: src/components/nutrition/plan-generation-progress.tsx:63
+#~ msgid "completato"
+#~ msgstr "completato"
+
+#: src/components/appointments/appointment-card.tsx:34
+#: src/components/appointments/appointment-detail.tsx:95
+#: src/components/onboarding/onboarding-flow.tsx:73
+msgid "Completato"
+msgstr "Completato"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1059
+msgid "Composizione dei pasti"
+msgstr "Composizione dei pasti"
+
+#: src/components/dashboard/communications-card.tsx:52
+#: src/components/dashboard/communications-card.tsx:70
+msgid "Comunicazioni"
+msgstr "Comunicazioni"
+
+#: src/components/consent/consent-form.tsx:167
+#: src/components/profile/consent-management-section.tsx:111
+msgid "Comunicazioni marketing"
+msgstr "Comunicazioni marketing"
+
+#: src/components/profile/consent-management-section.tsx:132
+msgid "Concesso il"
+msgstr "Concesso il"
+
+#: src/components/events/my-registrations-sidebar.tsx:246
+msgid "Concluso"
+msgstr "Concluso"
+
+#: src/routes/reset-password.tsx:175
+msgid "Conferma password"
+msgstr "Conferma password"
+
+#: src/components/appointments/appointment-card.tsx:32
+#: src/components/appointments/appointment-detail.tsx:90
+msgid "Confermato"
+msgstr "Confermato"
+
+#: src/components/onboarding/onboarding-flow.tsx:55
+msgid "Configura il tuo profilo in pochi passi"
+msgstr "Configura il tuo profilo in pochi passi"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:370
+msgid "Configurazione guidata"
+msgstr "Configurazione guidata"
+
+#: src/components/consent/consent-form.tsx:139
+msgid "Consensi facoltativi"
+msgstr "Consensi facoltativi"
+
+#: src/components/consent/consent-form.tsx:77
+msgid "Consensi obbligatori"
+msgstr "Consensi obbligatori"
+
+#: src/routes/consent.tsx:96
+msgid "Consensi salvati."
+msgstr "Consensi salvati."
+
+#: src/components/profile/consent-management-section.tsx:57
+msgid "Consenso aggiornato."
+msgstr "Consenso aggiornato."
+
+#: src/components/profile/consent-management-section.tsx:60
+msgid "Consenso revocato."
+msgstr "Consenso revocato."
+
+#: src/components/dashboard/healthcare-section.tsx:267
+msgid "Consiglio per il paziente"
+msgstr "Consiglio per il paziente"
+
+#: src/components/credits/credits-history-list.tsx:88
+msgid "Consumi"
+msgstr "Consumi"
+
+#: src/components/appointments/book-appointment-dialog.tsx:378
+#: src/components/consent/consent-form.tsx:218
+#: src/components/onboarding/steps/avatar-step.tsx:99
+#: src/components/onboarding/steps/health-data-step.tsx:144
+#: src/components/onboarding/steps/personal-info-step.tsx:111
+#: src/components/onboarding/steps/preferences-step.tsx:101
+#: src/components/professionals/book-professional-modal.tsx:374
+#: src/components/professionals/book-professional-modal.tsx:609
+msgid "Continua"
+msgstr "Continua"
+
+#: src/components/courses/courses-dashboard.tsx:130
+msgid "Continua Lezione {nextLessonNumber}"
+msgstr "Continua Lezione {nextLessonNumber}"
+
+#: src/components/nutrition/shopping-list-section.tsx:651
+#~ msgid "Controlla la dispensa"
+#~ msgstr "Controlla la dispensa"
+
+#: src/components/nutrition/shopping-list-section.tsx:441
+msgid "Controlla prima di comprarlo di nuovo."
+msgstr "Controlla prima di comprarlo di nuovo."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:475
+#~ msgid "Controlli"
+#~ msgstr "Controlli"
+
+#: src/components/nutrition/shopping-list-section.tsx:655
+msgid "controlli prima di comprare"
+msgstr "controlli prima di comprare"
+
+#: src/components/dashboard/latest-visits.tsx:18
+#: src/components/visits/my-visits-list.tsx:51
+msgid "Controllo"
+msgstr "Controllo"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1821
+#: src/components/nutrition/shopping-list-summary.tsx:126
+msgid "Coperti"
+msgstr "Coperti"
+
+#: src/components/nutrition/shopping-list-section.tsx:256
+msgid "Coperto"
+msgstr "Coperto"
+
+#: src/components/nutrition/shopping-list-section.tsx:209
+msgid "Copertura del piano per il range scelto."
+msgstr "Copertura del piano per il range scelto."
+
+#: src/components/nutrition/shopping-list-section.tsx:307
+msgid "Copri questi giorni"
+msgstr "Copri questi giorni"
+
+#: src/components/dashboard/app-sidebar.tsx:263
+#: src/components/dashboard/profile-summary.tsx:400
+msgid "Corsi"
+msgstr "Corsi"
+
+#: src/components/courses/courses-dashboard.tsx:187
+msgid "Corsi completati"
+msgstr "Corsi completati"
+
+#: src/components/auth/auth-layout.tsx:54
+msgid "Corsi, eventi e contenuti curati per il tuo benessere"
+msgstr "Corsi, eventi e contenuti curati per il tuo benessere"
+
+#: src/components/courses/courses-dashboard.tsx:185
+msgid "Corso completato"
+msgstr "Corso completato"
+
+#: src/components/courses/course-lesson-player.tsx:127
+msgid "Corso completato! 🎉"
+msgstr "Corso completato! 🎉"
+
+#: src/components/dashboard/course-progress-card.tsx:62
+msgid "Corso in corso"
+msgstr "Corso in corso"
+
+#: src/components/courses/courses-dashboard.tsx:41
+msgid "Corso in evidenza"
+msgstr "Corso in evidenza"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:819
+msgid "Cosa mangi e cosa eviti"
+msgstr "Cosa mangi e cosa eviti"
+
+#: src/components/prevy/photo-upload.tsx:143
+msgid "Costo analisi: {cost} crediti"
+msgstr "Costo analisi: {cost} crediti"
+
+#. placeholder {0}: balance?.total ?? 0
+#: src/components/nutrition/regeneration-dialog.tsx:164
+msgid "Costo: {cost} crediti — saldo: {0}"
+msgstr "Costo: {cost} crediti — saldo: {0}"
+
+#: src/components/nutrition/regeneration-dialog.tsx:162
+msgid "Costo: {cost} crediti (piano illimitato)"
+msgstr "Costo: {cost} crediti (piano illimitato)"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:88
+msgid "Costruiamo la tua nutrizione, senza partire da zero."
+msgstr "Costruiamo la tua nutrizione, senza partire da zero."
+
+#: src/components/auth/signup-form.tsx:195
+msgid "Crea account"
+msgstr "Crea account"
+
+#: src/routes/signup.tsx:37
+msgid "Crea il tuo account"
+msgstr "Crea il tuo account"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:86
+#~ msgid "Crea il tuo piano"
+#~ msgstr "Crea il tuo piano"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:398
+#~ msgid "Crea il tuo piano alimentare"
+#~ msgstr "Crea il tuo piano alimentare"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:391
+msgid "Crea il tuo piano nutrizionale"
+msgstr "Crea il tuo piano nutrizionale"
+
+#: src/components/credits/credits-service-tariff.tsx:29
+msgid "Crea un piano nutrizionale personalizzato per più giorni"
+msgstr "Crea un piano nutrizionale personalizzato per più giorni"
+
+#: src/components/credits/credits-service-tariff.tsx:79
+msgid "crediti"
+msgstr "crediti"
+
+#: src/components/dashboard/app-sidebar.tsx:195
+#: src/components/dashboard/app-sidebar.tsx:278
+#: src/routes/app/credits/index.tsx:16
+msgid "Crediti AI"
+msgstr "Crediti AI"
+
+#: src/components/nutrition/nutrition-credits.tsx:70
+#: src/components/nutrition/nutrition-credits.tsx:96
+msgid "Crediti disponibili"
+msgstr "Crediti disponibili"
+
+#: src/components/nutrition/plan-control-panel.tsx:299
+#~ msgid "Crediti generazione AI"
+#~ msgstr "Crediti generazione AI"
+
+#: src/components/credits/credits-balance-widget.tsx:49
+#: src/components/credits/credits-balance-widget.tsx:59
+msgid "Crediti illimitati"
+msgstr "Crediti illimitati"
+
+#: src/components/nutrition/nutrition-credits.tsx:79
+msgid "Crediti illimitati su tutti i servizi"
+msgstr "Crediti illimitati su tutti i servizi"
+
+#: src/components/nutrition/plan-control-panel.tsx:336
+#~ msgid "Crediti insufficienti"
+#~ msgstr "Crediti insufficienti"
+
+#: src/components/nutrition/nutrition-credits.tsx:149
+msgid "Crediti insufficienti per questo servizio"
+msgstr "Crediti insufficienti per questo servizio"
+
+#: src/components/nutrition/regeneration-dialog.tsx:171
+msgid "Crediti insufficienti. Aspetta il rinnovo del periodo o passa a un piano superiore."
+msgstr "Crediti insufficienti. Aspetta il rinnovo del periodo o passa a un piano superiore."
+
+#: src/components/prevy/analysis-detail.tsx:204
+msgid "Criticità"
+msgstr "Criticità"
+
+#: src/components/nutrition/shopping-list-section.tsx:158
+msgid "Da"
+msgstr "Da"
+
+#: src/components/nutrition/shopping-list-section.tsx:998
+msgid "da controllare"
+msgstr "da controllare"
+
+#: src/components/nutrition/shopping-list-section.tsx:539
+msgid "Da gestire"
+msgstr "Da gestire"
+
+#: src/components/nutrition/shopping-list-section.tsx:809
+msgid "Da piano a spesa, senza passaggi ambigui."
+msgstr "Da piano a spesa, senza passaggi ambigui."
+
+#: src/components/nutrition/shopping-list-summary.tsx:151
+msgid "Da prendere prima"
+msgstr "Da prendere prima"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1089
+#~ msgid "Dai un nome al tuo piano e scegli per quanto deve durare. Onciro lo genererà in pochi secondi."
+#~ msgstr "Dai un nome al tuo piano e scegli per quanto deve durare. Onciro lo genererà in pochi secondi."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1367
+msgid "Dai un nome al tuo piano, scegli quando deve iniziare e per quanto durare. Onciro lo genererà in pochi secondi."
+msgstr "Dai un nome al tuo piano, scegli quando deve iniziare e per quanto durare. Onciro lo genererà in pochi secondi."
+
+#: src/components/nutrition/plan-control-panel.tsx:62
+#~ msgid "Dal {0} al {1}"
+#~ msgstr "Dal {0} al {1}"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:498
+msgid "Dal piano corrente"
+msgstr "Dal piano corrente"
+
+#: src/components/appointments/appointment-detail.tsx:306
+msgid "Data"
+msgstr "Data"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1435
+msgid "Data di fine"
+msgstr "Data di fine"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1421
+msgid "Data di inizio"
+msgstr "Data di inizio"
+
+#: src/components/onboarding/steps/personal-info-step.tsx:96
+#: src/components/profile/profile-form.tsx:177
+#: src/components/profile/profile-form.tsx:222
+msgid "Data di nascita"
+msgstr "Data di nascita"
+
+#: src/components/appointments/appointment-detail.tsx:379
+msgid "Data richiesta originale"
+msgstr "Data richiesta originale"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:107
+msgid "Dati clinici da completare"
+msgstr "Dati clinici da completare"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:105
+msgid "Dati clinici precompilati"
+msgstr "Dati clinici precompilati"
+
+#: src/routes/app/index.tsx:154
+msgid "Dati clinici protetti"
+msgstr "Dati clinici protetti"
+
+#: src/components/dashboard/profile-summary.tsx:422
+msgid "Dati più ordinati aiutano visite, nutrizione e Prevy a lavorare meglio insieme."
+msgstr "Dati più ordinati aiutano visite, nutrizione e Prevy a lavorare meglio insieme."
+
+#: src/components/onboarding/onboarding-flow.tsx:70
+#: src/components/onboarding/steps/health-data-step.tsx:75
+#: src/components/profile/clinical-profile-section.tsx:81
+msgid "Dati sanitari"
+msgstr "Dati sanitari"
+
+#: src/components/appointments/book-appointment-dialog.tsx:353
+#: src/components/professionals/book-professional-modal.tsx:654
+msgid "Descrivi brevemente il motivo della visita..."
+msgstr "Descrivi brevemente il motivo della visita..."
+
+#: src/components/appointments/appointment-card.tsx:144
+#: src/components/appointments/appointment-card.tsx:149
+#: src/components/dashboard/healthcare-section.tsx:382
+msgid "Dettagli"
+msgstr "Dettagli"
+
+#: src/components/appointments/appointment-detail.tsx:298
+#: src/components/appointments/book-appointment-dialog.tsx:139
+#: src/components/professionals/book-professional-modal.tsx:265
+msgid "Dettagli appuntamento"
+msgstr "Dettagli appuntamento"
+
+#: src/components/courses/courses-dashboard.tsx:69
+msgid "Dettagli corso"
+msgstr "Dettagli corso"
+
+#. placeholder {0}: course.title
+#: src/components/courses/courses-dashboard.tsx:67
+msgid "Dettagli del corso {0}"
+msgstr "Dettagli del corso {0}"
+
+#: src/components/visits/my-visits-list.tsx:140
+msgid "Diagnosi"
+msgstr "Diagnosi"
+
+#: src/components/nutrition/diet-detail-rows.tsx:215
+#: src/components/nutrition/plan-generation-wizard.tsx:350
+#: src/components/nutrition/plan-generation-wizard.tsx:1916
+msgid "Dieta"
+msgstr "Dieta"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:818
+msgid "Dieta & allergeni"
+msgstr "Dieta & allergeni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:831
+msgid "Dieta di riferimento"
+msgstr "Dieta di riferimento"
+
+#: src/components/nutrition/plan-control-panel.tsx:355
+#~ msgid "Disattiva"
+#~ msgstr "Disattiva"
+
+#: src/components/nutrition/shopping-list-section.tsx:577
+#: src/components/nutrition/shopping-list-section.tsx:654
+#: src/components/nutrition/shopping-list-summary.tsx:131
+msgid "Dispensa"
+msgstr "Dispensa"
+
+#: src/components/nutrition/shopping-list-section.tsx:335
+#~ msgid "Dispensa — controlla cosa hai già"
+#~ msgstr "Dispensa — controlla cosa hai già"
+
+#: src/components/professionals/professional-detail.tsx:151
+msgid "Disponibile"
+msgstr "Disponibile"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:500
+msgid "Disponibile dopo la generazione"
+msgstr "Disponibile dopo la generazione"
+
+#: src/components/bundles/bundle-detail.tsx:148
+#: src/components/courses/course-detail.tsx:307
+#: src/components/events/event-detail.tsx:648
+msgid "Disponibile prossimamente"
+msgstr "Disponibile prossimamente"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1159
+#~ msgid "Diventerà il tuo piano principale appena sarà pronto."
+#~ msgstr "Diventerà il tuo piano principale appena sarà pronto."
+
+#: src/components/courses/course-detail.tsx:245
+msgid "Docenti"
+msgstr "Docenti"
+
+#: src/components/dashboard/healthcare-section.tsx:221
+msgid "Documenti recenti"
+msgstr "Documenti recenti"
+
+#: src/components/dashboard/app-sidebar.tsx:365
+msgid "Domande frequenti"
+msgstr "Domande frequenti"
+
+#: src/components/dashboard/next-appointment-card.tsx:34
+msgid "Domani"
+msgstr "Domani"
+
+#: src/components/nutrition/shopping-list-section.tsx:729
+msgid "Dopo la generazione potrai pianificare un giorno, tre giorni o tutta la settimana."
+msgstr "Dopo la generazione potrai pianificare un giorno, tre giorni o tutta la settimana."
+
+#: src/components/appointments/appointment-detail.tsx:482
+msgid "Dove andare"
+msgstr "Dove andare"
+
+#: src/components/courses/course-detail.tsx:197
+msgid "Durata"
+msgstr "Durata"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1387
+msgid "Durata del piano"
+msgstr "Durata del piano"
+
+#: src/components/consent/consent-form.tsx:152
+#: src/components/profile/consent-management-section.tsx:107
+msgid "Elaborazione AI"
+msgstr "Elaborazione AI"
+
+#: src/components/nutrition/shopping-list-section.tsx:971
+msgid "elementi"
+msgstr "elementi"
+
+#: src/components/nutrition/plan-control-panel.tsx:365
+#~ msgid "Elimina piano"
+#~ msgstr "Elimina piano"
+
+#: src/components/auth/login-form.tsx:94
+#: src/components/auth/signup-form.tsx:98
+#: src/components/profile/profile-form.tsx:210
+#: src/routes/forgot-password.tsx:66
+msgid "Email"
+msgstr "Email"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:369
+#~ msgid "Energia"
+#~ msgstr "Energia"
+
+#: src/components/events/event-detail.tsx:139
+msgid "Errore durante l'annullamento"
+msgstr "Errore durante l'annullamento"
+
+#: src/components/events/event-detail.tsx:129
+msgid "Errore durante l'iscrizione"
+msgstr "Errore durante l'iscrizione"
+
+#: src/components/nutrition/regeneration-dialog.tsx:154
+msgid "Es: Vorrei qualcosa di più leggero, senza pesce..."
+msgstr "Es: Vorrei qualcosa di più leggero, senza pesce..."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1249
+msgid "Es. \"In chemioterapia da 3 mesi, evito cibi piccanti e fritti. Non amo melanzane e funghi. Sto seguendo terapia con metformina.\""
+msgstr "Es. \"In chemioterapia da 3 mesi, evito cibi piccanti e fritti. Non amo melanzane e funghi. Sto seguendo terapia con metformina.\""
+
+#: src/components/onboarding/steps/health-data-step.tsx:115
+#: src/components/profile/clinical-profile-section.tsx:125
+msgid "es. glutine, lattosio"
+msgstr "es. glutine, lattosio"
+
+#: src/components/consent/consent-form.tsx:202
+#: src/components/dashboard/app-sidebar.tsx:211
+#: src/routes/verify-email.tsx:82
+msgid "Esci"
+msgstr "Esci"
+
+#: src/components/nutrition/suggestion-cards.tsx:70
+msgid "Esercizi per il tuo percorso di cura"
+msgstr "Esercizi per il tuo percorso di cura"
+
+#: src/components/auth/signup-form.tsx:48
+msgid "Esiste già un account con questa email."
+msgstr "Esiste già un account con questa email."
+
+#. placeholder {0}: date.toLocaleDateString("it-IT")
+#: src/components/visits/my-visits-list.tsx:69
+msgid "Espandi dettagli visita del {0}"
+msgstr "Espandi dettagli visita del {0}"
+
+#: src/components/courses/courses-dashboard.tsx:214
+msgid "Esplora corsi"
+msgstr "Esplora corsi"
+
+#: src/components/dashboard/course-progress-card.tsx:26
+msgid "Esplora i corsi"
+msgstr "Esplora i corsi"
+
+#: src/components/courses/courses-dashboard.tsx:339
+msgid "Esplora la libreria"
+msgstr "Esplora la libreria"
+
+#: src/components/prevy/photo-upload.tsx:69
+msgid "Estrazione con confidenza bassa. Verifica e modifica i campi prima di rianalizzare."
+msgstr "Estrazione con confidenza bassa. Verifica e modifica i campi prima di rianalizzare."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:683
+msgid "Età"
+msgstr "Età"
+
+#: src/components/dashboard/app-sidebar.tsx:269
+#: src/routes/app/index.tsx:85
+msgid "Eventi"
+msgstr "Eventi"
+
+#: src/components/events/events-page-content.tsx:170
+msgid "eventi disponibili"
+msgstr "eventi disponibili"
+
+#: src/components/events/events-page-content.tsx:97
+msgid "Eventi e percorsi live"
+msgstr "Eventi e percorsi live"
+
+#: src/components/events/events-page-content.tsx:86
+msgid "Eventi guidati"
+msgstr "Eventi guidati"
+
+#: src/components/events/my-registrations-sidebar.tsx:94
+msgid "Eventi passati"
+msgstr "Eventi passati"
+
+#: src/components/events/my-registrations-sidebar.tsx:57
+msgid "Eventi prenotati"
+msgstr "Eventi prenotati"
+
+#: src/components/events/events-page-content.tsx:162
+msgid "Eventi singoli"
+msgstr "Eventi singoli"
+
+#: src/components/events/event-detail.tsx:601
+msgid "Evento al completo"
+msgstr "Evento al completo"
+
+#: src/components/events/event-detail.tsx:538
+msgid "Evento concluso"
+msgstr "Evento concluso"
+
+#: src/components/events/events-page-content.tsx:168
+msgid "evento disponibile"
+msgstr "evento disponibile"
+
+#: src/components/events/event-detail.tsx:105
+msgid "Evento non trovato"
+msgstr "Evento non trovato"
+
+#: src/components/events/event-detail.tsx:431
+msgid "Evento online"
+msgstr "Evento online"
+
+#: src/components/nutrition/shopping-list-section.tsx:653
+#~ msgid "Evita doppioni prima ancora di uscire di casa."
+#~ msgstr "Evita doppioni prima ancora di uscire di casa."
+
+#: src/components/dashboard/app-sidebar.tsx:376
+msgid "FAQ"
+msgstr "FAQ"
+
+#: src/components/events/events-filter-bar.tsx:64
+msgid "Filtra per categoria"
+msgstr "Filtra per categoria"
+
+#: src/components/events/events-page-content.tsx:126
+msgid "Filtra per obiettivo e apri il dettaglio per iscriverti."
+msgstr "Filtra per obiettivo e apri il dettaglio per iscriverti."
+
+#: src/components/dashboard/healthcare-section.tsx:88
+msgid "Filtra per specialità"
+msgstr "Filtra per specialità"
+
+#: src/components/credits/credits-history-list.tsx:79
+msgid "Filtra per tipo"
+msgstr "Filtra per tipo"
+
+#: src/components/prevy/photo-upload.tsx:90
+#: src/routes/app/prevy/index.tsx:51
+msgid "Filtro"
+msgstr "Filtro"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1426
+msgid "Fine"
+msgstr "Fine"
+
+#: src/components/nutrition/plan-control-panel.tsx:226
+#: src/components/nutrition/plan-control-panel.tsx:271
+#~ msgid "Fine piano"
+#~ msgstr "Fine piano"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1125
+#~ msgid "Fino a una data"
+#~ msgstr "Fino a una data"
+
+#: src/components/dashboard/healthcare-section.tsx:285
+#: src/components/dashboard/latest-visits.tsx:19
+#: src/components/visits/my-visits-list.tsx:52
+msgid "Follow-up"
+msgstr "Follow-up"
+
+#: src/components/nutrition/shopping-list-section.tsx:612
+msgid "Fonte"
+msgstr "Fonte"
+
+#: src/components/prevy/photo-upload.tsx:30
+msgid "Formato non supportato. Usa JPEG, PNG o WebP."
+msgstr "Formato non supportato. Usa JPEG, PNG o WebP."
+
+#: src/components/onboarding/onboarding-flow.tsx:71
+#: src/components/onboarding/steps/avatar-step.tsx:51
+msgid "Foto profilo"
+msgstr "Foto profilo"
+
+#: src/components/nutrition/shopping-list-section.tsx:649
+msgid "Fresco prioritario"
+msgstr "Fresco prioritario"
+
+#: src/components/events/event-detail.tsx:329
+msgid "Galleria"
+msgstr "Galleria"
+
+#. placeholder {0}: impactPreview.overwrittenDates.length
+#: src/components/nutrition/plan-generation-wizard.tsx:468
+msgid "Genera e sostituisci {0} giorni"
+msgstr "Genera e sostituisci {0} giorni"
+
+#: src/components/nutrition/shopping-list-section.tsx:626
+#~ msgid "Genera il piano alimentare"
+#~ msgstr "Genera il piano alimentare"
+
+#: src/components/nutrition/shopping-list-section.tsx:616
+#~ msgid "Genera il piano alimentare e Oncologo.it trasformerà i pasti in una lista organizzata per giorni, budget e dispensa."
+#~ msgstr "Genera il piano alimentare e Oncologo.it trasformerà i pasti in una lista organizzata per giorni, budget e dispensa."
+
+#: src/components/nutrition/shopping-list-section.tsx:689
+msgid "Genera il piano, la lista della spesa si costruisce da sola."
+msgstr "Genera il piano, la lista della spesa si costruisce da sola."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:373
+msgid "Genera il tuo primo piano"
+msgstr "Genera il tuo primo piano"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:276
+#: src/components/nutrition/plan-generation-wizard.tsx:473
+msgid "Genera piano"
+msgstr "Genera piano"
+
+#: src/components/nutrition/shopping-list-section.tsx:723
+msgid "Genera piano e lista spesa"
+msgstr "Genera piano e lista spesa"
+
+#: src/components/nutrition/plan-control-panel.tsx:112
+msgid "Genera un nuovo piano"
+msgstr "Genera un nuovo piano"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:264
+msgid "Genera un nuovo piano per coprire questa data e aggiornare automaticamente la lista della spesa."
+msgstr "Genera un nuovo piano per coprire questa data e aggiornare automaticamente la lista della spesa."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:248
+#~ msgid "Genera un nuovo piano quando vuoi riallineare pasti e spesa."
+#~ msgstr "Genera un nuovo piano quando vuoi riallineare pasti e spesa."
+
+#: src/components/nutrition/shopping-list-summary.tsx:109
+msgid "Genera un piano"
+msgstr "Genera un piano"
+
+#: src/components/nutrition/shopping-list-summary.tsx:100
+msgid "Genera un piano e questa card diventerà il tuo promemoria spesa."
+msgstr "Genera un piano e questa card diventerà il tuo promemoria spesa."
+
+#: src/components/dashboard/ai-chat-panel.tsx:162
+msgid "Genera un piano nutrizionale"
+msgstr "Genera un piano nutrizionale"
+
+#: src/components/nutrition/shopping-list-section.tsx:310
+#~ msgid "Genera un piano per popolare automaticamente la lista."
+#~ msgstr "Genera un piano per popolare automaticamente la lista."
+
+#: src/components/credits/credits-service-tariff.tsx:32
+msgid "Genera un singolo pasto bilanciato"
+msgstr "Genera un singolo pasto bilanciato"
+
+#: src/components/nutrition/regeneration-dialog.tsx:116
+msgid "Genera una nuova versione di questo pasto. Puoi indicare preferenze specifiche."
+msgstr "Genera una nuova versione di questo pasto. Puoi indicare preferenze specifiche."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:310
+msgid "Generazione attiva"
+msgstr "Generazione attiva"
+
+#: src/components/nutrition/shopping-list-section.tsx:158
+#~ msgid "Generazione in corso per {pendingCount} giorni"
+#~ msgstr "Generazione in corso per {pendingCount} giorni"
+
+#: src/components/dashboard/task-rows/nutrition-plan-generation-row.tsx:37
+msgid "Generazione piano"
+msgstr "Generazione piano"
+
+#: src/components/nutrition/plan-generation-progress.tsx:49
+#~ msgid "Generazione piano AI in corso"
+#~ msgstr "Generazione piano AI in corso"
+
+#: src/components/dashboard/task-rows/nutrition-plan-generation-row.tsx:39
+msgid "Generazione piano fallita"
+msgstr "Generazione piano fallita"
+
+#: src/components/dashboard/task-rows/nutrition-plan-generation-row.tsx:36
+msgid "Generazione piano in attesa"
+msgstr "Generazione piano in attesa"
+
+#: src/components/nutrition/generation-details-card.tsx:180
+msgid "Generazione piano in corso"
+msgstr "Generazione piano in corso"
+
+#: src/components/dashboard/background-tasks-popover.tsx:62
+#~ msgid "Generazione piano nutrizionale"
+#~ msgstr "Generazione piano nutrizionale"
+
+#: src/components/nutrition/nutrition-credits.tsx:36
+msgid "Generazioni piano"
+msgstr "Generazioni piano"
+
+#: src/components/nutrition/shopping-list-section.tsx:614
+msgid "Generi il piano alimentare: giorni, pasti e preferenze diventano la base unica della spesa."
+msgstr "Generi il piano alimentare: giorni, pasti e preferenze diventano la base unica della spesa."
+
+#: src/components/nutrition/plan-control-panel.tsx:131
+#~ msgid "Gestione Piano"
+#~ msgstr "Gestione Piano"
+
+#: src/components/profile/consent-management-section.tsx:74
+msgid "Gestisci i consensi al trattamento dei tuoi dati. Puoi modificare i consensi facoltativi in qualsiasi momento."
+msgstr "Gestisci i consensi al trattamento dei tuoi dati. Puoi modificare i consensi facoltativi in qualsiasi momento."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:152
+#~ msgid "Gestisci i tuoi obiettivi dietetici e le pianificazioni giornaliere."
+#~ msgstr "Gestisci i tuoi obiettivi dietetici e le pianificazioni giornaliere."
+
+#: src/routes/app/profile/index.tsx:19
+msgid "Gestisci le tue informazioni personali"
+msgstr "Gestisci le tue informazioni personali"
+
+#: src/components/events/event-detail.tsx:228
+msgid "Già iscritto"
+msgstr "Già iscritto"
+
+#: src/components/nutrition/diet-detail-rows.tsx:227
+msgid "Giorni"
+msgstr "Giorni"
+
+#: src/components/nutrition/shopping-list-section.tsx:980
+msgid "giorni coperti"
+msgstr "giorni coperti"
+
+#: src/components/nutrition/shopping-list-section.tsx:533
+msgid "Giorni coperti"
+msgstr "Giorni coperti"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1023
+msgid "Giorni della settimana"
+msgstr "Giorni della settimana"
+
+#: src/components/nutrition/shopping-list-section.tsx:206
+msgid "Giorni nel carrello"
+msgstr "Giorni nel carrello"
+
+#: src/components/nutrition/daily-stats.tsx:189
+msgid "Giorno"
+msgstr "Giorno"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:494
+msgid "Giorno da pianificare"
+msgstr "Giorno da pianificare"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:431
+msgid "Giorno senza pasti"
+msgstr "Giorno senza pasti"
+
+#: src/components/ui/price.tsx:36
+msgid "Gratuito"
+msgstr "Gratuito"
+
+#: src/components/onboarding/steps/health-data-step.tsx:119
+#: src/components/profile/clinical-profile-section.tsx:129
+#: src/components/profile/clinical-profile-section.tsx:191
+msgid "Gruppo sanguigno"
+msgstr "Gruppo sanguigno"
+
+#. placeholder {0}: lesson.order
+#: src/components/courses/course-detail.tsx:163
+msgid "Guarda lezione {0}"
+msgstr "Guarda lezione {0}"
+
+#: src/components/bundles/bundle-detail.tsx:143
+msgid "Hai acquistato questo pacchetto"
+msgstr "Hai acquistato questo pacchetto"
+
+#: src/components/appointments/appointment-detail.tsx:516
+msgid "Hai bisogno di aiuto?"
+msgstr "Hai bisogno di aiuto?"
+
+#: src/components/dashboard/healthcare-section.tsx:249
+msgid "Hai domande sulla tua storia clinica?"
+msgstr "Hai domande sulla tua storia clinica?"
+
+#: src/routes/signup.tsx:52
+msgid "Hai già un account?"
+msgstr "Hai già un account?"
+
+#: src/components/consent/consent-form.tsx:110
+msgid "Ho letto l'informativa sulla privacy e acconsento al trattamento dei miei dati personali come descritto."
+msgstr "Ho letto l'informativa sulla privacy e acconsento al trattamento dei miei dati personali come descritto."
+
+#: src/components/dashboard/healthcare-section.tsx:270
+msgid "I follow-up regolari per i pazienti oncologici riducono il rischio di complicazioni fino al 30%. Stai facendo un ottimo lavoro."
+msgstr "I follow-up regolari per i pazienti oncologici riducono il rischio di complicazioni fino al 30%. Stai facendo un ottimo lavoro."
+
+#: src/components/dashboard/profile-summary.tsx:361
+msgid "I miei appuntamenti"
+msgstr "I miei appuntamenti"
+
+#: src/components/dashboard/profile-summary.tsx:387
+msgid "I miei eventi"
+msgstr "I miei eventi"
+
+#: src/components/dashboard/ai-chat-panel.tsx:165
+msgid "I miei prossimi impegni"
+msgstr "I miei prossimi impegni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1182
+msgid "I pasti principali devono distare almeno 4 ore."
+msgstr "I pasti principali devono distare almeno 4 ore."
+
+#: src/routes/consent.tsx:59
+msgid "I tuoi consensi"
+msgstr "I tuoi consensi"
+
+#: src/components/courses/courses-dashboard.tsx:153
+msgid "I tuoi progressi"
+msgstr "I tuoi progressi"
+
+#: src/components/events/event-detail.tsx:416
+msgid "Ibrido / Link online disponibile"
+msgstr "Ibrido / Link online disponibile"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:138
+#~ msgid "Il breakdown del giorno selezionato. Naviga i giorni dal calendario sulla destra."
+#~ msgstr "Il breakdown del giorno selezionato. Naviga i giorni dal calendario sulla destra."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1812
+msgid "Il calendario finale userà questi pasti nei giorni selezionati."
+msgstr "Il calendario finale userà questi pasti nei giorni selezionati."
+
+#: src/components/dashboard/app-sidebar.tsx:189
+msgid "Il mio profilo"
+msgstr "Il mio profilo"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1797
+msgid "Il nuovo piano aggiunge giorni senza sostituzioni."
+msgstr "Il nuovo piano aggiunge giorni senza sostituzioni."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1807
+msgid "Il nuovo piano diventerà quello mostrato in calendario per queste date. Gli altri piani restano salvati."
+msgstr "Il nuovo piano diventerà quello mostrato in calendario per queste date. Gli altri piani restano salvati."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:414
+#~ msgid "Il piano alimentare deve togliere rumore, non aggiungerlo."
+#~ msgstr "Il piano alimentare deve togliere rumore, non aggiungerlo."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:245
+#~ msgid "Il piano corrente non copre la giornata di oggi."
+#~ msgstr "Il piano corrente non copre la giornata di oggi."
+
+#: src/components/nutrition/nutrition-onboarding.tsx:91
+msgid "Il primo piano deve essere chiaro prima ancora di essere generato: profilo, preferenze, giorni coperti e spesa devono combaciare."
+msgstr "Il primo piano deve essere chiaro prima ancora di essere generato: profilo, preferenze, giorni coperti e spesa devono combaciare."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:177
+#~ msgid "Il programma del giorno selezionato. Naviga i giorni dal calendario sulla destra."
+#~ msgstr "Il programma del giorno selezionato. Naviga i giorni dal calendario sulla destra."
+
+#: src/components/dashboard/app-sidebar.tsx:112
+msgid "Il tuo benessere"
+msgstr "Il tuo benessere"
+
+#: src/components/events/my-registrations-sidebar.tsx:54
+msgid "Il tuo calendario"
+msgstr "Il tuo calendario"
+
+#: src/components/events/events-page-content.tsx:141
+msgid "Il tuo calendario mostra cosa hai già prenotato."
+msgstr "Il tuo calendario mostra cosa hai già prenotato."
+
+#: src/components/onboarding/steps/personal-info-step.tsx:82
+#: src/components/profile/profile-form.tsx:161
+msgid "Il tuo cognome"
+msgstr "Il tuo cognome"
+
+#: src/components/events/event-detail.tsx:556
+msgid "Il tuo evento inizia tra"
+msgstr "Il tuo evento inizia tra"
+
+#: src/components/onboarding/steps/personal-info-step.tsx:71
+#: src/components/profile/profile-form.tsx:150
+msgid "Il tuo nome"
+msgstr "Il tuo nome"
+
+#: src/components/auth/auth-layout.tsx:24
+msgid "Il tuo percorso di cura, sempre a portata di mano."
+msgstr "Il tuo percorso di cura, sempre a portata di mano."
+
+#: src/components/events/events-page-content.tsx:70
+#~ msgid "Il tuo percorso di salute, <0>insieme.</0>"
+#~ msgstr "Il tuo percorso di salute, <0>insieme.</0>"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:161
+#~ msgid "Il tuo piano alimentare personalizzato"
+#~ msgstr "Il tuo piano alimentare personalizzato"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:50
+#~ msgid "Il tuo piano nutrizionale personalizzato"
+#~ msgstr "Il tuo piano nutrizionale personalizzato"
+
+#: src/components/onboarding/steps/complete-step.tsx:17
+msgid "Il tuo profilo è stato configurato. Ora puoi iniziare a usare la piattaforma."
+msgstr "Il tuo profilo è stato configurato. Ora puoi iniziare a usare la piattaforma."
+
+#: src/routes/app/credits/index.tsx:19
+msgid "Il tuo saldo, lo storico delle transazioni e il tariffario dei servizi AI."
+msgstr "Il tuo saldo, lo storico delle transazioni e il tariffario dei servizi AI."
+
+#: src/components/nutrition/shopping-list-section.tsx:614
+#~ msgid "Il wizard definisce giorni, pasti e preferenze prima di creare la lista."
+#~ msgstr "Il wizard definisce giorni, pasti e preferenze prima di creare la lista."
+
+#: src/components/nutrition/plan-control-panel.tsx:303
+#~ msgid "illimitati"
+#~ msgstr "illimitati"
+
+#: src/components/prevy/photo-upload.tsx:34
+msgid "Immagine troppo grande. Massimo 5 MB."
+msgstr "Immagine troppo grande. Massimo 5 MB."
+
+#: src/components/profile/consent-management-section.tsx:87
+msgid "Impossibile caricare i consensi."
+msgstr "Impossibile caricare i consensi."
+
+#: src/components/nutrition/shopping-list-section.tsx:1017
+msgid "Impossibile caricare la lista"
+msgstr "Impossibile caricare la lista"
+
+#: src/routes/consent.tsx:77
+msgid "Impossibile recuperare lo stato dei tuoi consensi. Riprova."
+msgstr "Impossibile recuperare lo stato dei tuoi consensi. Riprova."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:381
+msgid "Imposta profilo, dieta, orari e note cliniche. Alla fine avrai un piano alimentare pronto da usare e collegato alla lista spesa."
+msgstr "Imposta profilo, dieta, orari e note cliniche. Alla fine avrai un piano alimentare pronto da usare e collegato alla lista spesa."
+
+#: src/components/dashboard/app-sidebar.tsx:200
+msgid "Impostazioni"
+msgstr "Impostazioni"
+
+#: src/components/nutrition/generation-details-card.tsx:115
+msgid "In aggiornamento"
+msgstr "In aggiornamento"
+
+#: src/components/appointments/appointment-card.tsx:31
+msgid "In attesa"
+msgstr "In attesa"
+
+#: src/components/appointments/appointment-detail.tsx:85
+#: src/components/appointments/appointment-detail.tsx:254
+msgid "In attesa di conferma"
+msgstr "In attesa di conferma"
+
+#: src/components/nutrition/shopping-list-section.tsx:454
+msgid "in casa?"
+msgstr "in casa?"
+
+#: src/components/prevy/history-list.tsx:82
+#: src/components/prevy/therapy-filter-toggle.tsx:45
+msgid "In chemioterapia"
+msgstr "In chemioterapia"
+
+#: src/components/nutrition/generation-details-card.tsx:248
+msgid "in coda"
+msgstr "in coda"
+
+#: src/components/nutrition/generation-details-card.tsx:113
+msgid "In coda"
+msgstr "In coda"
+
+#: src/components/dashboard/background-tasks-popover.tsx:50
+msgid "in corso"
+msgstr "in corso"
+
+#: src/components/nutrition/plan-control-panel.tsx:75
+msgid "In corso"
+msgstr "In corso"
+
+#: src/components/nutrition/shopping-list-section.tsx:260
+msgid "In generazione"
+msgstr "In generazione"
+
+#: src/components/nutrition/generation-details-card.tsx:111
+msgid "In lavorazione"
+msgstr "In lavorazione"
+
+#: src/components/appointments/appointment-detail.tsx:340
+#: src/components/dashboard/healthcare-section.tsx:168
+#: src/components/dashboard/next-appointment-card.tsx:61
+msgid "In presenza"
+msgstr "In presenza"
+
+#: src/components/appointments/appointment-card.tsx:112
+#: src/components/appointments/book-appointment-dialog.tsx:301
+#: src/components/professionals/book-professional-modal.tsx:315
+#: src/components/professionals/book-professional-modal.tsx:405
+msgid "In sede"
+msgstr "In sede"
+
+#: src/components/nutrition/nutrition-credits.tsx:159
+msgid "Include {bonusBalance} crediti bonus persistenti"
+msgstr "Include {bonusBalance} crediti bonus persistenti"
+
+#: src/routes/app/index.tsx:86
+msgid "Incontri e percorsi live"
+msgstr "Incontri e percorsi live"
+
+#: src/components/courses/course-lesson-player.tsx:250
+#: src/components/courses/course-lesson-player.tsx:256
+#: src/components/courses/lesson-sidebar.tsx:61
+msgid "Indice lezioni"
+msgstr "Indice lezioni"
+
+#: src/components/appointments/appointment-detail.tsx:548
+#: src/components/appointments/book-appointment-dialog.tsx:370
+#: src/components/legal/legal-document.tsx:41
+#: src/components/nutrition/plan-generation-wizard.tsx:442
+#: src/components/onboarding/steps/avatar-step.tsx:92
+#: src/components/onboarding/steps/health-data-step.tsx:140
+#: src/components/onboarding/steps/preferences-step.tsx:97
+#: src/components/professionals/book-professional-modal.tsx:600
+#: src/components/professionals/book-professional-modal.tsx:669
+msgid "Indietro"
+msgstr "Indietro"
+
+#: src/components/consent/consent-form.tsx:108
+#: src/components/profile/consent-management-section.tsx:99
+#: src/routes/privacy-policy.tsx:16
+msgid "Informativa sulla privacy"
+msgstr "Informativa sulla privacy"
+
+#: src/components/events/event-detail.tsx:403
+#: src/components/professionals/professional-detail.tsx:167
+msgid "Informazioni"
+msgstr "Informazioni"
+
+#: src/components/onboarding/onboarding-flow.tsx:69
+#: src/components/onboarding/steps/personal-info-step.tsx:53
+msgid "Informazioni personali"
+msgstr "Informazioni personali"
+
+#: src/components/events/event-detail.tsx:270
+msgid "Informazioni sull'evento"
+msgstr "Informazioni sull'evento"
+
+#: src/components/profile/clinical-profile-section.tsx:84
+msgid "Informazioni sulla tua salute"
+msgstr "Informazioni sulla tua salute"
+
+#: src/components/prevy/analysis-detail.tsx:225
+msgid "Ingredienti dichiarati"
+msgstr "Ingredienti dichiarati"
+
+#: src/components/nutrition/shopping-list-section.tsx:625
+#~ msgid "Ingredienti e quantità arrivano dai pasti, non da una lista manuale."
+#~ msgstr "Ingredienti e quantità arrivano dai pasti, non da una lista manuale."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:519
+msgid "Ingredienti pronti"
+msgstr "Ingredienti pronti"
+
+#: src/components/courses/courses-dashboard.tsx:56
+msgid "Inizia a studiare"
+msgstr "Inizia a studiare"
+
+#: src/components/courses/course-detail.tsx:365
+msgid "Inizia il corso"
+msgstr "Inizia il corso"
+
+#: src/routes/signup.tsx:40
+msgid "Inizia il tuo percorso di benessere"
+msgstr "Inizia il tuo percorso di benessere"
+
+#. placeholder {0}: professional.name
+#: src/components/professionals/professional-detail.tsx:216
+msgid "Inizia il tuo percorso di cura con {0}."
+msgstr "Inizia il tuo percorso di cura con {0}."
+
+#: src/components/dashboard/course-progress-card.tsx:21
+msgid "Inizia un percorso formativo dedicato alla tua salute"
+msgstr "Inizia un percorso formativo dedicato alla tua salute"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1414
+msgid "Inizio"
+msgstr "Inizio"
+
+#: src/components/nutrition/plan-control-panel.tsx:214
+#: src/components/nutrition/plan-control-panel.tsx:260
+#~ msgid "Inizio piano"
+#~ msgstr "Inizio piano"
+
+#: src/components/onboarding/steps/personal-info-step.tsx:56
+msgid "Inserisci i tuoi dati per personalizzare l'esperienza"
+msgstr "Inserisci i tuoi dati per personalizzare l'esperienza"
+
+#: src/routes/reset-password.tsx:104
+msgid "Inserisci il codice ricevuto via email e la tua nuova password."
+msgstr "Inserisci il codice ricevuto via email e la tua nuova password."
+
+#: src/routes/forgot-password.tsx:56
+msgid "Inserisci la tua email e ti invieremo un codice per reimpostare la password."
+msgstr "Inserisci la tua email e ti invieremo un codice per reimpostare la password."
+
+#: src/components/dashboard/ai-chat-panel.tsx:208
+msgid "Interrompi"
+msgstr "Interrompi"
+
+#: src/components/dashboard/ai-chat-panel.tsx:221
+msgid "Invia"
+msgstr "Invia"
+
+#: src/routes/forgot-password.tsx:88
+msgid "Invia codice"
+msgstr "Invia codice"
+
+#: src/components/credits/credits-service-tariff.tsx:38
+msgid "Invia un messaggio a Onciro (incluse le tool call)"
+msgstr "Invia un messaggio a Onciro (incluse le tool call)"
+
+#: src/components/auth/verification-code-form.tsx:123
+#: src/routes/forgot-password.tsx:85
+msgid "Invio in corso..."
+msgstr "Invio in corso..."
+
+#: src/components/courses/course-detail.tsx:207
+msgid "Iscritti"
+msgstr "Iscritti"
+
+#: src/components/events/event-card.tsx:124
+msgid "Iscritto"
+msgstr "Iscritto"
+
+#: src/components/events/event-detail.tsx:650
+msgid "Iscriviti"
+msgstr "Iscriviti"
+
+#: src/components/courses/course-detail.tsx:322
+msgid "Iscriviti al corso"
+msgstr "Iscriviti al corso"
+
+#: src/components/courses/course-lesson-player.tsx:88
+msgid "Iscriviti al corso prima di guardare le lezioni"
+msgstr "Iscriviti al corso prima di guardare le lezioni"
+
+#: src/components/events/event-detail.tsx:137
+msgid "Iscrizione annullata"
+msgstr "Iscrizione annullata"
+
+#: src/components/courses/course-detail.tsx:41
+#: src/components/events/event-detail.tsx:128
+msgid "Iscrizione completata!"
+msgstr "Iscrizione completata!"
+
+#: src/components/events/events-page-content.tsx:138
+msgid "Iscrizioni sotto controllo"
+msgstr "Iscrizioni sotto controllo"
+
+#: src/components/prevy/photo-upload.tsx:127
+msgid "JPEG, PNG o WebP — massimo 5 MB"
+msgstr "JPEG, PNG o WebP — massimo 5 MB"
+
+#: src/components/onboarding/steps/avatar-step.tsx:86
+msgid "JPEG, PNG, WebP o GIF. Max 5 MB."
+msgstr "JPEG, PNG, WebP o GIF. Max 5 MB."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1257
+msgid "L'AI estrae automaticamente allergeni e conflitti."
+msgstr "L'AI estrae automaticamente allergeni e conflitti."
+
+#. placeholder {0}: appointment.professionalName
+#: src/components/appointments/appointment-detail.tsx:535
+msgid "L'appuntamento con {0} del {formattedFullDate} alle {formattedTime} verrà annullato. Questa azione non può essere annullata."
+msgstr "L'appuntamento con {0} del {formattedFullDate} alle {formattedTime} verrà annullato. Questa azione non può essere annullata."
+
+#: src/components/events/event-detail.tsx:612
+msgid "L'evento inizia tra"
+msgstr "L'evento inizia tra"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:429
+msgid "La giornata alimentare"
+msgstr "La giornata alimentare"
+
+#: src/components/nutrition/shopping-list-section.tsx:325
+msgid "La lista si aggiorna appena il piano è pronto."
+msgstr "La lista si aggiorna appena il piano è pronto."
+
+#: src/components/nutrition/shopping-list-section.tsx:958
+msgid "La lista traduce il piano corrente in acquisti, dispensa e budget stimato. Cambia periodo quando vuoi preparare un solo giorno o più giornate insieme."
+msgstr "La lista traduce il piano corrente in acquisti, dispensa e budget stimato. Cambia periodo quando vuoi preparare un solo giorno o più giornate insieme."
+
+#: src/components/not-found-page.tsx:67
+msgid "La pagina che stai cercando non esiste o è stata spostata. Controlla l'indirizzo o torna alla home della dashboard."
+msgstr "La pagina che stai cercando non esiste o è stata spostata. Controlla l'indirizzo o torna alla home della dashboard."
+
+#: src/components/events/events-page-content.tsx:141
+#~ msgid "La rail laterale mostra cosa hai già prenotato."
+#~ msgstr "La rail laterale mostra cosa hai già prenotato."
+
+#: src/components/nutrition/shopping-list-section.tsx:701
+msgid "La spesa non parte da una pagina vuota: nasce dal piano corrente. Genera prima la tua nutrizione, poi qui troverai un carrello ordinato per giorni, priorità e controlli in casa."
+msgstr "La spesa non parte da una pagina vuota: nasce dal piano corrente. Genera prima la tua nutrizione, poi qui troverai un carrello ordinato per giorni, priorità e controlli in casa."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:174
+#~ msgid "La tua nutrizione"
+#~ msgstr "La tua nutrizione"
+
+#: src/components/dashboard/healthcare-section.tsx:53
+msgid "La tua salute, pianificata."
+msgstr "La tua salute, pianificata."
+
+#: src/components/events/my-registrations-sidebar.tsx:41
+#~ msgid "Le mie iscrizioni"
+#~ msgstr "Le mie iscrizioni"
+
+#: src/routes/reset-password.tsx:205
+msgid "Le password non corrispondono."
+msgstr "Le password non corrispondono."
+
+#: src/components/appointments/appointment-detail.tsx:398
+msgid "Le tue note"
+msgstr "Le tue note"
+
+#: src/components/visits/my-visits-list.tsx:194
+msgid "Le visite effettuate con i tuoi professionisti appariranno qui"
+msgstr "Le visite effettuate con i tuoi professionisti appariranno qui"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:367
+#~ msgid "Legenda:"
+#~ msgstr "Legenda:"
+
+#: src/components/consent/consent-form.tsx:100
+msgid "Leggi i termini"
+msgstr "Leggi i termini"
+
+#: src/components/consent/consent-form.tsx:117
+msgid "Leggi l'informativa"
+msgstr "Leggi l'informativa"
+
+#. placeholder {0}: currentLesson.order
+#. placeholder {0}: lesson.order
+#: src/components/courses/course-detail.tsx:137
+#: src/components/courses/course-lesson-player.tsx:287
+#: src/components/courses/lesson-sidebar.tsx:140
+msgid "Lezione {0}"
+msgstr "Lezione {0}"
+
+#: src/components/courses/course-lesson-player.tsx:129
+msgid "Lezione completata"
+msgstr "Lezione completata"
+
+#: src/components/courses/course-lesson-player.tsx:305
+msgid "Lezione precedente"
+msgstr "Lezione precedente"
+
+#: src/components/courses/course-lesson-player.tsx:312
+msgid "Lezione successiva"
+msgstr "Lezione successiva"
+
+#: src/components/courses/courses-dashboard.tsx:119
+#: src/components/dashboard/course-progress-card.tsx:71
+msgid "lezioni"
+msgstr "lezioni"
+
+#: src/components/courses/course-detail.tsx:187
+#: src/components/courses/courses-dashboard.tsx:248
+#: src/components/courses/courses-dashboard.tsx:258
+msgid "Lezioni"
+msgstr "Lezioni"
+
+#: src/components/courses/course-detail.tsx:104
+msgid "lezioni completate"
+msgstr "lezioni completate"
+
+#: src/components/dashboard/app-sidebar.tsx:248
+msgid "Lista della spesa"
+msgstr "Lista della spesa"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:473
+msgid "Lista spesa"
+msgstr "Lista spesa"
+
+#: src/components/nutrition/shopping-list-section.tsx:635
+msgid "Lista spesa pronta"
+msgstr "Lista spesa pronta"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:720
+msgid "Livello di attività"
+msgstr "Livello di attività"
+
+#: src/components/appointments/appointment-detail.tsx:257
+msgid "Lo specialista sta valutando la tua richiesta. Riceverai una notifica appena verrà confermata."
+msgstr "Lo specialista sta valutando la tua richiesta. Riceverai una notifica appena verrà confermata."
+
+#. placeholder {0}: countdown.days
+#. placeholder {1}: countdown.hours
+#: src/components/appointments/appointment-detail.tsx:279
+msgid "Mancano {0} giorni e {1} ore"
+msgstr "Mancano {0} giorni e {1} ore"
+
+#. placeholder {0}: countdown.minutes
+#: src/components/appointments/appointment-detail.tsx:287
+msgid "Mancano {0} minuti"
+msgstr "Mancano {0} minuti"
+
+#. placeholder {0}: countdown.hours
+#. placeholder {1}: countdown.minutes
+#: src/components/appointments/appointment-detail.tsx:283
+msgid "Mancano {0}h {1}min"
+msgstr "Mancano {0}h {1}min"
+
+#: src/components/auth/signup-form.tsx:74
+msgid "Mario"
+msgstr "Mario"
+
+#: src/components/professionals/book-professional-modal.tsx:536
+msgid "Mattina"
+msgstr "Mattina"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:213
+msgid "Mese precedente"
+msgstr "Mese precedente"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:237
+msgid "Mese successivo"
+msgstr "Mese successivo"
+
+#: src/components/dashboard/ai-chat-panel.tsx:249
+msgid "Messaggi chat"
+msgstr "Messaggi chat"
+
+#: src/components/nutrition/nutrition-credits.tsx:52
+msgid "Messaggi Onciro"
+msgstr "Messaggi Onciro"
+
+#: src/components/auth/signup-form.tsx:141
+#: src/routes/reset-password.tsx:166
+msgid "Minimo 6 caratteri, con almeno una maiuscola, una minuscola e un numero."
+msgstr "Minimo 6 caratteri, con almeno una maiuscola, una minuscola e un numero."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:678
+msgid "Misure"
+msgstr "Misure"
+
+#: src/components/appointments/appointment-detail.tsx:334
+msgid "Modalità"
+msgstr "Modalità"
+
+#: src/components/nutrition/meal-timeline.tsx:308
+msgid "Modifica"
+msgstr "Modifica"
+
+#: src/components/nutrition/meal-timeline.tsx:312
+#~ msgid "Modifica pasto"
+#~ msgstr "Modifica pasto"
+
+#: src/components/nutrition/plan-control-panel.tsx:288
+#~ msgid "Modifica periodo"
+#~ msgstr "Modifica periodo"
+
+#: src/components/nutrition/plan-control-panel.tsx:375
+#~ msgid "Modifica piano"
+#~ msgstr "Modifica piano"
+
+#: src/components/profile/profile-form.tsx:233
+msgid "Modifica profilo"
+msgstr "Modifica profilo"
+
+#: src/components/auth/login-form.tsx:130
+#: src/components/auth/signup-form.tsx:134
+#: src/routes/reset-password.tsx:158
+#: src/routes/reset-password.tsx:196
+msgid "Mostra password"
+msgstr "Mostra password"
+
+#: src/components/events/events-page-content.tsx:213
+msgid "Mostra tutti gli eventi"
+msgstr "Mostra tutti gli eventi"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1120
+#~ msgid "N settimane"
+#~ msgstr "N settimane"
+
+#: src/components/auth/login-form.tsx:130
+#: src/components/auth/signup-form.tsx:134
+#: src/routes/reset-password.tsx:158
+#: src/routes/reset-password.tsx:196
+msgid "Nascondi password"
+msgstr "Nascondi password"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1044
+msgid "Nei giorni esclusi non verrà generato un piano alimentare. Per quei giorni potrai creare un piano separato."
+msgstr "Nei giorni esclusi non verrà generato un piano alimentare. Per quei giorni potrai creare un piano separato."
+
+#: src/components/appointments/appointments-widget.tsx:65
+msgid "Nessun appuntamento"
+msgstr "Nessun appuntamento"
+
+#: src/components/dashboard/healthcare-section.tsx:344
+#: src/components/dashboard/profile-summary.tsx:158
+#: src/components/dashboard/upcoming-appointments.tsx:63
+msgid "Nessun appuntamento in programma"
+msgstr "Nessun appuntamento in programma"
+
+#: src/components/dashboard/profile-summary.tsx:406
+msgid "Nessun corso attivo"
+msgstr "Nessun corso attivo"
+
+#: src/components/dashboard/course-progress-card.tsx:18
+msgid "Nessun corso in corso"
+msgstr "Nessun corso in corso"
+
+#: src/components/courses/courses-dashboard.tsx:203
+msgid "Nessun corso iniziato"
+msgstr "Nessun corso iniziato"
+
+#: src/components/courses/courses-dashboard.tsx:374
+msgid "Nessun corso trovato"
+msgstr "Nessun corso trovato"
+
+#: src/components/dashboard/healthcare-section.tsx:237
+msgid "Nessun documento disponibile"
+msgstr "Nessun documento disponibile"
+
+#: src/components/dashboard/profile-summary.tsx:212
+#: src/components/events/events-page-content.tsx:220
+msgid "Nessun evento in programma"
+msgstr "Nessun evento in programma"
+
+#: src/components/events/events-page-content.tsx:204
+msgid "Nessun evento trovato"
+msgstr "Nessun evento trovato"
+
+#: src/components/dashboard/healthcare-section.tsx:205
+msgid "Nessun follow-up disponibile"
+msgstr "Nessun follow-up disponibile"
+
+#. placeholder {0}: formatHumanDate(selectedDate)
+#: src/components/nutrition/nutrition-dashboard.tsx:259
+msgid "Nessun pasto per {0}."
+msgstr "Nessun pasto per {0}."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:253
+#~ msgid "Nessun pasto previsto per questo giorno."
+#~ msgstr "Nessun pasto previsto per questo giorno."
+
+#: src/components/nutrition/shopping-list-section.tsx:933
+msgid "Nessun piano alimentare presente: genera un piano per creare la lista della spesa"
+msgstr "Nessun piano alimentare presente: genera un piano per creare la lista della spesa"
+
+#: src/components/dashboard/profile-summary.tsx:261
+msgid "Nessun piano attivo oggi"
+msgstr "Nessun piano attivo oggi"
+
+#: src/components/nutrition/shopping-list-section.tsx:308
+#~ msgid "Nessun piano copre questo intervallo"
+#~ msgstr "Nessun piano copre questo intervallo"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:331
+msgid "Nessun piano in {monthLabel}."
+msgstr "Nessun piano in {monthLabel}."
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:390
+#~ msgid "Nessun piano nel mese di {monthLabel}. Naviga avanti o indietro o genera un nuovo piano."
+#~ msgstr "Nessun piano nel mese di {monthLabel}. Naviga avanti o indietro o genera un nuovo piano."
+
+#: src/components/nutrition/shopping-list-summary.tsx:82
+#~ msgid "Nessun piano per i prossimi 7 giorni."
+#~ msgstr "Nessun piano per i prossimi 7 giorni."
+
+#: src/components/prevy/history-list.tsx:37
+msgid "Nessun prodotto analizzato. Cerca un prodotto per iniziare."
+msgstr "Nessun prodotto analizzato. Cerca un prodotto per iniziare."
+
+#: src/components/prevy/history-list.tsx:35
+msgid "Nessun prodotto salvato ancora."
+msgstr "Nessun prodotto salvato ancora."
+
+#: src/components/prevy/search-results.tsx:24
+msgid "Nessun prodotto trovato. Prova con un altro termine."
+msgstr "Nessun prodotto trovato. Prova con un altro termine."
+
+#: src/components/dashboard/recommended-professionals.tsx:70
+msgid "Nessun professionista disponibile"
+msgstr "Nessun professionista disponibile"
+
+#: src/routes/app/events/pacchetti.index.tsx:135
+msgid "Nessun webinar in programma"
+msgstr "Nessun webinar in programma"
+
+#: src/routes/app/events/pacchetti.index.tsx:124
+msgid "Nessun webinar trovato"
+msgstr "Nessun webinar trovato"
+
+#: src/components/prevy/analysis-detail.tsx:100
+msgid "Nessuna analisi disponibile per questo filtro terapeutico. Esegui un'analisi per continuare."
+msgstr "Nessuna analisi disponibile per questo filtro terapeutico. Esegui un'analisi per continuare."
+
+#: src/components/dashboard/background-tasks-popover.tsx:57
+msgid "Nessuna attività recente"
+msgstr "Nessuna attività recente"
+
+#: src/components/dashboard/communications-card.tsx:79
+msgid "Nessuna comunicazione"
+msgstr "Nessuna comunicazione"
+
+#: src/components/appointments/book-appointment-dialog.tsx:239
+#: src/components/professionals/book-professional-modal.tsx:528
+msgid "Nessuna disponibilità per questa data"
+msgstr "Nessuna disponibilità per questa data"
+
+#: src/components/events/my-registrations-sidebar.tsx:78
+msgid "Nessuna iscrizione attiva"
+msgstr "Nessuna iscrizione attiva"
+
+#: src/components/notifications/notification-popover.tsx:63
+msgid "Nessuna notifica"
+msgstr "Nessuna notifica"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:150
+msgid "Nessuna scelta è definitiva: potrai rigenerare singoli pasti o creare un nuovo piano quando cambia la tua routine."
+msgstr "Nessuna scelta è definitiva: potrai rigenerare singoli pasti o creare un nuovo piano quando cambia la tua routine."
+
+#: src/components/professionals/book-professional-modal.tsx:362
+msgid "Nessuna sede disponibile. Seleziona videovisita."
+msgstr "Nessuna sede disponibile. Seleziona videovisita."
+
+#: src/components/nutrition/shopping-list-summary.tsx:97
+msgid "Nessuna spesa pronta"
+msgstr "Nessuna spesa pronta"
+
+#: src/components/credits/credits-history-list.tsx:111
+msgid "Nessuna transazione da mostrare."
+msgstr "Nessuna transazione da mostrare."
+
+#: src/components/dashboard/healthcare-section.tsx:399
+#: src/components/dashboard/latest-visits.tsx:68
+#: src/components/visits/my-visits-list.tsx:192
+msgid "Nessuna visita registrata"
+msgstr "Nessuna visita registrata"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1942
+msgid "Nessuno"
+msgstr "Nessuno"
+
+#. placeholder {0}: initialSearch?.q ? ` per "${initialSearch.q}"` : ""
+#: src/components/professionals/professionals-listing.tsx:163
+msgid "Nessuno specialista trovato{0}"
+msgstr "Nessuno specialista trovato{0}"
+
+#: src/components/nutrition/shopping-list-section.tsx:744
+msgid "Niente doppie informazioni: qui vedrai solo ciò che serve per comprare."
+msgstr "Niente doppie informazioni: qui vedrai solo ciò che serve per comprare."
+
+#: src/components/auth/signup-form.tsx:65
+#: src/components/onboarding/steps/personal-info-step.tsx:64
+#: src/components/profile/profile-form.tsx:140
+#: src/components/profile/profile-form.tsx:204
+msgid "Nome"
+msgstr "Nome"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1374
+msgid "Nome del piano"
+msgstr "Nome del piano"
+
+#: src/components/auth/login-form.tsx:103
+#: src/components/auth/signup-form.tsx:107
+#: src/routes/forgot-password.tsx:75
+msgid "nome@esempio.it"
+msgstr "nome@esempio.it"
+
+#: src/components/courses/courses-dashboard.tsx:376
+msgid "Non ci sono corsi disponibili per questa categoria."
+msgstr "Non ci sono corsi disponibili per questa categoria."
+
+#: src/components/profile/consent-management-section.tsx:141
+msgid "Non concesso"
+msgstr "Non concesso"
+
+#: src/components/appointments/appointments-list.tsx:49
+msgid "Non hai ancora prenotato nessun appuntamento."
+msgstr "Non hai ancora prenotato nessun appuntamento."
+
+#: src/routes/login.tsx:54
+msgid "Non hai ancora un account?"
+msgstr "Non hai ancora un account?"
+
+#: src/components/auth/verification-code-form.tsx:115
+msgid "Non hai ricevuto il codice?"
+msgstr "Non hai ricevuto il codice?"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:383
+#~ msgid "Non impostati"
+#~ msgstr "Non impostati"
+
+#: src/routes/app/prevy/index.tsx:62
+msgid "Non trovi il prodotto?"
+msgstr "Non trovi il prodotto?"
+
+#: src/components/nutrition/diet-detail-rows.tsx:245
+#: src/components/nutrition/plan-generation-wizard.tsx:352
+#: src/components/visits/my-visits-list.tsx:164
+msgid "Note"
+msgstr "Note"
+
+#: src/components/appointments/book-appointment-dialog.tsx:349
+#: src/components/professionals/book-professional-modal.tsx:650
+msgid "Note (opzionale)"
+msgstr "Note (opzionale)"
+
+#: src/components/appointments/appointment-detail.tsx:411
+msgid "Note dello specialista"
+msgstr "Note dello specialista"
+
+#: src/components/prevy/analysis-detail.tsx:170
+msgid "Note per la chemioterapia"
+msgstr "Note per la chemioterapia"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1240
+#: src/components/nutrition/plan-generation-wizard.tsx:1949
+msgid "Note personali"
+msgstr "Note personali"
+
+#: src/components/notifications/notification-popover.tsx:33
+#: src/components/notifications/notification-popover.tsx:46
+msgid "Notifiche"
+msgstr "Notifiche"
+
+#: src/components/onboarding/steps/preferences-step.tsx:50
+msgid "Notifiche email"
+msgstr "Notifiche email"
+
+#: src/components/onboarding/steps/preferences-step.tsx:65
+msgid "Notifiche push"
+msgstr "Notifiche push"
+
+#: src/components/dashboard/profile-summary.tsx:408
+#~ msgid "Novità in arrivo"
+#~ msgstr "Novità in arrivo"
+
+#: src/components/onboarding/steps/personal-info-step.tsx:92
+#: src/components/profile/profile-form.tsx:173
+msgid "Numero di telefono"
+msgstr "Numero di telefono"
+
+#: src/components/dashboard/ai-chat-panel.tsx:286
+msgid "Nuova chat"
+msgstr "Nuova chat"
+
+#: src/routes/reset-password.tsx:137
+msgid "Nuova password"
+msgstr "Nuova password"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1822
+msgid "Nuovi"
+msgstr "Nuovi"
+
+#: src/components/events/events-page-content.tsx:222
+msgid "Nuovi eventi verranno pubblicati a breve. Torna a controllare!"
+msgstr "Nuovi eventi verranno pubblicati a breve. Torna a controllare!"
+
+#: src/routes/app/events/pacchetti.index.tsx:137
+msgid "Nuovi programmi verranno pubblicati a breve. Torna a controllare!"
+msgstr "Nuovi programmi verranno pubblicati a breve. Torna a controllare!"
+
+#: src/components/auth/verification-code-form.tsx:53
+msgid "Nuovo codice inviato alla tua email."
+msgstr "Nuovo codice inviato alla tua email."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:464
+msgid "Nuovo piano"
+msgstr "Nuovo piano"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:481
+#~ msgid "Nutrienti e calendario"
+#~ msgstr "Nutrienti e calendario"
+
+#: src/components/dashboard/app-sidebar.tsx:241
+#: src/components/nutrition/nutrition-dashboard.tsx:418
+#: src/routes/app/index.tsx:73
+msgid "Nutrizione"
+msgstr "Nutrizione"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:407
+#~ msgid "Nutrizione guidata"
+#~ msgstr "Nutrizione guidata"
+
+#: src/components/dashboard/profile-summary.tsx:374
+msgid "Nutrizione oggi"
+msgstr "Nutrizione oggi"
+
+#: src/components/profile/consent-management-section.tsx:161
+msgid "Obbligatorio"
+msgstr "Obbligatorio"
+
+#: src/components/nutrition/daily-stats.tsx:165
+msgid "Obiettivi mirati per il tuo piano alimentare"
+msgstr "Obiettivi mirati per il tuo piano alimentare"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:739
+msgid "Obiettivo"
+msgstr "Obiettivo"
+
+#: src/components/dashboard/next-appointment-card.tsx:33
+#: src/components/nutrition/plan-timeline-calendar.tsx:229
+#: src/components/nutrition/shopping-list-section.tsx:99
+msgid "Oggi"
+msgstr "Oggi"
+
+#: src/components/nutrition/shopping-list-section.tsx:813
+msgid "Ogni freccia indica cosa deve succedere prima che la lista possa essere generata correttamente."
+msgstr "Ogni freccia indica cosa deve succedere prima che la lista possa essere generata correttamente."
+
+#: src/components/dashboard/doctor-search-cta.tsx:39
+msgid "Oltre 100 dottori hanno già aiutato pazienti come te a trovare le risposte di cui avevano bisogno."
+msgstr "Oltre 100 dottori hanno già aiutato pazienti come te a trovare le risposte di cui avevano bisogno."
+
+#: src/components/nutrition/nutrition-onboarding.tsx:53
+#~ msgid "Onciro crea un piano alimentare su misura per le tue esigenze, con 5 pasti bilanciati al giorno."
+#~ msgstr "Onciro crea un piano alimentare su misura per le tue esigenze, con 5 pasti bilanciati al giorno."
+
+#: src/components/nutrition/generation-details-card.tsx:138
+msgid "Onciro sta componendo {currentFocus}."
+msgstr "Onciro sta componendo {currentFocus}."
+
+#: src/components/nutrition/generation-details-card.tsx:140
+msgid "Onciro sta generando le giornate del piano."
+msgstr "Onciro sta generando le giornate del piano."
+
+#: src/components/nutrition/shopping-list-section.tsx:626
+msgid "Oncologo.it legge i pasti del piano e li trasforma in alimenti, quantità e priorità."
+msgstr "Oncologo.it legge i pasti del piano e li trasforma in alimenti, quantità e priorità."
+
+#: src/components/events/event-card.tsx:170
+#: src/components/events/event-detail.tsx:211
+#: src/components/events/my-registrations-sidebar.tsx:254
+msgid "Online"
+msgstr "Online"
+
+#: src/components/dashboard/healthcare-section.tsx:228
+msgid "Opzioni"
+msgstr "Opzioni"
+
+#: src/components/dashboard/task-rows/task-row-frame.tsx:59
+msgid "ora"
+msgstr "ora"
+
+#: src/components/appointments/appointment-detail.tsx:318
+#: src/components/nutrition/plan-generation-wizard.tsx:1132
+msgid "Orario"
+msgstr "Orario"
+
+#. placeholder {0}: slot.startTime
+#: src/components/professionals/book-professional-modal.tsx:544
+#: src/components/professionals/book-professional-modal.tsx:571
+msgid "Orario {0}"
+msgstr "Orario {0}"
+
+#: src/components/dashboard/task-rows/meal-regeneration-row.tsx:55
+msgid "Ottimizzazione"
+msgstr "Ottimizzazione"
+
+#: src/components/nutrition/plan-generation-progress.tsx:55
+#~ msgid "Ottimizzazione del protocollo in base ai tuoi dati"
+#~ msgstr "Ottimizzazione del protocollo in base ai tuoi dati"
+
+#: src/components/dashboard/app-sidebar.tsx:367
+#~ msgid "Pacchetti"
+#~ msgstr "Pacchetti"
+
+#: src/components/bundles/bundle-card.tsx:97
+#: src/components/bundles/bundle-detail.tsx:87
+msgid "Pacchetto"
+msgstr "Pacchetto"
+
+#: src/components/bundles/bundle-detail.tsx:45
+msgid "Pacchetto non trovato."
+msgstr "Pacchetto non trovato."
+
+#: src/components/consent/consent-form.tsx:181
+#: src/components/profile/consent-management-section.tsx:115
+msgid "Pagamenti tramite Stripe"
+msgstr "Pagamenti tramite Stripe"
+
+#. placeholder {0}: data.pagination.page
+#. placeholder {0}: pagination.page
+#. placeholder {1}: data.pagination.totalPages
+#. placeholder {1}: pagination.totalPages
+#: src/components/credits/credits-history-list.tsx:174
+#: src/components/visits/my-visits-list.tsx:238
+msgid "Pagina {0} di {1}"
+msgstr "Pagina {0} di {1}"
+
+#: src/components/professionals/professionals-listing.tsx:185
+msgid "Pagina {page} di {totalPages}"
+msgstr "Pagina {page} di {totalPages}"
+
+#: src/components/not-found-page.tsx:62
+msgid "Pagina non trovata"
+msgstr "Pagina non trovata"
+
+#: src/components/credits/credits-history-list.tsx:184
+#: src/components/visits/my-visits-list.tsx:233
+msgid "Pagina precedente"
+msgstr "Pagina precedente"
+
+#: src/components/credits/credits-history-list.tsx:193
+#: src/components/visits/my-visits-list.tsx:247
+msgid "Pagina successiva"
+msgstr "Pagina successiva"
+
+#: src/components/dashboard/app-sidebar.tsx:232
+msgid "Panoramica"
+msgstr "Panoramica"
+
+#: src/routes/app/index.tsx:97
+msgid "Panoramica paziente"
+msgstr "Panoramica paziente"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:654
+msgid "Parlaci di te"
+msgstr "Parlaci di te"
+
+#. placeholder {0}: event.bundleTitle
+#: src/components/events/event-card.tsx:141
+msgid "Parte di «{0}»"
+msgstr "Parte di «{0}»"
+
+#: src/components/dashboard/next-appointment-card.tsx:130
+msgid "Parti da una visita, un consulto o un follow-up: la dashboard si organizza meglio quando il percorso clinico è collegato a uno specialista."
+msgstr "Parti da una visita, un consulto o un follow-up: la dashboard si organizza meglio quando il percorso clinico è collegato a uno specialista."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:413
+#~ msgid "Parti dalle preferenze cliniche e crea una giornata già pronta per pasti e spesa."
+#~ msgstr "Parti dalle preferenze cliniche e crea una giornata già pronta per pasti e spesa."
+
+#. placeholder {0}: step + 1
+#: src/components/nutrition/plan-generation-wizard.tsx:446
+#: src/components/onboarding/onboarding-flow.tsx:64
+msgid "Passo {0} di {TOTAL_STEPS}"
+msgstr "Passo {0} di {TOTAL_STEPS}"
+
+#: src/components/auth/login-form.tsx:110
+#: src/components/auth/signup-form.tsx:114
+msgid "Password"
+msgstr "Password"
+
+#: src/routes/reset-password.tsx:60
+msgid "Password aggiornata con successo."
+msgstr "Password aggiornata con successo."
+
+#: src/routes/forgot-password.tsx:53
+#: src/routes/reset-password.tsx:90
+msgid "Password dimenticata"
+msgstr "Password dimenticata"
+
+#: src/routes/login.tsx:67
+msgid "Password dimenticata?"
+msgstr "Password dimenticata?"
+
+#: src/components/nutrition/generation-details-card.tsx:241
+msgid "Pasti"
+msgstr "Pasti"
+
+#: src/components/nutrition/diet-detail-rows.tsx:233
+msgid "Pasti / giorno"
+msgstr "Pasti / giorno"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1085
+msgid "Pasti del giorno"
+msgstr "Pasti del giorno"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:314
+msgid "Pasti e spesa"
+msgstr "Pasti e spesa"
+
+#. placeholder {0}: scheduleRules.mainCount
+#: src/components/nutrition/plan-generation-wizard.tsx:1097
+msgid "Pasti principali: {0}/{MIN_MAIN_MEALS}"
+msgstr "Pasti principali: {0}/{MIN_MAIN_MEALS}"
+
+#: src/components/dashboard/task-rows/meal-regeneration-row.tsx:34
+msgid "Pasto rigenerato"
+msgstr "Pasto rigenerato"
+
+#: src/routes/verify-email.tsx:58
+msgid "Per continuare, inserisci il codice che ti abbiamo inviato."
+msgstr "Per continuare, inserisci il codice che ti abbiamo inviato."
+
+#: src/components/appointments/appointment-detail.tsx:519
+msgid "Per modificare l'orario o avere chiarimenti, contatta lo specialista o annulla l'appuntamento e prenotane uno nuovo."
+msgstr "Per modificare l'orario o avere chiarimenti, contatta lo specialista o annulla l'appuntamento e prenotane uno nuovo."
+
+#: src/components/nutrition/shopping-list-section.tsx:645
+#~ msgid "Per ora stimato, poi collegato ai prezzi reali."
+#~ msgstr "Per ora stimato, poi collegato ai prezzi reali."
+
+#: src/components/nutrition/shopping-list-section.tsx:635
+#~ msgid "Per ora usiamo stime placeholder, pronte per i prezzi reali."
+#~ msgstr "Per ora usiamo stime placeholder, pronte per i prezzi reali."
+
+#: src/components/profile/consent-management-section.tsx:146
+msgid "Per revocare questo consenso è necessario eliminare l'account."
+msgstr "Per revocare questo consenso è necessario eliminare l'account."
+
+#: src/components/consent/consent-form.tsx:80
+msgid "Per utilizzare la piattaforma è necessario accettare i documenti qui sotto. Ogni consenso è separato e può essere verificato sulla relativa pagina."
+msgstr "Per utilizzare la piattaforma è necessario accettare i documenti qui sotto. Ogni consenso è separato e può essere verificato sulla relativa pagina."
+
+#: src/routes/app/index.tsx:158
+msgid "Percorsi guidati"
+msgstr "Percorsi guidati"
+
+#: src/routes/app/events/pacchetti.index.tsx:93
+msgid "Percorsi strutturati di più sessioni pensati per accompagnarti nel tempo."
+msgstr "Percorsi strutturati di più sessioni pensati per accompagnarti nel tempo."
+
+#: src/components/credits/credits-history-list.tsx:148
+msgid "periodo"
+msgstr "periodo"
+
+#: src/components/nutrition/diet-detail-rows.tsx:221
+#: src/components/nutrition/shopping-list-section.tsx:569
+msgid "Periodo"
+msgstr "Periodo"
+
+#: src/components/nutrition/plan-control-panel.tsx:135
+#~ msgid "Personalizza e rigenera il tuo piano nutrizionale clinico."
+#~ msgstr "Personalizza e rigenera il tuo piano nutrizionale clinico."
+
+#: src/components/onboarding/steps/preferences-step.tsx:43
+msgid "Personalizza le notifiche e le comunicazioni"
+msgstr "Personalizza le notifiche e le comunicazioni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1408
+msgid "Personalizzato"
+msgstr "Personalizzato"
+
+#: src/components/dashboard/profile-summary.tsx:93
+#: src/components/nutrition/plan-generation-wizard.tsx:693
+#: src/components/profile/clinical-profile-section.tsx:173
+msgid "Peso"
+msgstr "Peso"
+
+#: src/components/onboarding/steps/health-data-step.tsx:97
+#: src/components/profile/clinical-profile-section.tsx:105
+msgid "Peso (kg)"
+msgstr "Peso (kg)"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:308
+msgid "Piani mostrati"
+msgstr "Piani mostrati"
+
+#: src/components/auth/auth-layout.tsx:38
+msgid "Piani nutrizionali personalizzati e aggiornati in tempo reale"
+msgstr "Piani nutrizionali personalizzati e aggiornati in tempo reale"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:395
+#~ msgid "Piano"
+#~ msgstr "Piano"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:476
+#~ msgid "Piano adattabile"
+#~ msgstr "Piano adattabile"
+
+#: src/components/dashboard/app-sidebar.tsx:323
+#~ msgid "Piano alimentare"
+#~ msgstr "Piano alimentare"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:423
+#: src/components/nutrition/shopping-list-section.tsx:611
+msgid "Piano corrente"
+msgstr "Piano corrente"
+
+#: src/components/dashboard/task-rows/nutrition-plan-generation-row.tsx:38
+msgid "Piano generato"
+msgstr "Piano generato"
+
+#: src/components/nutrition/shopping-list-section.tsx:681
+#: src/components/nutrition/shopping-list-section.tsx:713
+msgid "Piano in generazione"
+msgstr "Piano in generazione"
+
+#: src/components/nutrition/plan-control-panel.tsx:144
+#~ msgid "Piano nutrizionale attuale"
+#~ msgstr "Piano nutrizionale attuale"
+
+#: src/components/nutrition/generation-details-card.tsx:189
+msgid "Piano nutrizionale personalizzato"
+msgstr "Piano nutrizionale personalizzato"
+
+#: src/components/nutrition/shopping-list-section.tsx:561
+msgid "Piano sorgente"
+msgstr "Piano sorgente"
+
+#: src/routes/app/index.tsx:74
+msgid "Piano, pasti e spesa"
+msgstr "Piano, pasti e spesa"
+
+#: src/components/nutrition/shopping-list-section.tsx:989
+msgid "placeholder"
+msgstr "placeholder"
+
+#: src/components/nutrition/shopping-list-section.tsx:660
+msgid "placeholder per giorno"
+msgstr "placeholder per giorno"
+
+#: src/components/nutrition/shopping-list-section.tsx:869
+msgid "poi"
+msgstr "poi"
+
+#: src/components/professionals/book-professional-modal.tsx:563
+msgid "Pomeriggio"
+msgstr "Pomeriggio"
+
+#: src/components/events/event-detail.tsx:445
+msgid "posti disponibili"
+msgstr "posti disponibili"
+
+#: src/components/professionals/professionals-listing.tsx:181
+#: src/components/visits/my-visits-list.tsx:235
+msgid "Precedente"
+msgstr "Precedente"
+
+#: src/components/onboarding/onboarding-flow.tsx:72
+#: src/components/onboarding/steps/preferences-step.tsx:40
+msgid "Preferenze"
+msgstr "Preferenze"
+
+#: src/routes/app/prevy/index.tsx:97
+msgid "Preferiti"
+msgstr "Preferiti"
+
+#: src/components/appointments/book-appointment-dialog.tsx:392
+#: src/components/professionals/book-professional-modal.tsx:683
+msgid "Prenota"
+msgstr "Prenota"
+
+#: src/components/appointments/appointments-list.tsx:40
+#: src/components/appointments/appointments-list.tsx:104
+#: src/components/dashboard/upcoming-appointments.tsx:67
+#: src/components/professionals/professional-detail.tsx:229
+msgid "Prenota appuntamento"
+msgstr "Prenota appuntamento"
+
+#: src/components/appointments/appointments-list.tsx:57
+msgid "Prenota il tuo primo appuntamento"
+msgstr "Prenota il tuo primo appuntamento"
+
+#: src/components/appointments/appointments-widget.tsx:52
+msgid "Prenota nuovo"
+msgstr "Prenota nuovo"
+
+#: src/components/appointments/appointments-list.tsx:37
+#: src/components/appointments/appointments-list.tsx:101
+msgid "Prenota nuovo appuntamento"
+msgstr "Prenota nuovo appuntamento"
+
+#: src/routes/app/index.tsx:68
+msgid "Prenota o riprendi una visita"
+msgstr "Prenota o riprendi una visita"
+
+#: src/components/dashboard/ai-chat-panel.tsx:163
+msgid "Prenota un appuntamento"
+msgstr "Prenota un appuntamento"
+
+#: src/components/professionals/book-professional-modal.tsx:263
+#: src/components/professionals/professional-detail.tsx:213
+msgid "Prenota una consulenza"
+msgstr "Prenota una consulenza"
+
+#: src/components/professionals/professional-detail.tsx:226
+msgid "Prenota visita"
+msgstr "Prenota visita"
+
+#: src/components/dashboard/healthcare-section.tsx:372
+msgid "Prepara"
+msgstr "Prepara"
+
+#: src/components/nutrition/shopping-list-section.tsx:955
+msgid "Prepara il carrello senza ricontrollare ogni pasto."
+msgstr "Prepara il carrello senza ricontrollare ogni pasto."
+
+#: src/components/nutrition/generation-details-card.tsx:214
+msgid "Preparazione piano"
+msgstr "Preparazione piano"
+
+#: src/components/dashboard/app-sidebar.tsx:254
+#: src/routes/app/index.tsx:79
+#: src/routes/app/prevy/index.tsx:31
+msgid "Prevy"
+msgstr "Prevy"
+
+#: src/components/nutrition/shopping-list-section.tsx:514
+msgid "Prezzi placeholder, in attesa dei listini reali."
+msgstr "Prezzi placeholder, in attesa dei listini reali."
+
+#: src/components/courses/course-detail.tsx:216
+#: src/components/events/event-detail.tsx:633
+msgid "Prezzo"
+msgstr "Prezzo"
+
+#: src/routes/consent.tsx:62
+msgid "Prima di usare la piattaforma dobbiamo registrare i tuoi consensi al trattamento dei dati. Ogni scelta è tracciata in un registro immutabile e può essere modificata in qualsiasi momento."
+msgstr "Prima di usare la piattaforma dobbiamo registrare i tuoi consensi al trattamento dei dati. Ogni scelta è tracciata in un registro immutabile e può essere modificata in qualsiasi momento."
+
+#: src/components/nutrition/shopping-list-section.tsx:613
+#~ msgid "Prima il piano, poi una spesa davvero pronta."
+#~ msgstr "Prima il piano, poi una spesa davvero pronta."
+
+#: src/components/dashboard/latest-visits.tsx:17
+#: src/components/visits/my-visits-list.tsx:50
+msgid "Prima visita"
+msgstr "Prima visita"
+
+#: src/components/dashboard/next-appointment-card.tsx:121
+msgid "Primo passo"
+msgstr "Primo passo"
+
+#: src/components/nutrition/nutrition-onboarding.tsx:79
+msgid "Primo piano"
+msgstr "Primo piano"
+
+#: src/components/dashboard/app-sidebar.tsx:301
+msgid "Principale"
+msgstr "Principale"
+
+#: src/components/auth/auth-footer.tsx:16
+msgid "Privacy"
+msgstr "Privacy"
+
+#: src/components/profile/consent-management-section.tsx:71
+msgid "Privacy e consensi"
+msgstr "Privacy e consensi"
+
+#: src/components/prevy/analysis-detail.tsx:44
+msgid "Prodotto non trovato."
+msgstr "Prodotto non trovato."
+
+#: src/components/dashboard/recommended-professionals.tsx:31
+msgid "Professionisti consigliati"
+msgstr "Professionisti consigliati"
+
+#: src/components/professionals/professionals-listing.tsx:88
+msgid "Professionisti qualificati pronti ad accompagnarti nel tuo percorso di cura."
+msgstr "Professionisti qualificati pronti ad accompagnarti nel tuo percorso di cura."
+
+#: src/components/dashboard/app-sidebar.tsx:285
+#: src/components/nutrition/plan-generation-wizard.tsx:349
+#: src/components/nutrition/plan-generation-wizard.tsx:653
+#: src/components/nutrition/plan-generation-wizard.tsx:1931
+#: src/routes/app/profile/index.tsx:16
+msgid "Profilo"
+msgstr "Profilo"
+
+#: src/components/events/event-detail.tsx:283
+#: src/components/nutrition/plan-generation-wizard.tsx:351
+#: src/components/nutrition/plan-generation-wizard.tsx:1014
+#: src/components/nutrition/plan-generation-wizard.tsx:1921
+msgid "Programma"
+msgstr "Programma"
+
+#: src/components/courses/course-detail.tsx:116
+msgid "Programma del corso"
+msgstr "Programma del corso"
+
+#: src/components/nutrition/meal-timeline.tsx:170
+msgid "Programma del giorno"
+msgstr "Programma del giorno"
+
+#: src/components/nutrition/meal-timeline.tsx:168
+msgid "Programma di oggi"
+msgstr "Programma di oggi"
+
+#: src/components/courses/course-detail.tsx:100
+msgid "Progresso"
+msgstr "Progresso"
+
+#: src/components/nutrition/daily-stats.tsx:161
+msgid "Progresso nutrizionale"
+msgstr "Progresso nutrizionale"
+
+#: src/components/dashboard/next-appointment-card.tsx:74
+msgid "Prossima visita"
+msgstr "Prossima visita"
+
+#: src/components/dashboard/healthcare-section.tsx:283
+msgid "Prossime visite"
+msgstr "Prossime visite"
+
+#: src/components/nutrition/shopping-list-section.tsx:96
+#~ msgid "Prossimi 14 giorni"
+#~ msgstr "Prossimi 14 giorni"
+
+#: src/components/nutrition/shopping-list-section.tsx:89
+#: src/components/nutrition/shopping-list-summary.tsx:66
+#~ msgid "Prossimi 7 giorni"
+#~ msgstr "Prossimi 7 giorni"
+
+#: src/components/appointments/appointments-list.tsx:66
+#: src/components/dashboard/upcoming-appointments.tsx:26
+#: src/components/dashboard/upcoming-appointments.tsx:44
+msgid "Prossimi appuntamenti"
+msgstr "Prossimi appuntamenti"
+
+#: src/components/events/my-registrations-sidebar.tsx:85
+msgid "Prossimi eventi"
+msgstr "Prossimi eventi"
+
+#: src/components/nutrition/meal-timeline.tsx:228
+msgid "Prossimo"
+msgstr "Prossimo"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:488
+msgid "Prossimo pasto"
+msgstr "Prossimo pasto"
+
+#: src/components/nutrition/shopping-list-section.tsx:650
+msgid "proteine, verdure, frutta"
+msgstr "proteine, verdure, frutta"
+
+#: src/components/events/events-page-content.tsx:206
+msgid "Prova a modificare i filtri o cancella la ricerca per vedere tutti gli eventi disponibili."
+msgstr "Prova a modificare i filtri o cancella la ricerca per vedere tutti gli eventi disponibili."
+
+#: src/routes/app/events/pacchetti.index.tsx:126
+msgid "Prova a modificare i filtri o cancella la ricerca per vedere tutti i webinar disponibili."
+msgstr "Prova a modificare i filtri o cancella la ricerca per vedere tutti i webinar disponibili."
+
+#: src/components/prevy/analysis-detail.tsx:184
+msgid "Punti di forza"
+msgstr "Punti di forza"
+
+#: src/components/consent/consent-form.tsx:142
+msgid "Puoi attivarli o disattivarli ora e in qualsiasi momento dalle impostazioni dell'account."
+msgstr "Puoi attivarli o disattivarli ora e in qualsiasi momento dalle impostazioni dell'account."
+
+#: src/components/errors/global-error-page.tsx:48
+msgid "Qualcosa è andato storto durante il caricamento della pagina. Riprova oppure torna alla home."
+msgstr "Qualcosa è andato storto durante il caricamento della pagina. Riprova oppure torna alla home."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1015
+msgid "Quando vuoi mangiare"
+msgstr "Quando vuoi mangiare"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1366
+msgid "Quasi fatto!"
+msgstr "Quasi fatto!"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:451
+msgid "questa data non ha ancora pasti in calendario."
+msgstr "questa data non ha ancora pasti in calendario."
+
+#: src/components/onboarding/steps/health-data-step.tsx:78
+msgid "Questi dati ci aiutano a personalizzare i tuoi piani nutrizionali"
+msgstr "Questi dati ci aiutano a personalizzare i tuoi piani nutrizionali"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:655
+msgid "Questi dati ci servono per calcolare il tuo fabbisogno energetico. Sono tutti facoltativi — più informazioni dai, più preciso sarà il piano."
+msgstr "Questi dati ci servono per calcolare il tuo fabbisogno energetico. Sono tutti facoltativi — più informazioni dai, più preciso sarà il piano."
+
+#: src/components/events/event-detail.tsx:676
+msgid "Questo evento fa parte del pacchetto «{bundleTitle}»"
+msgstr "Questo evento fa parte del pacchetto «{bundleTitle}»"
+
+#: src/components/dashboard/profile-summary.tsx:411
+#~ msgid "Qui troverai aggiornamenti e iniziative dedicate a te."
+#~ msgstr "Qui troverai aggiornamenti e iniziative dedicate a te."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:419
+#~ msgid "Qui trovi il giorno selezionato, le decisioni già ordinate per orario e le azioni utili: modifica un pasto, prepara la spesa o genera un piano più adatto."
+#~ msgstr "Qui trovi il giorno selezionato, le decisioni già ordinate per orario e le azioni utili: modifica un pasto, prepara la spesa o genera un piano più adatto."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:322
+msgid "Qui vedi cosa è stato ricevuto, cosa sta generando Onciro e quando la lista della spesa inizierà a popolarsi. Puoi lasciare la pagina aperta: il risultato arriva in tempo reale."
+msgstr "Qui vedi cosa è stato ricevuto, cosa sta generando Onciro e quando la lista della spesa inizierà a popolarsi. Puoi lasciare la pagina aperta: il risultato arriva in tempo reale."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1241
+msgid "Raccontaci tutto in libertà"
+msgstr "Raccontaci tutto in libertà"
+
+#: src/components/dashboard/ai-chat-panel.tsx:54
+msgid "Ragionamento"
+msgstr "Ragionamento"
+
+#: src/components/nutrition/shopping-list-section.tsx:774
+msgid "Range"
+msgstr "Range"
+
+#: src/components/appointments/appointments-widget.tsx:85
+#: src/routes/app/prevy/index.tsx:94
+msgid "Recenti"
+msgstr "Recenti"
+
+#: src/routes/login.tsx:59
+msgid "Registrati"
+msgstr "Registrati"
+
+#: src/components/auth/signup-form.tsx:192
+msgid "Registrazione in corso..."
+msgstr "Registrazione in corso..."
+
+#: src/routes/reset-password.tsx:78
+#: src/routes/reset-password.tsx:101
+msgid "Reimposta password"
+msgstr "Reimposta password"
+
+#: src/components/auth/verification-code-form.tsx:125
+msgid "Reinvia codice"
+msgstr "Reinvia codice"
+
+#: src/components/events/event-detail.tsx:372
+msgid "Relatori"
+msgstr "Relatori"
+
+#: src/components/onboarding/steps/preferences-step.tsx:80
+msgid "Report settimanale"
+msgstr "Report settimanale"
+
+#: src/components/credits/credits-history-list.tsx:97
+msgid "Rettifiche"
+msgstr "Rettifiche"
+
+#: src/components/nutrition/shopping-list-section.tsx:161
+#~ msgid "Ricaricheremo la lista appena saranno pronti."
+#~ msgstr "Ricaricheremo la lista appena saranno pronti."
+
+#: src/components/onboarding/steps/preferences-step.tsx:52
+msgid "Ricevi aggiornamenti via email"
+msgstr "Ricevi aggiornamenti via email"
+
+#: src/components/onboarding/steps/preferences-step.tsx:67
+msgid "Ricevi notifiche in tempo reale"
+msgstr "Ricevi notifiche in tempo reale"
+
+#: src/components/onboarding/steps/preferences-step.tsx:82
+msgid "Ricevi un riepilogo settimanale dei tuoi progressi"
+msgstr "Ricevi un riepilogo settimanale dei tuoi progressi"
+
+#: src/components/nutrition/generation-details-card.tsx:236
+msgid "ricevuta"
+msgstr "ricevuta"
+
+#: src/routes/reset-password.tsx:81
+msgid "Richiedi prima un codice dalla pagina password dimenticata."
+msgstr "Richiedi prima un codice dalla pagina password dimenticata."
+
+#: src/components/professionals/professional-detail.tsx:236
+#: src/components/professionals/professional-detail.tsx:239
+msgid "Richiedi videovisita"
+msgstr "Richiedi videovisita"
+
+#: src/components/nutrition/generation-details-card.tsx:235
+msgid "Richiesta"
+msgstr "Richiesta"
+
+#: src/components/appointments/appointment-detail.tsx:425
+msgid "Richiesta inviata il {createdFormatted}"
+msgstr "Richiesta inviata il {createdFormatted}"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:353
+#: src/components/nutrition/plan-generation-wizard.tsx:1365
+#: src/components/nutrition/plan-generation-wizard.tsx:1911
+msgid "Riepilogo"
+msgstr "Riepilogo"
+
+#: src/components/nutrition/daily-stats.tsx:144
+msgid "Riepilogo nutrizionale del giorno"
+msgstr "Riepilogo nutrizionale del giorno"
+
+#: src/components/nutrition/regeneration-dialog.tsx:192
+msgid "Rigenera ({cost})"
+msgstr "Rigenera ({cost})"
+
+#. placeholder {0}: mealTypeLabel(mealType)
+#: src/components/nutrition/regeneration-dialog.tsx:113
+msgid "Rigenera {0}"
+msgstr "Rigenera {0}"
+
+#: src/components/nutrition/plan-control-panel.tsx:334
+#~ msgid "Rigenera piano ({planCost} crediti)"
+#~ msgstr "Rigenera piano ({planCost} crediti)"
+
+#: src/components/credits/credits-service-tariff.tsx:35
+msgid "Rigenera un singolo pasto con feedback custom"
+msgstr "Rigenera un singolo pasto con feedback custom"
+
+#: src/components/nutrition/meal-timeline.tsx:293
+#~ msgid "Rigenerazione in corso…"
+#~ msgstr "Rigenerazione in corso…"
+
+#: src/components/dashboard/task-rows/meal-regeneration-row.tsx:33
+msgid "Rigenerazione pasto"
+msgstr "Rigenerazione pasto"
+
+#: src/components/dashboard/task-rows/meal-regeneration-row.tsx:35
+msgid "Rigenerazione pasto fallita"
+msgstr "Rigenerazione pasto fallita"
+
+#: src/components/dashboard/task-rows/meal-regeneration-row.tsx:32
+msgid "Rigenerazione pasto in attesa"
+msgstr "Rigenerazione pasto in attesa"
+
+#: src/components/nutrition/nutrition-credits.tsx:44
+msgid "Rigenerazioni pasto"
+msgstr "Rigenerazioni pasto"
+
+#: src/components/nutrition/meal-timeline.tsx:291
+msgid "Rigenero…"
+msgstr "Rigenero…"
+
+#: src/components/credits/credits-history-list.tsx:91
+msgid "Rimborsi"
+msgstr "Rimborsi"
+
+#. placeholder {0}: cancelTarget?.event.title
+#. placeholder {0}: event.title
+#: src/components/events/event-detail.tsx:476
+#: src/components/events/my-registrations-sidebar.tsx:113
+msgid "Rimuoveremo “{0}” dal tuo calendario. Potrai iscriverti di nuovo se resteranno posti disponibili."
+msgstr "Rimuoveremo “{0}” dal tuo calendario. Potrai iscriverti di nuovo se resteranno posti disponibili."
+
+#: src/components/prevy/analysis-detail.tsx:159
+msgid "Rimuovi"
+msgstr "Rimuovi"
+
+#: src/components/prevy/analysis-detail.tsx:156
+msgid "Rimuovi dai preferiti"
+msgstr "Rimuovi dai preferiti"
+
+#: src/components/prevy/photo-upload.tsx:171
+msgid "Rimuovi foto"
+msgstr "Rimuovi foto"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1165
+msgid "Rimuovi pasto"
+msgstr "Rimuovi pasto"
+
+#: src/components/courses/course-detail.tsx:352
+msgid "Riprendi"
+msgstr "Riprendi"
+
+#: src/components/courses/courses-dashboard.tsx:156
+msgid "Riprendi da dove hai lasciato"
+msgstr "Riprendi da dove hai lasciato"
+
+#: src/components/dashboard/course-progress-card.tsx:88
+msgid "Riprendi sessione"
+msgstr "Riprendi sessione"
+
+#: src/components/errors/global-error-page.tsx:68
+#: src/components/legal/legal-document.tsx:73
+#: src/routes/consent.tsx:86
+msgid "Riprova"
+msgstr "Riprova"
+
+#: src/components/errors/global-error-page.tsx:65
+msgid "Riprova a caricare la pagina"
+msgstr "Riprova a caricare la pagina"
+
+#: src/components/nutrition/shopping-list-section.tsx:1020
+msgid "Riprova tra qualche istante."
+msgstr "Riprova tra qualche istante."
+
+#. placeholder {0}: formatPriceEur(savings, bundle.currency)
+#: src/components/bundles/bundle-card.tsx:136
+msgid "Risparmia {0}"
+msgstr "Risparmia {0}"
+
+#. placeholder {0}: formatPriceEur( bundle.priceTotalIfBoughtSeparately - bundle.priceEurCents, bundle.currency, )
+#: src/components/bundles/bundle-detail.tsx:128
+msgid "Risparmia {0} rispetto all'acquisto separato"
+msgstr "Risparmia {0} rispetto all'acquisto separato"
+
+#: src/routes/app/prevy/index.tsx:84
+msgid "Risultati ricerca"
+msgstr "Risultati ricerca"
+
+#: src/components/nutrition/shopping-list-section.tsx:636
+msgid "Risultato"
+msgstr "Risultato"
+
+#: src/components/dashboard/ai-chat-panel.tsx:99
+msgid "Risultato:"
+msgstr "Risultato:"
+
+#: src/components/courses/course-detail.tsx:338
+msgid "Rivedi corso"
+msgstr "Rivedi corso"
+
+#: src/components/auth/signup-form.tsx:90
+msgid "Rossi"
+msgstr "Rossi"
+
+#: src/components/credits/credits-balance-widget.tsx:82
+msgid "Saldo crediti AI"
+msgstr "Saldo crediti AI"
+
+#: src/components/onboarding/steps/avatar-step.tsx:96
+msgid "Salta"
+msgstr "Salta"
+
+#: src/components/dashboard/app-sidebar.tsx:235
+msgid "Salute"
+msgstr "Salute"
+
+#: src/components/prevy/analysis-detail.tsx:145
+#: src/components/profile/clinical-profile-section.tsx:151
+#: src/components/profile/profile-form.tsx:192
+msgid "Salva"
+msgstr "Salva"
+
+#: src/components/prevy/analysis-detail.tsx:142
+msgid "Salva tra i preferiti"
+msgstr "Salva tra i preferiti"
+
+#: src/components/dashboard/task-rows/meal-regeneration-row.tsx:56
+msgid "Salvataggio"
+msgstr "Salvataggio"
+
+#: src/components/consent/consent-form.tsx:215
+msgid "Salvataggio…"
+msgstr "Salvataggio…"
+
+#: src/components/dashboard/profile-summary.tsx:85
+msgid "Sangue"
+msgstr "Sangue"
+
+#: src/routes/app/prevy/index.tsx:74
+msgid "Scansiona"
+msgstr "Scansiona"
+
+#: src/routes/app/prevy/scan.tsx:24
+msgid "Scansiona etichetta"
+msgstr "Scansiona etichetta"
+
+#: src/routes/app/index.tsx:80
+msgid "Scansiona un prodotto"
+msgstr "Scansiona un prodotto"
+
+#: src/components/prevy/photo-upload.tsx:87
+msgid "Scatta o carica una foto dell'etichetta"
+msgstr "Scatta o carica una foto dell'etichetta"
+
+#: src/routes/app/prevy/index.tsx:65
+msgid "Scatta una foto dell'etichetta e la analizziamo per te."
+msgstr "Scatta una foto dell'etichetta e la analizziamo per te."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:256
+#~ msgid "Scegli dal calendario un giorno coperto da uno dei tuoi piani."
+#~ msgstr "Scegli dal calendario un giorno coperto da uno dei tuoi piani."
+
+#: src/components/appointments/book-appointment-dialog.tsx:138
+msgid "Scegli data e ora"
+msgstr "Scegli data e ora"
+
+#: src/components/prevy/photo-upload.tsx:140
+msgid "Scegli foto o scatta"
+msgstr "Scegli foto o scatta"
+
+#: src/components/nutrition/shopping-list-section.tsx:637
+#~ msgid "Scegli i giorni"
+#~ msgstr "Scegli i giorni"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1016
+msgid "Scegli i giorni della settimana e personalizza il numero, il tipo e l'orario dei tuoi pasti (da 2 a 6 al giorno)."
+msgstr "Scegli i giorni della settimana e personalizza il numero, il tipo e l'orario dei tuoi pasti (da 2 a 6 al giorno)."
+
+#: src/components/appointments/book-appointment-dialog.tsx:137
+msgid "Scegli il medico"
+msgstr "Scegli il medico"
+
+#: src/components/professionals/book-professional-modal.tsx:261
+msgid "Scegli la sede"
+msgstr "Scegli la sede"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:821
+msgid "Scegli la tua dieta di riferimento e indica fino a {MAX_ALLERGENS} allergeni o intolleranze alimentari."
+msgstr "Scegli la tua dieta di riferimento e indica fino a {MAX_ALLERGENS} allergeni o intolleranze alimentari."
+
+#: src/components/courses/courses-dashboard.tsx:206
+msgid "Scegli un corso e lo ritroverai qui con la prossima lezione."
+msgstr "Scegli un corso e lo ritroverai qui con la prossima lezione."
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:204
+msgid "Scegli un giorno e guarda i pasti già pronti."
+msgstr "Scegli un giorno e guarda i pasti già pronti."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1062
+msgid "Scegli un punto di partenza. Potrai personalizzare orari e tipi qui sotto."
+msgstr "Scegli un punto di partenza. Potrai personalizzare orari e tipi qui sotto."
+
+#: src/components/events/events-page-content.tsx:100
+msgid "Scegli workshop, webinar e percorsi della community. Tutto resta collegato al tuo calendario personale, senza perdere iscrizioni, link e prossimi appuntamenti."
+msgstr "Scegli workshop, webinar e percorsi della community. Tutto resta collegato al tuo calendario personale, senza perdere iscrizioni, link e prossimi appuntamenti."
+
+#: src/components/events/events-page-content.tsx:123
+msgid "Scelta rapida"
+msgstr "Scelta rapida"
+
+#: src/components/nutrition/shopping-list-section.tsx:264
+msgid "Scoperto"
+msgstr "Scoperto"
+
+#: src/components/dashboard/app-sidebar.tsx:316
+msgid "Scopri"
+msgstr "Scopri"
+
+#: src/components/nutrition/suggestion-cards.tsx:26
+msgid "Scopri gli eventi"
+msgstr "Scopri gli eventi"
+
+#: src/components/nutrition/suggestion-cards.tsx:22
+msgid "Scopri i nostri eventi sulla nutrizione"
+msgstr "Scopri i nostri eventi sulla nutrizione"
+
+#: src/components/events/event-detail.tsx:692
+msgid "Scopri il pacchetto"
+msgstr "Scopri il pacchetto"
+
+#: src/components/events/event-detail.tsx:679
+msgid "Scopri il pacchetto completo e risparmia acquistandolo tutto insieme."
+msgstr "Scopri il pacchetto completo e risparmia acquistandolo tutto insieme."
+
+#: src/components/events/events-page-content.tsx:76
+#~ msgid "Scopri workshop ed eventi della community pensati per supportare il tuo benessere."
+#~ msgstr "Scopri workshop ed eventi della community pensati per supportare il tuo benessere."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1242
+msgid "Scrivi qualsiasi cosa il sistema debba sapere: condizioni cliniche, terapie in corso, cibi che non ami, restrizioni religiose. Onciro leggerà e dedurrà eventuali allergeni o conflitti con la dieta scelta."
+msgstr "Scrivi qualsiasi cosa il sistema debba sapere: condizioni cliniche, terapie in corso, cibi che non ami, restrizioni religiose. Onciro leggerà e dedurrà eventuali allergeni o conflitti con la dieta scelta."
+
+#: src/components/dashboard/ai-chat-panel.tsx:203
+msgid "Scrivi un messaggio..."
+msgstr "Scrivi un messaggio..."
+
+#: src/components/mode-toggle.tsx:31
+msgid "Scuro"
+msgstr "Scuro"
+
+#: src/routes/forgot-password.tsx:32
+msgid "Se l'indirizzo è associato a un account, riceverai un codice via email."
+msgstr "Se l'indirizzo è associato a un account, riceverai un codice via email."
+
+#: src/components/appointments/book-appointment-dialog.tsx:320
+msgid "Sede"
+msgstr "Sede"
+
+#: src/components/professionals/professional-detail.tsx:280
+msgid "Sede principale"
+msgstr "Sede principale"
+
+#: src/components/professionals/professional-detail.tsx:248
+msgid "Sedi"
+msgstr "Sedi"
+
+#: src/components/notifications/notification-popover.tsx:56
+msgid "Segna tutte lette"
+msgstr "Segna tutte lette"
+
+#: src/components/events/event-detail.tsx:550
+msgid "Sei iscritto"
+msgstr "Sei iscritto"
+
+#: src/components/onboarding/steps/health-data-step.tsx:125
+#: src/components/profile/clinical-profile-section.tsx:137
+msgid "Seleziona"
+msgstr "Seleziona"
+
+#. placeholder {0}: professional.name
+#: src/components/appointments/book-appointment-dialog.tsx:158
+msgid "Seleziona {0}"
+msgstr "Seleziona {0}"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1051
+msgid "Seleziona almeno un giorno."
+msgstr "Seleziona almeno un giorno."
+
+#: src/components/professionals/book-professional-modal.tsx:473
+msgid "Seleziona giorno"
+msgstr "Seleziona giorno"
+
+#: src/components/professionals/book-professional-modal.tsx:276
+msgid "Seleziona la data e l'orario preferiti."
+msgstr "Seleziona la data e l'orario preferiti."
+
+#: src/components/professionals/book-professional-modal.tsx:273
+msgid "Seleziona la sede in cui desideri effettuare la visita."
+msgstr "Seleziona la sede in cui desideri effettuare la visita."
+
+#: src/components/professionals/book-professional-modal.tsx:524
+msgid "Seleziona un giorno"
+msgstr "Seleziona un giorno"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:193
+#~ msgid "Seleziona un giorno coperto dal piano per vedere i pasti."
+#~ msgstr "Seleziona un giorno coperto dal piano per vedere i pasti."
+
+#: src/components/appointments/book-appointment-dialog.tsx:231
+msgid "Seleziona una data"
+msgstr "Seleziona una data"
+
+#: src/components/dashboard/task-rows/meal-regeneration-row.tsx:54
+msgid "Selezione alimenti"
+msgstr "Selezione alimenti"
+
+#: src/components/nutrition/shopping-list-section.tsx:683
+msgid "Serve un piano"
+msgstr "Serve un piano"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1108
+msgid "Servono almeno {MIN_MAIN_MEALS} pasti principali al giorno per chiudere il fabbisogno calorico."
+msgstr "Servono almeno {MIN_MAIN_MEALS} pasti principali al giorno per chiudere il fabbisogno calorico."
+
+#: src/components/bundles/bundle-detail.tsx:161
+msgid "Sessioni incluse"
+msgstr "Sessioni incluse"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:661
+msgid "Sesso biologico"
+msgstr "Sesso biologico"
+
+#: src/components/nutrition/daily-stats.tsx:202
+msgid "Settimana"
+msgstr "Settimana"
+
+#: src/components/professionals/book-professional-modal.tsx:453
+msgid "Settimana precedente"
+msgstr "Settimana precedente"
+
+#: src/components/professionals/book-professional-modal.tsx:461
+msgid "Settimana successiva"
+msgstr "Settimana successiva"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1137
+#~ msgid "Settimane"
+#~ msgstr "Settimane"
+
+#: src/components/errors/global-error-page.tsx:45
+msgid "Si è verificato un errore"
+msgstr "Si è verificato un errore"
+
+#: src/components/legal/legal-document.tsx:63
+msgid "Si è verificato un errore nel caricamento del documento."
+msgstr "Si è verificato un errore nel caricamento del documento."
+
+#: src/components/auth/signup-form.tsx:50
+#: src/components/auth/signup-form.tsx:53
+#: src/components/auth/verification-code-form.tsx:39
+#: src/components/auth/verification-code-form.tsx:61
+#: src/components/consent/consent-form.tsx:69
+#: src/components/profile/consent-management-section.tsx:63
+#: src/routes/forgot-password.tsx:43
+#: src/routes/reset-password.tsx:66
+msgid "Si è verificato un errore. Riprova."
+msgstr "Si è verificato un errore. Riprova."
+
+#. placeholder {0}: new Date(balance.period.resetsAt).toLocaleDateString("it-IT", { day: "numeric", month: "long", })
+#: src/components/credits/credits-balance-widget.tsx:128
+msgid "Si rinnovano il {0}"
+msgstr "Si rinnovano il {0}"
+
+#: src/components/appointments/appointment-detail.tsx:558
+msgid "Sì, annulla"
+msgstr "Sì, annulla"
+
+#: src/components/mode-toggle.tsx:34
+msgid "Sistema"
+msgstr "Sistema"
+
+#: src/components/nutrition/regeneration-dialog.tsx:134
+msgid "Solo questo giorno"
+msgstr "Solo questo giorno"
+
+#: src/components/nutrition/regeneration-dialog.tsx:144
+msgid "Sostituisci il pasto in ogni occorrenza dello stesso giorno della settimana fino alla fine del piano."
+msgstr "Sostituisci il pasto in ogni occorrenza dello stesso giorno della settimana fino alla fine del piano."
+
+#: src/components/nutrition/regeneration-dialog.tsx:136
+msgid "Sostituisci il pasto solo per il {dateLabel}."
+msgstr "Sostituisci il pasto solo per il {dateLabel}."
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1824
+msgid "Sostituiti"
+msgstr "Sostituiti"
+
+#: src/components/appointments/appointment-detail.tsx:236
+#: src/routes/app/index.tsx:67
+msgid "Specialista"
+msgstr "Specialista"
+
+#: src/components/professionals/professional-detail.tsx:92
+msgid "Specialista non trovato"
+msgstr "Specialista non trovato"
+
+#: src/components/dashboard/recommended-professionals.tsx:34
+msgid "Specialisti selezionati per il tuo percorso di cura"
+msgstr "Specialisti selezionati per il tuo percorso di cura"
+
+#: src/components/auth/auth-layout.tsx:46
+msgid "Specialisti verificati e prenotazione visite in pochi click"
+msgstr "Specialisti verificati e prenotazione visite in pochi click"
+
+#: src/components/professionals/professional-detail.tsx:194
+msgid "Specializzazioni"
+msgstr "Specializzazioni"
+
+#: src/components/nutrition/generation-details-card.tsx:255
+#: src/components/nutrition/nutrition-dashboard.tsx:513
+msgid "Spesa"
+msgstr "Spesa"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:480
+#~ msgid "Spesa collegata al calendario"
+#~ msgstr "Spesa collegata al calendario"
+
+#: src/components/nutrition/shopping-list-section.tsx:672
+#: src/components/nutrition/shopping-list-section.tsx:947
+msgid "Spesa guidata"
+msgstr "Spesa guidata"
+
+#: src/components/nutrition/shopping-list-summary.tsx:70
+msgid "Spesa prossima"
+msgstr "Spesa prossima"
+
+#: src/components/nutrition/shopping-list-section.tsx:548
+msgid "Spesa spuntata"
+msgstr "Spesa spuntata"
+
+#: src/components/prevy/therapy-filter-toggle.tsx:31
+msgid "Standard"
+msgstr "Standard"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:319
+msgid "Stiamo costruendo il tuo piano."
+msgstr "Stiamo costruendo il tuo piano."
+
+#: src/components/nutrition/shopping-list-section.tsx:695
+msgid "Stiamo preparando il piano alimentare. Appena sarà pronto, questa sezione mostrerà ingredienti, quantità, dispensa e budget stimato."
+msgstr "Stiamo preparando il piano alimentare. Appena sarà pronto, questa sezione mostrerà ingredienti, quantità, dispensa e budget stimato."
+
+#: src/components/nutrition/shopping-list-section.tsx:782
+msgid "Stima"
+msgstr "Stima"
+
+#: src/components/nutrition/shopping-list-section.tsx:523
+msgid "Stima carrello"
+msgstr "Stima carrello"
+
+#: src/components/credits/credits-history-list.tsx:68
+msgid "Storico transazioni"
+msgstr "Storico transazioni"
+
+#: src/components/dashboard/next-appointment-card.tsx:145
+msgid "Storico visite ordinato"
+msgstr "Storico visite ordinato"
+
+#: src/components/nutrition/generation-details-card.tsx:256
+msgid "subito dopo"
+msgstr "subito dopo"
+
+#: src/components/professionals/professionals-listing.tsx:196
+#: src/components/visits/my-visits-list.tsx:249
+msgid "Successiva"
+msgstr "Successiva"
+
+#: src/components/dashboard/healthcare-section.tsx:246
+msgid "Supporto Concierge"
+msgstr "Supporto Concierge"
+
+#: src/components/credits/credits-service-tariff.tsx:63
+msgid "Tariffario servizi"
+msgstr "Tariffario servizi"
+
+#: src/components/onboarding/steps/personal-info-step.tsx:86
+#: src/components/profile/profile-form.tsx:165
+#: src/components/profile/profile-form.tsx:216
+msgid "Telefono"
+msgstr "Telefono"
+
+#: src/components/dashboard/mobile-menu.tsx:142
+#~ msgid "Tema"
+#~ msgstr "Tema"
+
+#: src/components/visits/my-visits-list.tsx:152
+msgid "Terapia"
+msgstr "Terapia"
+
+#: src/components/auth/auth-footer.tsx:23
+msgid "Termini"
+msgstr "Termini"
+
+#: src/components/consent/consent-form.tsx:91
+#: src/components/profile/consent-management-section.tsx:95
+#: src/routes/terms-of-service.tsx:16
+msgid "Termini di servizio"
+msgstr "Termini di servizio"
+
+#: src/components/events/event-detail.tsx:488
+#: src/components/events/my-registrations-sidebar.tsx:125
+msgid "Tieni iscrizione"
+msgstr "Tieni iscrizione"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:429
+#~ msgid "Timeline pasti"
+#~ msgstr "Timeline pasti"
+
+#: src/components/nutrition/plan-generation-wizard.tsx:1142
+msgid "Tipo di pasto"
+msgstr "Tipo di pasto"
+
+#: src/components/appointments/book-appointment-dialog.tsx:289
+#: src/components/professionals/book-professional-modal.tsx:301
+#: src/components/professionals/book-professional-modal.tsx:386
+msgid "Tipo di visita"
+msgstr "Tipo di visita"
+
+#: src/routes/app/prevy/products.$productId.tsx:48
+#: src/routes/app/prevy/scan.tsx:19
+msgid "Torna a Prevy"
+msgstr "Torna a Prevy"
+
+#: src/components/nutrition/week-calendar.tsx:111
+#~ msgid "Torna a questa settimana"
+#~ msgstr "Torna a questa settimana"
+
+#: src/components/appointments/appointment-detail.tsx:154
+#: src/components/appointments/appointment-detail.tsx:473
+msgid "Torna agli appuntamenti"
+msgstr "Torna agli appuntamenti"
+
+#: src/components/bundles/bundle-detail.tsx:50
+#: src/components/bundles/bundle-detail.tsx:68
+#: src/components/events/event-detail.tsx:108
+msgid "Torna agli eventi"
+msgstr "Torna agli eventi"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:212
+#~ msgid "Torna al calendario e scegli un giorno coperto da uno dei tuoi piani."
+#~ msgstr "Torna al calendario e scegli un giorno coperto da uno dei tuoi piani."
+
+#: src/routes/forgot-password.tsx:99
+#: src/routes/reset-password.tsx:232
+msgid "Torna al login"
+msgstr "Torna al login"
+
+#: src/components/errors/global-error-page.tsx:74
+#: src/components/not-found-page.tsx:77
+msgid "Torna alla home"
+msgstr "Torna alla home"
+
+#: src/components/nutrition/meal-timeline.tsx:262
+#~ msgid "Totale"
+#~ msgstr "Totale"
+
+#: src/components/nutrition/shopping-list-section.tsx:624
+msgid "Traduzione"
+msgstr "Traduzione"
+
+#: src/components/prevy/photo-upload.tsx:122
+msgid "Trascina qui una foto oppure clicca per scegliere"
+msgstr "Trascina qui una foto oppure clicca per scegliere"
+
+#: src/components/consent/consent-form.tsx:125
+#: src/components/profile/consent-management-section.tsx:103
+msgid "Trattamento dei dati sanitari"
+msgstr "Trattamento dei dati sanitari"
+
+#: src/routes/app/index.tsx:28
+#~ msgid "Trova il professionista giusto e prendi in mano il tuo percorso di cura."
+#~ msgstr "Trova il professionista giusto e prendi in mano il tuo percorso di cura."
+
+#: src/components/dashboard/next-appointment-card.tsx:127
+msgid "Trova il professionista giusto per questo momento."
+msgstr "Trova il professionista giusto per questo momento."
+
+#: src/components/dashboard/next-appointment-card.tsx:123
+#~ msgid "Trova il professionista giusto per te"
+#~ msgstr "Trova il professionista giusto per te"
+
+#: src/components/dashboard/doctor-search-cta.tsx:30
+msgid "Trova il tuo professionista"
+msgstr "Trova il tuo professionista"
+
+#: src/components/professionals/professionals-listing.tsx:85
+msgid "Trova il tuo specialista"
+msgstr "Trova il tuo specialista"
+
+#: src/components/dashboard/healthcare-section.tsx:56
+msgid "Trova lo specialista giusto e prenota un appuntamento in pochi minuti con il nostro concierge clinico."
+msgstr "Trova lo specialista giusto e prenota un appuntamento in pochi minuti con il nostro concierge clinico."
+
+#: src/routes/app/index.tsx:119
+msgid "Trova uno specialista"
+msgstr "Trova uno specialista"
+
+#: src/components/events/events-filter-bar.tsx:70
+msgid "Tutte"
+msgstr "Tutte"
+
+#: src/components/dashboard/healthcare-section.tsx:90
+msgid "Tutte le specialità"
+msgstr "Tutte le specialità"
+
+#: src/components/courses/courses-dashboard.tsx:353
+#: src/components/credits/credits-history-list.tsx:85
+#: src/components/professionals/professionals-listing.tsx:130
+msgid "Tutti"
+msgstr "Tutti"
+
+#: src/components/dashboard/app-sidebar.tsx:360
+#~ msgid "Tutti gli eventi"
+#~ msgstr "Tutti gli eventi"
+
+#: src/components/nutrition/regeneration-dialog.tsx:142
+msgid "Tutti i {weekdayPlural} del piano"
+msgstr "Tutti i {weekdayPlural} del piano"
+
+#: src/components/events/event-card.tsx:147
+msgid "Tutto esaurito"
+msgstr "Tutto esaurito"
+
+#: src/components/onboarding/steps/complete-step.tsx:14
+msgid "Tutto pronto!"
+msgstr "Tutto pronto!"
+
+#: src/components/dashboard/latest-visits.tsx:29
+#: src/components/dashboard/latest-visits.tsx:49
+msgid "Ultime visite"
+msgstr "Ultime visite"
+
+#: src/components/legal/legal-document.tsx:49
+msgid "ultimo aggiornamento"
+msgstr "ultimo aggiornamento"
+
+#: src/components/nutrition/shopping-list-section.tsx:638
+#~ msgid "Un giorno, tre giorni o tutta la settimana."
+#~ msgstr "Un giorno, tre giorni o tutta la settimana."
+
+#: src/components/dashboard/latest-visits.tsx:20
+#: src/components/visits/my-visits-list.tsx:53
+msgid "Urgenza"
+msgstr "Urgenza"
+
+#: src/components/dashboard/app-sidebar.tsx:363
+#~ msgid "Vai a tutti gli eventi"
+#~ msgstr "Vai a tutti gli eventi"
+
+#: src/components/nutrition/suggestion-cards.tsx:46
+msgid "Vai agli eventi"
+msgstr "Vai agli eventi"
+
+#: src/components/nutrition/suggestion-cards.tsx:87
+msgid "Vai ai corsi"
+msgstr "Vai ai corsi"
+
+#: src/components/dashboard/app-sidebar.tsx:369
+#~ msgid "Vai ai pacchetti eventi"
+#~ msgstr "Vai ai pacchetti eventi"
+
+#: src/components/nutrition/nutrition-dashboard.tsx:224
+#~ msgid "Vai al calendario"
+#~ msgstr "Vai al calendario"
+
+#: src/components/dashboard/app-sidebar.tsx:326
+#~ msgid "Vai al piano alimentare"
+#~ msgstr "Vai al piano alimentare"
+
+#: src/components/onboarding/steps/complete-step.tsx:25
+msgid "Vai alla Dashboard"
+msgstr "Vai alla Dashboard"
+
+#: src/components/dashboard/app-sidebar.tsx:333
+#~ msgid "Vai alla lista della spesa"
+#~ msgstr "Vai alla lista della spesa"
+
+#: src/components/dashboard/dashboard-layout.tsx:43
+msgid "Vai alla pagina dei crediti AI"
+msgstr "Vai alla pagina dei crediti AI"
+
+#: src/components/dashboard/app-sidebar.tsx:102
+msgid "Vai alla panoramica"
+msgstr "Vai alla panoramica"
+
+#: src/components/profile/consent-management-section.tsx:154
+msgid "Vai alle impostazioni account"
+msgstr "Vai alle impostazioni account"
+
+#: src/components/nutrition/shopping-list-section.tsx:638
+msgid "Vedi cosa comprare, cosa controllare in dispensa e il budget stimato del periodo."
+msgstr "Vedi cosa comprare, cosa controllare in dispensa e il budget stimato del periodo."
+
+#: src/components/dashboard/next-appointment-card.tsx:104
+msgid "Vedi dettagli"
+msgstr "Vedi dettagli"
+
+#: src/components/nutrition/shopping-list-section.tsx:643
+#~ msgid "Vedi il budget"
+#~ msgstr "Vedi il budget"
+
+#: src/components/events/event-detail.tsx:462
+#: src/components/events/event-detail.tsx:580
+msgid "Vedi indicazioni"
+msgstr "Vedi indicazioni"
+
+#: src/components/professionals/professional-card.tsx:89
+msgid "Vedi profilo"
+msgstr "Vedi profilo"
+
+#: src/components/appointments/appointment-detail.tsx:453
+msgid "Vedi profilo specialista"
+msgstr "Vedi profilo specialista"
+
+#: src/components/nutrition/shopping-list-summary.tsx:133
+#~ msgid "Vedi tutta la lista"
+#~ msgstr "Vedi tutta la lista"
+
+#: src/components/dashboard/latest-visits.tsx:58
+msgid "Vedi tutte"
+msgstr "Vedi tutte"
+
+#: src/components/appointments/appointments-widget.tsx:96
+#: src/components/dashboard/recommended-professionals.tsx:44
+#: src/components/dashboard/upcoming-appointments.tsx:53
+#: src/components/events/webinar-carousel.tsx:56
+msgid "Vedi tutti"
+msgstr "Vedi tutti"
+
+#: src/components/dashboard/profile-summary.tsx:135
+msgid "Vedi tutto"
+msgstr "Vedi tutto"
+
+#: src/components/auth/verification-code-form.tsx:110
+msgid "Verifica"
+msgstr "Verifica"
+
+#: src/components/auth/verification-code-form.tsx:107
+msgid "Verifica in corso..."
+msgstr "Verifica in corso..."
+
+#: src/routes/signup.tsx:65
+#: src/routes/verify-email.tsx:55
+msgid "Verifica la tua email"
+msgstr "Verifica la tua email"
+
+#: src/components/profile/consent-management-section.tsx:138
+msgid "versione"
+msgstr "versione"
+
+#: src/components/legal/legal-document.tsx:48
+msgid "Versione"
+msgstr "Versione"
+
+#: src/components/appointments/appointment-card.tsx:103
+#: src/components/appointments/appointment-detail.tsx:338
+#: src/components/appointments/book-appointment-dialog.tsx:310
+#: src/components/dashboard/healthcare-section.tsx:168
+#: src/components/dashboard/healthcare-section.tsx:362
+#: src/components/dashboard/next-appointment-card.tsx:61
+msgid "Videochiamata"
+msgstr "Videochiamata"
+
+#: src/components/professionals/book-professional-modal.tsx:332
+#: src/components/professionals/book-professional-modal.tsx:419
+#: src/components/professionals/book-professional-modal.tsx:641
+msgid "Videovisita"
+msgstr "Videovisita"
+
+#: src/components/professionals/book-professional-modal.tsx:634
+#: src/components/professionals/book-professional-modal.tsx:638
+msgid "Visita in sede"
+msgstr "Visita in sede"
+
+#: src/components/dashboard/healthcare-section.tsx:284
+msgid "Visite passate"
+msgstr "Visite passate"
+
+#: src/routes/app/index.tsx:107
+msgid "Visite, nutrizione, corsi e strumenti AI in una regia chiara: parti da ciò che può migliorare davvero la tua settimana."
+msgstr "Visite, nutrizione, corsi e strumenti AI in una regia chiara: parti da ciò che può migliorare davvero la tua settimana."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:328
+#~ msgid "Vista giorno"
+#~ msgstr "Vista giorno"
+
+#: src/components/nutrition/plan-timeline-calendar.tsx:238
+#~ msgid "Visualizza i piani nel tempo. Le aree sovrapposte vengono risolte automaticamente prendendo il piano più recente."
+#~ msgstr "Visualizza i piani nel tempo. Le aree sovrapposte vengono risolte automaticamente prendendo il piano più recente."
+
+#: src/components/nutrition/nutrition-dashboard.tsx:160
+#~ msgid "Visualizza i piani su calendario, esplora i pasti del giorno e gestisci le tue diete."
+#~ msgstr "Visualizza i piani su calendario, esplora i pasti del giorno e gestisci le tue diete."
+
+#: src/components/events/webinar-carousel.tsx:50
+msgid "Webinar"
+msgstr "Webinar"
+
+#: src/routes/app/events/pacchetti.index.tsx:85
+msgid "Webinar — <0>programmi multi-sessione</0>"
+msgstr "Webinar — <0>programmi multi-sessione</0>"
+
+#: src/components/nutrition/suggestion-cards.tsx:29
+msgid "Webinar e incontri con specialisti"
+msgstr "Webinar e incontri con specialisti"

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "ui": "tui",
+  "globalEnv": [
+    "NODE_ENV",
+    "SERVER_PORT",
+    "MONGODB_URI",
+    "JWT_SECRET_KEY",
+    "LOG_LEVEL",
+    "HOST",
+    "JWT_EXPIRY",
+    "REFRESH_TOKEN_EXPIRY_SECONDS",
+    "FRONTEND_URL",
+    "API_PROXY_TARGET",
+    "WS_PROXY_TARGET",
+    "ENCRYPTION_KEY",
+    "PRIVACY_POLICY_VERSION",
+    "TERMS_VERSION",
+    "DATABASE_URL",
+    "LANGFUSE_ENABLED",
+    "LANGFUSE_PUBLIC_KEY",
+    "LANGFUSE_SECRET_KEY",
+    "LANGFUSE_BASE_URL",
+    "LANGFUSE_BASEURL"
+  ],
+  "tasks": {
+    "db:generate": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["dist/**", ".next/**", "build/**"]
+    },
+    "build-storybook": {
+      "dependsOn": ["^build","^build-storybook"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["storybook-static/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "dev": {
+      "dependsOn": [],
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "cache": false
+    }
+  }
+}

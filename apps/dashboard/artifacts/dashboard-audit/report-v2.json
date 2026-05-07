@@ -1,0 +1,176 @@
+[
+  {
+    "account": "maria",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "screenshot": "/Users/federicopomponii/Documents/METAIMED/oncologo.it/apps/dashboard/artifacts/dashboard-audit/desktop-maria-v2.png",
+    "url": "http://localhost:5173/app",
+    "title": "dashboard",
+    "h1": "Ciao, Maria. La prossima azione conta.",
+    "h1Top": 151,
+    "scroll": {
+      "width": 1440,
+      "height": 1199
+    },
+    "buttons": [
+      "OOncologo.itIl tuo benessere",
+      "Panoramica",
+      "Salute",
+      "Nutrizione",
+      "Lista della spesa",
+      "Prevy",
+      "Corsi",
+      "Eventi",
+      "Crediti AI",
+      "Profilo",
+      "Assistenza",
+      "FAQ",
+      "MRMaria Rossimaria.rossi@example.com",
+      "Toggle Sidebar",
+      "Pro627/635",
+      "4",
+      "Cambia tema",
+      "Trova uno specialista",
+      "SpecialistaPrenota o riprendi una visita",
+      "NutrizionePiano, pasti e spesa"
+    ],
+    "overflow": [
+      {
+        "tag": "DIV",
+        "className": "h-full w-full flex-1 bg-primary transition-all",
+        "left": -323,
+        "right": 105,
+        "width": 428,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "account": "maria",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "screenshot": "/Users/federicopomponii/Documents/METAIMED/oncologo.it/apps/dashboard/artifacts/dashboard-audit/mobile-maria-v2.png",
+    "url": "http://localhost:5173/app",
+    "title": "dashboard",
+    "h1": "Ciao, Maria. La prossima azione conta.",
+    "h1Top": 135,
+    "scroll": {
+      "width": 390,
+      "height": 2189
+    },
+    "buttons": [
+      "Toggle Sidebar",
+      "Pro627/635",
+      "4",
+      "Cambia tema",
+      "Trova uno specialista",
+      "SpecialistaPrenota o riprendi una visita",
+      "NutrizionePiano, pasti e spesa",
+      "PrevyScansiona un prodotto",
+      "EventiIncontri e percorsi live",
+      "Cerca professionista",
+      "Vedi tutta la lista",
+      "Riprendi sessione",
+      "Vedi tutte",
+      "Vedi tutte",
+      "Vedi tutti",
+      "I miei appuntamentiVedi tutto",
+      "Vedi tutto",
+      "Nutrizione oggiVedi tutto",
+      "Vedi tutto",
+      "I miei eventiVedi tutto"
+    ],
+    "overflow": [
+      {
+        "tag": "DIV",
+        "className": "h-full w-full flex-1 bg-primary transition-all",
+        "left": -279,
+        "right": 37,
+        "width": 316,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "account": "anna",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "screenshot": "/Users/federicopomponii/Documents/METAIMED/oncologo.it/apps/dashboard/artifacts/dashboard-audit/desktop-anna-v2.png",
+    "url": "http://localhost:5173/app",
+    "title": "dashboard",
+    "h1": "Ciao, Anna. La prossima azione conta.",
+    "h1Top": 151,
+    "scroll": {
+      "width": 1440,
+      "height": 1189
+    },
+    "buttons": [
+      "OOncologo.itIl tuo benessere",
+      "Panoramica",
+      "Salute",
+      "Nutrizione",
+      "Lista della spesa",
+      "Prevy",
+      "Corsi",
+      "Eventi",
+      "Crediti AI",
+      "Profilo",
+      "Assistenza",
+      "FAQ",
+      "AVAnna Verdianna.verdi@example.com",
+      "Toggle Sidebar",
+      "Free30/50",
+      "Cambia tema",
+      "Trova uno specialista",
+      "SpecialistaPrenota o riprendi una visita",
+      "NutrizionePiano, pasti e spesa",
+      "PrevyScansiona un prodotto"
+    ],
+    "overflow": []
+  },
+  {
+    "account": "anna",
+    "viewport": {
+      "width": 390,
+      "height": 900
+    },
+    "screenshot": "/Users/federicopomponii/Documents/METAIMED/oncologo.it/apps/dashboard/artifacts/dashboard-audit/mobile-anna-v2.png",
+    "url": "http://localhost:5173/app",
+    "title": "dashboard",
+    "h1": "Ciao, Anna. La prossima azione conta.",
+    "h1Top": 135,
+    "scroll": {
+      "width": 390,
+      "height": 2185
+    },
+    "buttons": [
+      "Toggle Sidebar",
+      "Free30/50",
+      "Cambia tema",
+      "Trova uno specialista",
+      "SpecialistaPrenota o riprendi una visita",
+      "NutrizionePiano, pasti e spesa",
+      "PrevyScansiona un prodotto",
+      "EventiIncontri e percorsi live",
+      "Cerca professionista",
+      "Genera un piano",
+      "Esplora i corsi",
+      "Vedi tutte",
+      "Vedi tutte",
+      "Vedi tutti",
+      "I miei appuntamentiVedi tutto",
+      "Vedi tutto",
+      "Nutrizione oggiVedi tutto",
+      "Vedi tutto",
+      "I miei eventiVedi tutto",
+      "Vedi tutto"
+    ],
+    "overflow": []
+  }
+]

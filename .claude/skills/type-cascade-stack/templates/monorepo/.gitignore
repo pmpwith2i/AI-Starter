@@ -1,0 +1,12 @@
+node_modules
+dist
+.turbo
+.next
+.env
+.env.local
+*.tsbuildinfo
+coverage
+.DS_Store
+.idea
+.vscode
+prisma/migrations/.lock

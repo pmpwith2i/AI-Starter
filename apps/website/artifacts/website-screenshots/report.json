@@ -1,0 +1,142 @@
+[
+  {
+    "viewport": "desktop",
+    "route": "/",
+    "statusCode": 200,
+    "title": "oncologo.it, La piattaforma dedicata ai pazienti oncologici",
+    "h1Top": 210,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowing": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/specialisti",
+    "statusCode": 200,
+    "title": "Specialisti oncologici certificati",
+    "h1Top": 191,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowing": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/eventi",
+    "statusCode": 200,
+    "title": "Eventi e workshop",
+    "h1Top": 214,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowing": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/corsi",
+    "statusCode": 200,
+    "title": "Corsi di benessere oncologico",
+    "h1Top": 214,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowing": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/blog",
+    "statusCode": 200,
+    "title": "Blog, approfondimenti e guide",
+    "h1Top": 214,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowing": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/come-funziona",
+    "statusCode": 200,
+    "title": "Come funziona oncologo.it",
+    "h1Top": 182,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowing": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/chi-siamo",
+    "statusCode": 200,
+    "title": "Chi siamo",
+    "h1Top": 182,
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "overflowing": []
+  },
+  {
+    "viewport": "mobile",
+    "route": "/",
+    "statusCode": 200,
+    "title": "oncologo.it, La piattaforma dedicata ai pazienti oncologici",
+    "h1Top": 170,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflowing": []
+  },
+  {
+    "viewport": "mobile",
+    "route": "/specialisti",
+    "statusCode": 200,
+    "title": "Specialisti oncologici certificati",
+    "h1Top": 167,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflowing": []
+  },
+  {
+    "viewport": "mobile",
+    "route": "/eventi",
+    "statusCode": 200,
+    "title": "Eventi e workshop",
+    "h1Top": 167,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflowing": []
+  },
+  {
+    "viewport": "mobile",
+    "route": "/corsi",
+    "statusCode": 200,
+    "title": "Corsi di benessere oncologico",
+    "h1Top": 167,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflowing": []
+  },
+  {
+    "viewport": "mobile",
+    "route": "/blog",
+    "statusCode": 200,
+    "title": "Blog, approfondimenti e guide",
+    "h1Top": 167,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflowing": []
+  },
+  {
+    "viewport": "mobile",
+    "route": "/come-funziona",
+    "statusCode": 200,
+    "title": "Come funziona oncologo.it",
+    "h1Top": 158,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflowing": []
+  },
+  {
+    "viewport": "mobile",
+    "route": "/chi-siamo",
+    "statusCode": 200,
+    "title": "Chi siamo",
+    "h1Top": 158,
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflowing": []
+  }
+]

@@ -1,0 +1,20 @@
+node_modules
+dist
+.turbo
+.next
+.expo
+*.tsbuildinfo
+coverage
+.DS_Store
+.idea
+.vscode
+
+# Secrets
+.env
+.env.local
+.env.production
+.env.test
+
+# Prisma
+packages/db/src/generated/
+packages/db/prisma/migrations/.lock
