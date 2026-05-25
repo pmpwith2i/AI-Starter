@@ -39,7 +39,7 @@ TypeScript monorepo, Turborepo + pnpm. Strict TypeScript, Node 22.
 
 - `apps/server` — Fastify 5 API (port 3000)
 - `apps/dashboard` — Vite + React 19 + TanStack (port 5173)
-- `apps/marketing` — Next.js 16 (port 4000) — present if scaffolded
+- `apps/website` — Next.js 16 marketing (port 4000) — present if scaffolded
 - `apps/mobile` — Expo + React Native — present if scaffolded
 
 ### Packages

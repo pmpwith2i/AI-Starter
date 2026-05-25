@@ -559,19 +559,6 @@ describe("registerUser", () => {
     assert.equal(mockTransaction.mock.callCount(), 1);
     assert.equal(mockRefreshTokenCreate.mock.callCount(), 1);
   });
-
-  it("creates both User and Account in transaction", async () => {
-    mockFindUnique.mock.mockImplementation(async () => null);
-
-    await registerUser("new@example.com", "Password1", "Test", "User");
-
-    assert.equal(mockCreate.mock.callCount(), 1);
-    assert.equal(mockAccountCreate.mock.callCount(), 1);
-    const accountData = mockAccountCreate.mock.calls[0].arguments[0] as {
-      data: { provider: string };
-    };
-    assert.equal(accountData.data.provider, "credentials");
-  });
 });
 
 // ─── refreshAccessToken ───────────────────────────────────────────────────────

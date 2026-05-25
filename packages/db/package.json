@@ -16,6 +16,7 @@
     }
   },
   "scripts": {
+    "postinstall": "prisma generate",
     "build": "rm -rf dist && tsc -b",
     "db:generate": "prisma generate",
     "migrate": "prisma migrate dev",

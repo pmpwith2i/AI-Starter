@@ -73,15 +73,16 @@ question: "Which surfaces should be scaffolded?"
 header: "Surfaces"
 multiSelect: true
 options:
-  - "Marketing site (Next.js 16)" / "Public-facing landing, blog, SEO. Recommended for any consumer product."
-  - "Patient/User dashboard (Vite + React + TanStack)" / "Authenticated app. Required."
+  - "Marketing site (Next.js 16)" / "Public-facing landing, blog, SEO. Recommended for any consumer product. (dir: apps/website)"
+  - "User dashboard (Vite + React + TanStack)" / "Authenticated app. Required — always kept."
   - "Mobile companion (Expo + React Native)" / "iOS/Android app reusing @repo/server-sdk types"
-  - "Professional/Admin platform (separate Fastify + Vite app)" / "Two-server split like oncologo.it. Adds apps/pro-server + apps/pro-dashboard + packages/pro-db."
 ```
 
-Persist:
+> A second Professional/Admin platform (separate Fastify + Vite app) is a **post-bootstrap extension**, not a starter surface — the scaffold ships one server + one dashboard. Add it later by duplicating the pattern; don't offer it here.
+
+Persist (surface keys map to dirs: `marketing` → `apps/website`, `mobile` → `apps/mobile`; `dashboard` + `server` are always kept):
 ```json
-{ "surfaces": ["marketing", "dashboard", "mobile", "pro"] }
+{ "surfaces": ["marketing", "dashboard", "mobile"] }
 ```
 
 ## Round 5 — Tone + brand
@@ -114,6 +115,27 @@ Persist:
 { "tone": "...", "tone_keywords": "...", "primary_hue": 245, "secondary_hue": null }
 ```
 
+## Round 6 — Legal identity (optional)
+
+These flow into the marketing site's SEO/site-config, the legal pages, and the
+transactional email templates. Skippable — `personalize.sh` falls back to
+sensible non-generic defaults (`company_name` = project name, `contact_email`
+= `hello@<project>.com`, `tagline` = the one-liner, address fields blank).
+
+```
+question: "Legal/company identity for legal pages, email, and SEO? (optional — skip to use defaults)"
+header: "Identity"
+multiSelect: false
+options:
+  - "Provide now (write in notes)" / "User gives legal company name, contact email, and optionally a registered address"
+  - "Use defaults / fill later" / "Defaults derived from the project name; refine in design + legal pages later"
+```
+
+Persist (any subset; omit keys to accept the default):
+```json
+{ "company_name": "...", "contact_email": "...", "tagline": "...", "street_address": "...", "postal_code": "...", "address_city": "...", "address_region": "..." }
+```
+
 ## Confirmation step
 
 Before running `bootstrap.sh`, **echo back a one-paragraph summary** of every decision and ask the user:
@@ -136,12 +158,24 @@ Final `.claude/bootstrap-answers.json`:
   "primary_domain": "string (PascalCase entity name)",
   "primary_domain_description": "string",
   "data_class": "health | personal | public",
-  "surfaces": ["marketing", "dashboard", "mobile", "pro"],
+  "surfaces": ["marketing", "dashboard", "mobile"],
   "tone": "clinical | warm | sharp | custom",
   "tone_keywords": "string",
   "primary_hue": 245,
-  "secondary_hue": null
+  "secondary_hue": null,
+
+  "company_name": "string (optional — defaults to project_name)",
+  "contact_email": "string (optional — defaults to hello@<project>.com)",
+  "tagline": "string (optional — defaults to one_liner)",
+  "street_address": "string (optional)",
+  "postal_code": "string (optional)",
+  "address_city": "string (optional)",
+  "address_region": "string (optional)"
 }
 ```
+
+> `personalize.sh` fills any remaining design tokens (`MISSION`, `FONT_SANS`,
+> persona/copy/reference tokens, `PRO_HUE`, …) from the tone + category answers,
+> so no `{{...}}` survives. The design-system agent refines them afterward.
 
 Spawned agents read this file. Never re-ask the user for facts already in it; if you need a new fact, add a field, document it here, and ask only for the new one.

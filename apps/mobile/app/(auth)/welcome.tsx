@@ -37,26 +37,25 @@ type Slide = {
   gradient: readonly [string, string, string];
 };
 
+// Placeholder onboarding slides — rewrite with your product's story.
 const SLIDES: readonly Slide[] = [
   {
-    eyebrow: "Nutrizione",
-    title: "Il tuo piano,\nogni settimana.",
+    eyebrow: "Welcome",
+    title: "Everything in\none place.",
     description:
-      "Pasti generati su misura per gusti, condizioni cliniche e obiettivi.",
+      "Placeholder onboarding copy — swap this for your product's first promise.",
     gradient: ["#0d1424", "#13243b", "#7c95ff"] as const,
   },
   {
-    eyebrow: "Specialisti",
-    title: "Sempre\na portata.",
-    description:
-      "Oncologi, nutrizionisti, psicologi. Una conversazione lontana.",
+    eyebrow: "Built for you",
+    title: "Designed\naround you.",
+    description: "Describe the core value your users get on day one.",
     gradient: ["#101a2b", "#182f62", "#7c95ff"] as const,
   },
   {
-    eyebrow: "Percorsi",
-    title: "Cresci,\ngiorno per giorno.",
-    description:
-      "Corsi, eventi e percorsi guidati per il tuo benessere fisico ed emotivo.",
+    eyebrow: "Get started",
+    title: "Ready when\nyou are.",
+    description: "Close with a clear call to action, then sign in.",
     gradient: ["#17243a", "#14324a", "#8fc7e8"] as const,
   },
 ];

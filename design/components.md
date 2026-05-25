@@ -38,7 +38,7 @@
 
 | Component | Notes |
 |---|---|
-| `DashboardLayout` | sidebar + main content + sticky header (web). Replicates oncologo.it shadcn `Sidebar` pattern. |
+| `DashboardLayout` | sidebar + main content + sticky header (web). Built on the shadcn `Sidebar` pattern. |
 | `MobileTabBar` | bottom nav for Expo; 3–5 destinations max |
 | `DataTable` | TanStack Table + virtualization for >200 rows; pagination from SDK envelope |
 | `EmptyState` | icon + heading + body + primary action |

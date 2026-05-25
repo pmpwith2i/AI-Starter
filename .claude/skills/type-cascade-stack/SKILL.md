@@ -21,7 +21,7 @@ Your job is the **first 30 minutes**: interview, personalize, install, then hand
 
 ### 1. Interview the user
 
-Run [INTERVIEW.md](INTERVIEW.md). Five sequential `AskUserQuestion` rounds collect: project name + pitch, category + primary domain, sensitive-data class, surfaces to keep, tone + brand hue. **Stop and wait between rounds.** Persist answers to `.claude/bootstrap-answers.json`.
+Run [INTERVIEW.md](INTERVIEW.md). Five sequential `AskUserQuestion` rounds collect: project name + pitch, category + primary domain, sensitive-data class, surfaces to keep, tone + brand hue — plus an optional sixth round for legal/company identity. **Stop and wait between rounds.** Persist answers to `.claude/bootstrap-answers.json`.
 
 ### 2. Confirm
 
@@ -35,13 +35,17 @@ bash .claude/skills/type-cascade-stack/scripts/personalize.sh
 
 The script:
 - reads `.claude/bootstrap-answers.json`
-- substitutes `{{PROJECT_NAME}}`, `{{PRIMARY_HUE}}`, `{{TONE_KEYWORDS}}`, `{{AUDIENCE}}`, etc. into `AGENT.md`, `CLAUDE.md`, `README.md`, `design/*.md`, `package.json` (root + each app)
-- generates `ENCRYPTION_KEY` (`openssl rand -hex 32`) and `JWT_SECRET_KEY` into every app's `.env`
-- runs `pnpm install`
+- substitutes **every** `{{...}}` token in `AGENT.md`, `CLAUDE.md`, `README.md`, `design/*.md`, and the source tree (`.ts`/`.tsx`/`.po`) — using interview answers, falling back to tone/category-derived defaults so no raw placeholder survives
+- sets the root `package.json` name and the mobile `app.json` identity (name, slug, scheme, `com.<project>.app` bundle id)
+- generates `ENCRYPTION_KEY` (`openssl rand -hex 32`) and `JWT_SECRET_KEY` into `apps/server/.env`, and creates `packages/db/.env` with `DATABASE_URL` (Prisma reads it from the db package's own cwd)
+- runs `pnpm install` (the `@repo/db` `postinstall` runs `prisma generate`)
 - starts `docker compose up -d` (Postgres)
 - runs `pnpm --filter @repo/db exec prisma migrate dev --name init`
-- applies `prisma/raw_sql/triggers.sql` + `prisma/raw_sql/permissions.sql`
-- removes any `apps/<surface>/` folder the user did NOT pick in round 4 (mobile, website)
+- applies `prisma/raw_sql/triggers.sql` + `prisma/raw_sql/permissions.sql` + seed
+- removes any `apps/<surface>/` folder the user did NOT pick in round 4 (`marketing` → `apps/website`, `mobile` → `apps/mobile`)
+- ends with a scan that lists any remaining `{{...}}` placeholders
+
+> Native `apps/mobile/ios` + `android` are not committed — Expo regenerates them from `app.json` via `prebuild` on first `ios`/`android` run.
 
 ### 4. Generate the design system
 
@@ -88,8 +92,10 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the 11-step type-cascade flow.
 - [ ] `.claude/bootstrap-answers.json` written with all required keys.
 - [ ] `pnpm install` clean, `pnpm lint` clean from repo root.
 - [ ] `docker compose up -d` reports healthy Postgres.
+- [ ] `packages/db/.env` exists with a `DATABASE_URL` (in sync with `apps/server/.env`).
 - [ ] Initial Prisma migration applied; `triggers.sql` + `permissions.sql` executed.
 - [ ] `design/tone.md`, `brand.md`, `tokens.md`, `components.md` populated with substituted values.
-- [ ] `AGENT.md` + `CLAUDE.md` reflect the interview answers (no `{{...}}` placeholders left).
-- [ ] `.env` files have non-empty `ENCRYPTION_KEY` and `JWT_SECRET_KEY`.
+- [ ] `AGENT.md` + `CLAUDE.md` reflect the interview answers — the script's leftover-placeholder scan reports **none**.
+- [ ] `apps/server/.env` has non-empty `ENCRYPTION_KEY` and `JWT_SECRET_KEY`.
+- [ ] Mobile (if kept): `app.json` identity is set; no "Oncologo"/placeholder strings remain.
 - [ ] Surfaces the user did NOT pick are removed.

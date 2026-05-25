@@ -7,7 +7,7 @@
     "start": "expo start",
     "ios": "expo run:ios",
     "android": "expo run:android",
-    "prebuild": "expo prebuild",
+    "native:prebuild": "expo prebuild",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --max-warnings 0",
     "build": "tsc --noEmit"

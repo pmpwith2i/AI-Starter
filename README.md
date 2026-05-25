@@ -35,10 +35,10 @@ Open the project in Claude Code (or any agent runner) and say:
 The `type-cascade-stack` skill will:
 
 1. **Interview** you (5 rounds: project name + pitch, primary domain, sensitive-data class, surfaces to keep, tone + brand hue).
-2. **Personalize** the placeholders in `AGENT.md`, `CLAUDE.md`, `design/*.md` from your answers.
-3. **Generate** `ENCRYPTION_KEY` + `JWT_SECRET_KEY` and write them into `apps/server/.env`.
+2. **Personalize** every `{{...}}` placeholder in `AGENT.md`, `CLAUDE.md`, `design/*.md`, the source tree, root `package.json`, and the mobile `app.json` identity — from your answers, with tone/category-derived defaults so nothing is left blank.
+3. **Generate** `ENCRYPTION_KEY` + `JWT_SECRET_KEY` into `apps/server/.env`, and create `packages/db/.env` (where Prisma reads `DATABASE_URL`).
 4. **Drop** any surface (`apps/website`, `apps/mobile`) you didn't pick.
-5. **Install** dependencies, bring up Postgres, run the initial Prisma migration + triggers + permissions + seed.
+5. **Install** dependencies (auto-runs `prisma generate`), bring up Postgres, run the initial Prisma migration + triggers + permissions + seed.
 6. **Generate** the design system via `impeccable:teach-impeccable` + `impeccable:normalize`.
 7. **Spawn** four checkpoint agents in sequence (design system → auth vertical → first CRUD domain → deploy infra), pausing for review between each.
 8. **Audit** for compliance (`gdpr-compliance:gdpr-compliance` + `iso27001:iso27001` + `security-review`).
@@ -48,10 +48,11 @@ By the end of day 1 you have a deployable v0.1.0 with auth + your first domain C
 ## Manual quick start (without the skill)
 
 ```bash
-pnpm install
+pnpm install                                   # also runs `prisma generate`
 docker compose up -d
 cp apps/server/.env.example apps/server/.env
-# fill ENCRYPTION_KEY + JWT_SECRET_KEY (openssl rand -hex 32) + RESEND_API_KEY
+cp packages/db/.env.example packages/db/.env   # Prisma reads DATABASE_URL from here
+# fill ENCRYPTION_KEY + JWT_SECRET_KEY (openssl rand -hex 32) + RESEND_API_KEY in apps/server/.env
 pnpm --filter @repo/db exec prisma migrate dev --name init
 pnpm --filter @repo/db exec prisma db execute --file prisma/raw_sql/triggers.sql
 pnpm --filter @repo/db exec prisma db execute --file prisma/raw_sql/permissions.sql

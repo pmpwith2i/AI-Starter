@@ -19,6 +19,12 @@ coverage
 packages/db/src/generated/
 packages/db/prisma/migrations/.lock
 
+# Expo native projects — regenerated via `expo prebuild` (Continuous Native
+# Generation). Not committed so the app identity in app.json is the single
+# source of truth. See apps/mobile/README.md.
+apps/mobile/ios
+apps/mobile/android
+
 # Audit artifacts (regenerated on demand)
 **/artifacts/
 **/storybook-static/

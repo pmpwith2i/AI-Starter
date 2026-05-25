@@ -54,7 +54,7 @@ If multiple platforms exist (patient + pro), each shifts the hue by ~25° to avo
 
 ## Logo + assets
 
-- **Logo SVG**: `apps/marketing/public/logo.svg` (fill via `currentColor` so it adapts to themes)
+- **Logo SVG**: `apps/website/public/logo.svg` (fill via `currentColor` so it adapts to themes)
 - **Favicon / app icon**: generated dynamically via Next `icon.tsx` + Expo `app.json` icon
 - **OG image**: generated via `ImageResponse` in marketing `app/opengraph-image.tsx`
 

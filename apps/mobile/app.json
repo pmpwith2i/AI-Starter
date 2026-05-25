@@ -1,18 +1,18 @@
 {
   "expo": {
-    "name": "Oncologo",
-    "slug": "oncologo-mobile",
+    "name": "Starter",
+    "slug": "starter-mobile",
     "version": "0.0.1",
     "orientation": "portrait",
-    "scheme": "oncologo",
+    "scheme": "starter",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "it.oncologo.app"
+      "bundleIdentifier": "com.starter.app"
     },
     "android": {
-      "package": "it.oncologo.app"
+      "package": "com.starter.app"
     },
     "plugins": [
       "expo-router",
